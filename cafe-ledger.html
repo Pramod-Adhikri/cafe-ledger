@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cafe Daily Ledger</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<style>
+  :root{
+    --paper: #EDE6D6;
+    --paper-dark: #E2D9C4;
+    --ink: #2B211A;
+    --ink-soft: #5C5142;
+    --income: #3F6B4A;
+    --income-bg: #E1EBE2;
+    --expense: #A63D33;
+    --expense-bg: #F3E1DE;
+    --gold: #B4915B;
+    --line: #D2C6A9;
+    --white: #FBF8F1;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    padding:28px 16px 60px;
+  }
+  .wrap{max-width:920px;margin:0 auto;}
+
+  .shop-header{
+    text-align:center;
+    padding:10px 0 22px;
+    border-bottom:2px solid var(--ink);
+    margin-bottom:22px;
+  }
+  .shop-header h1{
+    font-family:'Special Elite',cursive;
+    font-size:2.2rem;
+    letter-spacing:1px;
+    margin:0 0 4px;
+    color:var(--ink);
+  }
+  .shop-header p{
+    margin:0;
+    color:var(--ink-soft);
+    font-size:.9rem;
+    letter-spacing:.5px;
+  }
+
+  /* ---- Excel connection bar ---- */
+  .excel-bar{
+    background:var(--white);
+    border:1px solid var(--line);
+    padding:14px 18px;
+    margin-bottom:22px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    flex-wrap:wrap;
+  }
+  .excel-status{font-size:.85rem;color:var(--ink-soft);}
+  .excel-status b{color:var(--ink);}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;background:var(--expense);}
+  .dot.on{background:var(--income);}
+  .excel-actions{display:flex;gap:8px;flex-wrap:wrap;}
+
+  /* ---- Receipt tally strip ---- */
+  .receipt{
+    position:relative;
+    background:var(--white);
+    max-width:420px;
+    margin:0 auto 34px;
+    padding:22px 26px 26px;
+    box-shadow:0 3px 10px rgba(43,33,26,.12);
+    font-family:'IBM Plex Mono',monospace;
+  }
+  .receipt::before, .receipt::after{
+    content:"";
+    position:absolute;
+    left:0; right:0; height:10px;
+    background:
+      radial-gradient(circle at 10px 5px, var(--paper) 5px, transparent 5.5px) repeat-x;
+    background-size:20px 10px;
+  }
+  .receipt::before{top:-5px;}
+  .receipt::after{bottom:-5px; transform:rotate(180deg);}
+  .receipt .r-title{
+    text-align:center;font-weight:600;letter-spacing:2px;
+    font-size:.75rem;color:var(--ink-soft);text-transform:uppercase;margin-bottom:12px;
+  }
+  .receipt-line{display:flex;justify-content:space-between;font-size:.95rem;padding:5px 0;}
+  .receipt-line.income{color:var(--income);}
+  .receipt-line.expense{color:var(--expense);}
+  .receipt-divider{border-top:1px dashed var(--line);margin:8px 0;}
+  .receipt-line.net{font-weight:700;font-size:1.1rem;color:var(--ink);}
+  .receipt-date{text-align:center;font-size:.72rem;color:var(--ink-soft);margin-top:10px;letter-spacing:.5px;}
+
+  .panel{background:var(--white);border:1px solid var(--line);padding:22px 24px;margin-bottom:22px;}
+  .panel h2{
+    font-family:'Special Elite',cursive;font-size:1.15rem;margin:0 0 16px;color:var(--ink);
+    border-bottom:1px solid var(--line);padding-bottom:10px;
+  }
+
+  .form-grid{
+    display:grid;
+    grid-template-columns:.7fr .7fr .6fr 1fr 1.1fr 1.6fr auto;
+    gap:10px;align-items:end;
+  }
+  @media(max-width:900px){ .form-grid{grid-template-columns:1fr 1fr 1fr;} }
+  label{display:block;font-size:.72rem;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--ink-soft);margin-bottom:4px;}
+  input, select{
+    width:100%;padding:8px 9px;border:1px solid var(--line);background:var(--paper);
+    font-family:'Inter',sans-serif;font-size:.9rem;color:var(--ink);
+  }
+  input:focus, select:focus{outline:2px solid var(--gold);outline-offset:1px;}
+  .type-toggle{display:flex;gap:6px;}
+  .type-toggle button{
+    flex:1;padding:8px 4px;border:1px solid var(--line);background:var(--paper);cursor:pointer;
+    font-size:.82rem;font-weight:600;font-family:'Inter',sans-serif;color:var(--ink-soft);
+  }
+  .type-toggle button.active-income{background:var(--income);color:#fff;border-color:var(--income);}
+  .type-toggle button.active-expense{background:var(--expense);color:#fff;border-color:var(--expense);}
+
+  .btn{padding:9px 16px;border:none;cursor:pointer;font-family:'Inter',sans-serif;font-weight:600;font-size:.85rem;letter-spacing:.3px;}
+  .btn-add{background:var(--ink);color:var(--white);}
+  .btn-add:hover{background:#171310;}
+  .btn-export{background:var(--gold);color:var(--white);}
+  .btn-export:hover{background:#9c7c48;}
+  .btn-connect{background:var(--income);color:#fff;}
+  .btn-connect:hover{background:#325a3c;}
+  .btn-del{background:transparent;color:var(--expense);border:1px solid var(--expense);padding:4px 9px;font-size:.75rem;}
+  .btn-del:hover{background:var(--expense-bg);}
+
+  .toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:10px;}
+  .tabs{display:flex;gap:2px;}
+  .tab{padding:9px 18px;cursor:pointer;font-family:'Inter',sans-serif;font-weight:600;font-size:.85rem;background:var(--paper-dark);color:var(--ink-soft);border:1px solid var(--line);border-bottom:none;}
+  .tab.active{background:var(--white);color:var(--ink);}
+
+  table{width:100%;border-collapse:collapse;font-size:.88rem;}
+  thead th{text-align:left;font-size:.68rem;text-transform:uppercase;letter-spacing:.5px;color:var(--ink-soft);border-bottom:2px solid var(--ink);padding:8px 6px;}
+  tbody td{padding:8px 6px;border-bottom:1px solid var(--line);}
+  tbody tr:nth-child(even){background:rgba(210,198,169,.18);}
+  .amt{font-family:'IBM Plex Mono',monospace;text-align:right;}
+  .amt.income{color:var(--income);}
+  .amt.expense{color:var(--expense);}
+  .type-pill{font-size:.68rem;font-weight:700;padding:2px 8px;text-transform:uppercase;letter-spacing:.4px;}
+  .type-pill.income{background:var(--income-bg);color:var(--income);}
+  .type-pill.expense{background:var(--expense-bg);color:var(--expense);}
+  .empty-state{text-align:center;padding:30px 10px;color:var(--ink-soft);font-size:.9rem;}
+  .ad-sub{display:block;font-size:.68rem;color:var(--ink-soft);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="shop-header">
+    <h1>☕ Cafe Daily Ledger</h1>
+    <p>Every rupee logged, dated the Nepali way.</p>
+  </div>
+
+  <div class="excel-bar">
+    <div class="excel-status">
+      <span class="dot" id="excelDot"></span>
+      <span id="excelStatusText"><b>Not connected.</b> Connect a file so every entry writes straight to it.</span>
+    </div>
+    <div class="excel-actions">
+      <button class="btn btn-connect" id="connectBtn" onclick="connectExcelFile()">🔗 Connect Excel File</button>
+      <button class="btn btn-export" onclick="downloadCopy()">⬇ Download a Copy</button>
+    </div>
+  </div>
+
+  <div class="receipt" id="receiptStrip">
+    <div class="r-title">Today's Tally</div>
+    <div class="receipt-line income"><span>Income</span><span id="todayIncome">Rs. 0.00</span></div>
+    <div class="receipt-line expense"><span>Expense</span><span id="todayExpense">Rs. 0.00</span></div>
+    <div class="receipt-divider"></div>
+    <div class="receipt-line net"><span>Net</span><span id="todayNet">Rs. 0.00</span></div>
+    <div class="receipt-date" id="todayDateLabel"></div>
+  </div>
+
+  <div class="panel">
+    <h2>Add an entry</h2>
+    <div class="form-grid">
+      <div>
+        <label>BS Year</label>
+        <select id="f-year" onchange="onDatePartChange()"></select>
+      </div>
+      <div>
+        <label>BS Month</label>
+        <select id="f-month" onchange="onDatePartChange()"></select>
+      </div>
+      <div>
+        <label>BS Day</label>
+        <select id="f-day"></select>
+      </div>
+      <div>
+        <label>Type</label>
+        <div class="type-toggle">
+          <button type="button" id="btn-income" onclick="setType('Income')">Income</button>
+          <button type="button" id="btn-expense" onclick="setType('Expense')">Expense</button>
+        </div>
+      </div>
+      <div>
+        <label>Amount (Rs.)</label>
+        <input type="number" id="f-amount" min="0" step="0.01" placeholder="0.00">
+      </div>
+      <div>
+        <label>Notes (optional)</label>
+        <input type="text" id="f-notes" placeholder="">
+      </div>
+      <div>
+        <button class="btn btn-add" onclick="addEntry()">+ Add</button>
+      </div>
+    </div>
+    <div id="formError" style="color:var(--expense);font-size:.8rem;margin-top:8px;"></div>
+  </div>
+
+  <div class="panel">
+    <div class="toolbar">
+      <div class="tabs">
+        <div class="tab active" data-tab="transactions" onclick="switchTab('transactions')">Transactions</div>
+        <div class="tab" data-tab="daily" onclick="switchTab('daily')">Daily Summary</div>
+        <div class="tab" data-tab="monthly" onclick="switchTab('monthly')">Monthly Summary</div>
+      </div>
+    </div>
+
+    <div id="tab-transactions">
+      <table>
+        <thead><tr><th>Date (BS)</th><th>Type</th><th>Amount</th><th>Notes</th><th></th></tr></thead>
+        <tbody id="txBody"></tbody>
+      </table>
+      <div id="txEmpty" class="empty-state" style="display:none;">No entries yet — add your first one above.</div>
+    </div>
+
+    <div id="tab-daily" style="display:none;">
+      <table>
+        <thead><tr><th>Date (BS)</th><th style="text-align:right;">Income</th><th style="text-align:right;">Expense</th><th style="text-align:right;">Net</th></tr></thead>
+        <tbody id="dailyBody"></tbody>
+      </table>
+    </div>
+
+    <div id="tab-monthly" style="display:none;">
+      <table>
+        <thead><tr><th>Month (BS)</th><th style="text-align:right;">Income</th><th style="text-align:right;">Expense</th><th style="text-align:right;">Net</th></tr></thead>
+        <tbody id="monthlyBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div style="text-align:center;font-size:.72rem;color:var(--ink-soft);margin-top:10px;" id="footNote">
+    Entries are saved automatically. Connect an Excel file above and every entry writes to it in real time.
+  </div>
+
+</div>
+
+<script>
+/* ============ BS <-> AD conversion (Bikram Sambat calendar data) ============ */
+const BS_DATA={1978:[31,31,32,31,31,31,30,29,30,29,30,30],1979:[31,31,32,32,31,30,30,29,30,29,30,30],1980:[31,32,31,32,31,30,30,30,29,29,30,31],1981:[31,31,31,32,31,31,29,30,30,29,30,30],1982:[31,31,32,31,31,31,30,29,30,29,30,30],1983:[31,31,32,32,31,30,30,29,30,29,30,30],1984:[31,32,31,32,31,30,30,30,29,29,30,31],1985:[31,31,31,32,31,31,29,30,30,29,30,30],1986:[31,31,32,31,31,31,30,29,30,29,30,30],1987:[31,32,31,32,31,30,30,29,30,29,30,30],1988:[31,32,31,32,31,30,30,30,29,29,30,31],1989:[31,31,31,32,31,31,30,29,30,29,30,30],1990:[31,31,32,31,31,31,30,29,30,29,30,30],1991:[31,32,31,32,31,30,30,29,30,29,30,30],1992:[31,32,31,32,31,30,30,30,29,30,29,31],1993:[31,31,31,32,31,31,30,29,30,29,30,30],1994:[31,31,32,31,31,31,30,29,30,29,30,30],1995:[31,32,31,32,31,30,30,30,29,29,30,30],1996:[31,32,31,32,31,30,30,30,29,30,29,31],1997:[31,31,32,31,31,31,30,29,30,29,30,30],1998:[31,31,32,31,31,31,30,29,30,29,30,30],1999:[31,32,31,32,31,30,30,30,29,29,30,31],2000:[30,32,31,32,31,30,30,30,29,30,29,31],2001:[31,31,32,31,31,31,30,29,30,29,30,30],2002:[31,31,32,32,31,30,30,29,30,29,30,30],2003:[31,32,31,32,31,30,30,30,29,29,30,31],2004:[30,32,31,32,31,30,30,30,29,30,29,31],2005:[31,31,32,31,31,31,30,29,30,29,30,30],2006:[31,31,32,32,31,30,30,29,30,29,30,30],2007:[31,32,31,32,31,30,30,30,29,29,30,31],2008:[31,31,31,32,31,31,29,30,30,29,29,31],2009:[31,31,32,31,31,31,30,29,30,29,30,30],2010:[31,31,32,32,31,30,30,29,30,29,30,30],2011:[31,32,31,32,31,30,30,30,29,29,30,31],2012:[31,31,31,32,31,31,29,30,30,29,30,30],2013:[31,31,32,31,31,31,30,29,30,29,30,30],2014:[31,31,32,32,31,30,30,29,30,29,30,30],2015:[31,32,31,32,31,30,30,30,29,29,30,31],2016:[31,31,31,32,31,31,29,30,30,29,30,30],2017:[31,31,32,31,31,31,30,29,30,29,30,30],2018:[31,32,31,32,31,30,30,29,30,29,30,30],2019:[31,32,31,32,31,30,30,30,29,30,29,31],2020:[31,31,31,32,31,31,30,29,30,29,30,30],2021:[31,31,32,31,31,31,30,29,30,29,30,30],2022:[31,32,31,32,31,30,30,30,29,29,30,30],2023:[31,32,31,32,31,30,30,30,29,30,29,31],2024:[31,31,31,32,31,31,30,29,30,29,30,30],2025:[31,31,32,31,31,31,30,29,30,29,30,30],2026:[31,32,31,32,31,30,30,30,29,29,30,31],2027:[30,32,31,32,31,30,30,30,29,30,29,31],2028:[31,31,32,31,31,31,30,29,30,29,30,30],2029:[31,31,32,31,32,30,30,29,30,29,30,30],2030:[31,32,31,32,31,30,30,30,29,29,30,31],2031:[30,32,31,32,31,30,30,30,29,30,29,31],2032:[31,31,32,31,31,31,30,29,30,29,30,30],2033:[31,31,32,32,31,30,30,29,30,29,30,30],2034:[31,32,31,32,31,30,30,30,29,29,30,31],2035:[30,32,31,32,31,31,29,30,30,29,29,31],2036:[31,31,32,31,31,31,30,29,30,29,30,30],2037:[31,31,32,32,31,30,30,29,30,29,30,30],2038:[31,32,31,32,31,30,30,30,29,29,30,31],2039:[31,31,31,32,31,31,29,30,30,29,30,30],2040:[31,31,32,31,31,31,30,29,30,29,30,30],2041:[31,31,32,32,31,30,30,29,30,29,30,30],2042:[31,32,31,32,31,30,30,30,29,29,30,31],2043:[31,31,31,32,31,31,29,30,30,29,30,30],2044:[31,31,32,31,31,31,30,29,30,29,30,30],2045:[31,32,31,32,31,30,30,29,30,29,30,30],2046:[31,32,31,32,31,30,30,30,29,29,30,31],2047:[31,31,31,32,31,31,30,29,30,29,30,30],2048:[31,31,32,31,31,31,30,29,30,29,30,30],2049:[31,32,31,32,31,30,30,30,29,29,30,30],2050:[31,32,31,32,31,30,30,30,29,30,29,31],2051:[31,31,31,32,31,31,30,29,30,29,30,30],2052:[31,31,32,31,31,31,30,29,30,29,30,30],2053:[31,32,31,32,31,30,30,30,29,29,30,30],2054:[31,32,31,32,31,30,30,30,29,30,29,31],2055:[31,31,32,31,31,31,30,29,30,29,30,30],2056:[31,31,32,31,32,30,30,29,30,29,30,30],2057:[31,32,31,32,31,30,30,30,29,29,30,31],2058:[30,32,31,32,31,30,30,30,29,30,29,31],2059:[31,31,32,31,31,31,30,29,30,29,30,30],2060:[31,31,32,32,31,30,30,29,30,29,30,30],2061:[31,32,31,32,31,30,30,30,29,29,30,31],2062:[30,32,31,32,31,31,29,30,29,30,29,31],2063:[31,31,32,31,31,31,30,29,30,29,30,30],2064:[31,31,32,32,31,30,30,29,30,29,30,30],2065:[31,32,31,32,31,30,30,30,29,29,30,31],2066:[31,31,31,32,31,31,29,30,30,29,29,31],2067:[31,31,32,31,31,31,30,29,30,29,30,30],2068:[31,31,32,32,31,30,30,29,30,29,30,30],2069:[31,32,31,32,31,30,30,30,29,29,30,31],2070:[31,31,31,32,31,31,29,30,30,29,30,30],2071:[31,31,32,31,31,31,30,29,30,29,30,30],2072:[31,32,31,32,31,30,30,29,30,29,30,30],2073:[31,32,31,32,31,30,30,30,29,29,30,31],2074:[31,31,31,32,31,31,30,29,30,29,30,30],2075:[31,31,32,31,31,31,30,29,30,29,30,30],2076:[31,32,31,32,31,30,30,30,29,29,30,30],2077:[31,32,31,32,31,30,30,30,29,30,29,31],2078:[31,31,31,32,31,31,30,29,30,29,30,30],2079:[31,31,32,31,31,31,30,29,30,29,30,30],2080:[31,32,31,32,31,30,30,30,29,29,30,30],2081:[31,32,31,32,31,30,30,30,29,30,29,31],2082:[31,31,32,31,31,31,30,29,30,29,30,30],2083:[31,31,32,31,31,31,30,29,30,29,30,30],2084:[31,31,32,31,31,30,30,30,29,30,30,30],2085:[31,32,31,32,30,31,30,30,29,30,30,30],2086:[30,32,31,32,31,30,30,30,29,30,30,30],2087:[31,31,32,31,31,31,30,30,29,30,30,30],2088:[30,31,32,32,30,31,30,30,29,30,30,30],2089:[30,32,31,32,31,30,30,30,29,30,30,30],2090:[30,32,31,32,31,30,30,30,29,30,30,30],2091:[31,31,32,31,31,31,30,30,29,30,30,30],2092:[30,31,32,32,31,30,30,30,29,30,30,30],2093:[30,32,31,32,31,30,30,30,29,30,30,30],2094:[31,31,32,31,31,30,30,30,29,30,30,30],2095:[31,31,32,31,31,31,30,29,30,30,30,30],2096:[30,31,32,32,31,30,30,29,30,29,30,30],2097:[31,32,31,32,31,30,30,30,29,30,30,30],2098:[31,31,32,31,31,31,29,30,29,30,29,31],2099:[31,32,31,32,31,30,30,30,29,29,30,31]};
+const MIN_YEAR_BS = 1978, MAX_YEAR_BS = 2099;
+const START_AD = new Date(1921,3,13); // 1921-04-13 = 1978-01-01 BS
+const NEP_MONTHS = ["Baishakh","Jestha","Ashadh","Shrawan","Bhadra","Ashwin","Kartik","Mangsir","Poush","Magh","Falgun","Chaitra"];
+
+function adToBs(jsDate){
+  const daysDiff = Math.floor((Date.UTC(jsDate.getFullYear(),jsDate.getMonth(),jsDate.getDate()) - Date.UTC(1921,3,13)) / 86400000);
+  let total = 0;
+  for(let y=MIN_YEAR_BS; y<=MAX_YEAR_BS; y++){
+    const months = BS_DATA[y];
+    for(let m=0;m<12;m++){
+      total += months[m];
+      if(daysDiff - total < 0){
+        const day = daysDiff - total + months[m] + 1;
+        return {year:y, month:m+1, day:day};
+      }
+    }
+  }
+  return {year:MAX_YEAR_BS, month:1, day:1};
+}
+function bsToAdString(y,m,day){
+  let daysDiff = 0;
+  for(let i=MIN_YEAR_BS; i<=y; i++){
+    const months = BS_DATA[i];
+    if(i===y){
+      for(let j=0;j<m-1;j++) daysDiff += months[j];
+      daysDiff += day - 1;
+    }else{
+      for(let j=0;j<12;j++) daysDiff += months[j];
+    }
+  }
+  const d = new Date(1921,3,13);
+  d.setDate(d.getDate() + daysDiff);
+  const yyyy = d.getFullYear(), mm = String(d.getMonth()+1).padStart(2,'0'), dd = String(d.getDate()).padStart(2,'0');
+  return `${yyyy}-${mm}-${dd}`;
+}
+function daysInBsMonth(y,m){ return BS_DATA[y] ? BS_DATA[y][m-1] : 30; }
+function pad2(n){ return String(n).padStart(2,'0'); }
+function bsDateStr(y,m,d){ return `${y}-${pad2(m)}-${pad2(d)}`; }
+
+/* ============ App state ============ */
+let entries = [];
+let currentType = 'Income';
+let fileHandle = null;
+let fsApiSupported = ('showSaveFilePicker' in window);
+
+function fmt(n){
+  const v = Number(n)||0;
+  return 'Rs. ' + v.toLocaleString('en-IN', {minimumFractionDigits:2, maximumFractionDigits:2});
+}
+function setType(t){
+  currentType = t;
+  document.getElementById('btn-income').className = t==='Income' ? 'active-income' : '';
+  document.getElementById('btn-expense').className = t==='Expense' ? 'active-expense' : '';
+}
+
+/* ---- Date picker population ---- */
+function populateDatePicker(defaultBs){
+  const yearSel = document.getElementById('f-year');
+  const monthSel = document.getElementById('f-month');
+  const daySel = document.getElementById('f-day');
+
+  yearSel.innerHTML = '';
+  const centerYear = defaultBs.year;
+  for(let y = centerYear-5; y <= centerYear+5; y++){
+    if(y < MIN_YEAR_BS || y > MAX_YEAR_BS) continue;
+    const opt = document.createElement('option');
+    opt.value = y; opt.textContent = y;
+    if(y === centerYear) opt.selected = true;
+    yearSel.appendChild(opt);
+  }
+  monthSel.innerHTML = '';
+  NEP_MONTHS.forEach((name, i)=>{
+    const opt = document.createElement('option');
+    opt.value = i+1; opt.textContent = name;
+    if(i+1 === defaultBs.month) opt.selected = true;
+    monthSel.appendChild(opt);
+  });
+  populateDays(defaultBs.year, defaultBs.month, defaultBs.day);
+}
+function populateDays(year, month, selectedDay){
+  const daySel = document.getElementById('f-day');
+  const count = daysInBsMonth(year, month);
+  daySel.innerHTML = '';
+  for(let d=1; d<=count; d++){
+    const opt = document.createElement('option');
+    opt.value = d; opt.textContent = d;
+    if(d === selectedDay) opt.selected = true;
+    daySel.appendChild(opt);
+  }
+}
+function onDatePartChange(){
+  const y = parseInt(document.getElementById('f-year').value);
+  const m = parseInt(document.getElementById('f-month').value);
+  populateDays(y, m, 1);
+}
+
+/* ---- Persistence: personal in-artifact storage (survives reloads here) ---- */
+async function loadEntries(){
+  try{
+    const res = await window.storage.get('entries', false);
+    entries = res ? JSON.parse(res.value) : [];
+  }catch(e){ entries = []; }
+}
+async function saveEntries(){
+  try{ await window.storage.set('entries', JSON.stringify(entries), false); }
+  catch(e){ console.error('Storage error', e); }
+}
+
+/* ---- Tiny IndexedDB wrapper to remember the file handle between sessions ---- */
+function idbOpen(){
+  return new Promise((resolve,reject)=>{
+    const req = indexedDB.open('cafe-ledger-db', 1);
+    req.onupgradeneeded = ()=> req.result.createObjectStore('handles');
+    req.onsuccess = ()=> resolve(req.result);
+    req.onerror = ()=> reject(req.error);
+  });
+}
+async function idbSet(key, val){
+  const db = await idbOpen();
+  return new Promise((resolve,reject)=>{
+    const tx = db.transaction('handles','readwrite');
+    tx.objectStore('handles').put(val, key);
+    tx.oncomplete = ()=>resolve();
+    tx.onerror = ()=>reject(tx.error);
+  });
+}
+async function idbGet(key){
+  const db = await idbOpen();
+  return new Promise((resolve,reject)=>{
+    const tx = db.transaction('handles','readonly');
+    const req = tx.objectStore('handles').get(key);
+    req.onsuccess = ()=>resolve(req.result);
+    req.onerror = ()=>reject(req.error);
+  });
+}
+
+function markConnected(name){
+  document.getElementById('excelDot').classList.add('on');
+  document.getElementById('excelStatusText').innerHTML = `<b>Connected:</b> ${name} — every entry writes here automatically.`;
+  document.getElementById('footNote').textContent = 'Every entry you add is written straight into your connected Excel file.';
+  document.getElementById('connectBtn').textContent = '🔗 Reconnect / Change File';
+}
+
+/* Try to silently resume a previously-connected file (no file picker, at most a one-click permission prompt) */
+async function tryAutoReconnect(){
+  if(!fsApiSupported) return;
+  try{
+    const stored = await idbGet('fileHandle');
+    if(!stored) return;
+    let perm = await stored.queryPermission({mode:'readwrite'});
+    if(perm !== 'granted'){
+      perm = await stored.requestPermission({mode:'readwrite'});
+    }
+    if(perm === 'granted'){
+      fileHandle = stored;
+      markConnected(fileHandle.name);
+    }else{
+      document.getElementById('excelStatusText').innerHTML =
+        "<b>Found your file, but access wasn't granted.</b> Click Connect to re-allow it (one click, same file).";
+    }
+  }catch(e){
+    // no permission API support in this context, or handle no longer valid — user can reconnect manually
+  }
+}
+
+/* ---- Excel file connection (File System Access API) ---- */
+async function connectExcelFile(){
+  if(!fsApiSupported){
+    document.getElementById('excelStatusText').innerHTML =
+      "<b>Live-write isn't supported in this browser.</b> Use 'Download a Copy' after each session instead.";
+    return;
+  }
+  try{
+    fileHandle = await window.showSaveFilePicker({
+      suggestedName: 'Cafe_Ledger.xlsx',
+      types: [{ description:'Excel Workbook', accept:{ 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':['.xlsx'] } }]
+    });
+    await idbSet('fileHandle', fileHandle);
+    markConnected(fileHandle.name);
+    await writeToExcelFile();
+  }catch(e){
+    // user cancelled the picker — do nothing
+  }
+}
+function buildWorkbook(){
+  const wb = XLSX.utils.book_new();
+
+  const txRows = [['Date (BS)','Date (AD)','Type','Amount (Rs.)','Notes']];
+  [...entries].sort((a,b)=> a.bs.localeCompare(b.bs)).forEach(e=>{
+    txRows.push([e.bs, e.ad, e.type, Number(e.amount), e.notes || '']);
+  });
+  const wsTx = XLSX.utils.aoa_to_sheet(txRows);
+  wsTx['!cols'] = [{wch:12},{wch:12},{wch:10},{wch:14},{wch:30}];
+  XLSX.utils.book_append_sheet(wb, wsTx, 'Transactions');
+
+  const dailyMap = groupBy(e=>e.bs);
+  const dailyRows = [['Date (BS)','Total Income','Total Expense','Net Profit']];
+  Object.keys(dailyMap).sort().forEach(k=>{
+    const {income, expense} = dailyMap[k];
+    dailyRows.push([k, income, expense, income-expense]);
+  });
+  const wsDaily = XLSX.utils.aoa_to_sheet(dailyRows);
+  wsDaily['!cols'] = [{wch:12},{wch:14},{wch:14},{wch:14}];
+  XLSX.utils.book_append_sheet(wb, wsDaily, 'Daily Summary');
+
+  const monthMap = groupBy(e=>e.bs.slice(0,7));
+  const monthRows = [['Month (BS)','Total Income','Total Expense','Net Profit']];
+  Object.keys(monthMap).sort().forEach(k=>{
+    const {income, expense} = monthMap[k];
+    monthRows.push([k, income, expense, income-expense]);
+  });
+  const wsMonth = XLSX.utils.aoa_to_sheet(monthRows);
+  wsMonth['!cols'] = [{wch:10},{wch:14},{wch:14},{wch:14}];
+  XLSX.utils.book_append_sheet(wb, wsMonth, 'Monthly Summary');
+
+  return wb;
+}
+async function writeToExcelFile(){
+  if(!fileHandle) return;
+  try{
+    const wb = buildWorkbook();
+    const wbout = XLSX.write(wb, {bookType:'xlsx', type:'array'});
+    const writable = await fileHandle.createWritable();
+    await writable.write(wbout);
+    await writable.close();
+  }catch(e){
+    console.error('Excel write failed', e);
+    document.getElementById('excelStatusText').innerHTML =
+      "<b>Couldn't write to the file.</b> Reconnect it using the button, or use 'Download a Copy'.";
+  }
+}
+function downloadCopy(){
+  const wb = buildWorkbook();
+  const today = adToBs(new Date());
+  XLSX.writeFile(wb, `Cafe_Ledger_${bsDateStr(today.year,today.month,today.day)}.xlsx`);
+}
+
+/* ---- Entry CRUD ---- */
+async function addEntry(){
+  const y = parseInt(document.getElementById('f-year').value);
+  const m = parseInt(document.getElementById('f-month').value);
+  const d = parseInt(document.getElementById('f-day').value);
+  const amount = parseFloat(document.getElementById('f-amount').value);
+  const notes = document.getElementById('f-notes').value.trim();
+  const errEl = document.getElementById('formError');
+
+  if(!y || !m || !d || isNaN(amount) || amount <= 0){
+    errEl.textContent = 'Please choose a date and enter a valid amount.';
+    return;
+  }
+  errEl.textContent = '';
+
+  entries.push({
+    id: Date.now().toString(36) + Math.random().toString(36).slice(2,6),
+    bs: bsDateStr(y,m,d),
+    ad: bsToAdString(y,m,d),
+    type: currentType,
+    amount, notes
+  });
+  await saveEntries();
+
+  document.getElementById('f-amount').value = '';
+  document.getElementById('f-notes').value = '';
+
+  renderAll();
+  if(fileHandle) await writeToExcelFile();
+}
+async function deleteEntry(id){
+  entries = entries.filter(e => e.id !== id);
+  await saveEntries();
+  renderAll();
+  if(fileHandle) await writeToExcelFile();
+}
+
+/* ---- Rendering ---- */
+function switchTab(tab){
+  ['transactions','daily','monthly'].forEach(t=>{
+    document.getElementById('tab-'+t).style.display = (t===tab) ? '' : 'none';
+    document.querySelector(`.tab[data-tab="${t}"]`).classList.toggle('active', t===tab);
+  });
+}
+function groupBy(keyFn){
+  const map = {};
+  entries.forEach(e=>{
+    const k = keyFn(e);
+    if(!map[k]) map[k] = {income:0, expense:0};
+    map[k][e.type.toLowerCase()] += Number(e.amount);
+  });
+  return map;
+}
+function renderTransactions(){
+  const body = document.getElementById('txBody');
+  const empty = document.getElementById('txEmpty');
+  const sorted = [...entries].sort((a,b)=> b.bs.localeCompare(a.bs));
+  body.innerHTML = '';
+  empty.style.display = sorted.length ? 'none' : '';
+  sorted.forEach(e=>{
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${e.bs}<span class="ad-sub">${e.ad} AD</span></td>
+      <td><span class="type-pill ${e.type.toLowerCase()}">${e.type}</span></td>
+      <td class="amt ${e.type.toLowerCase()}">${fmt(e.amount)}</td>
+      <td>${e.notes || ''}</td>
+      <td><button class="btn-del" onclick="deleteEntry('${e.id}')">Delete</button></td>
+    `;
+    body.appendChild(tr);
+  });
+}
+function renderDaily(){
+  const map = groupBy(e=>e.bs);
+  const body = document.getElementById('dailyBody');
+  body.innerHTML = '';
+  Object.keys(map).sort((a,b)=> b.localeCompare(a)).forEach(k=>{
+    const {income, expense} = map[k];
+    const net = income - expense;
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${k}</td><td class="amt income">${fmt(income)}</td><td class="amt expense">${fmt(expense)}</td><td class="amt ${net>=0?'income':'expense'}">${fmt(net)}</td>`;
+    body.appendChild(tr);
+  });
+}
+function renderMonthly(){
+  const map = groupBy(e=>e.bs.slice(0,7));
+  const body = document.getElementById('monthlyBody');
+  body.innerHTML = '';
+  Object.keys(map).sort((a,b)=> b.localeCompare(a)).forEach(k=>{
+    const {income, expense} = map[k];
+    const net = income - expense;
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${k}</td><td class="amt income">${fmt(income)}</td><td class="amt expense">${fmt(expense)}</td><td class="amt ${net>=0?'income':'expense'}">${fmt(net)}</td>`;
+    body.appendChild(tr);
+  });
+}
+function renderReceipt(todayBsStr){
+  const map = groupBy(e=>e.bs);
+  const t = map[todayBsStr] || {income:0, expense:0};
+  document.getElementById('todayIncome').textContent = fmt(t.income);
+  document.getElementById('todayExpense').textContent = fmt(t.expense);
+  document.getElementById('todayNet').textContent = fmt(t.income - t.expense);
+}
+function renderAll(){
+  renderTransactions();
+  renderDaily();
+  renderMonthly();
+}
+
+(async function init(){
+  const todayBs = adToBs(new Date());
+  populateDatePicker(todayBs);
+  document.getElementById('todayDateLabel').textContent = `${NEP_MONTHS[todayBs.month-1]} ${todayBs.day}, ${todayBs.year} BS`;
+  setType('Income');
+  if(!fsApiSupported){
+    document.getElementById('excelStatusText').innerHTML =
+      "<b>Live-write isn't supported in this browser.</b> Use 'Download a Copy' regularly instead.";
+  }
+  await loadEntries();
+  renderAll();
+  renderReceipt(bsDateStr(todayBs.year, todayBs.month, todayBs.day));
+  await tryAutoReconnect();
+})();
+</script>
+</body>
+</html>
