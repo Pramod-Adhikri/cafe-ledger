@@ -592,7 +592,9 @@ function renderMonthly(){
     body.appendChild(tr);
   });
 }
-function renderReceipt(todayBsStr){
+function renderReceipt(){
+  const todayBs = adToBs(new Date());
+  const todayBsStr = bsDateStr(todayBs.year, todayBs.month, todayBs.day);
   const map = groupBy(e=>e.bs);
   const t = map[todayBsStr] || {income:0, expense:0};
   document.getElementById('todayIncome').textContent = fmt(t.income);
@@ -603,6 +605,7 @@ function renderAll(){
   renderTransactions();
   renderDaily();
   renderMonthly();
+  renderReceipt();
 }
 
 (async function init(){
@@ -616,7 +619,6 @@ function renderAll(){
   }
   await loadEntries();
   renderAll();
-  renderReceipt(bsDateStr(todayBs.year, todayBs.month, todayBs.day));
   await tryAutoReconnect();
 })();
 </script>
