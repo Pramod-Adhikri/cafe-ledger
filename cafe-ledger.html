@@ -357,15 +357,15 @@ function onDatePartChange(){
   populateDays(y, m, 1);
 }
 
-/* ---- Persistence: personal in-artifact storage (survives reloads here) ---- */
+/* ---- Persistence: browser localStorage (works on any standalone site) ---- */
 async function loadEntries(){
   try{
-    const res = await window.storage.get('entries', false);
-    entries = res ? JSON.parse(res.value) : [];
+    const raw = localStorage.getItem('cafe-ledger-entries');
+    entries = raw ? JSON.parse(raw) : [];
   }catch(e){ entries = []; }
 }
 async function saveEntries(){
-  try{ await window.storage.set('entries', JSON.stringify(entries), false); }
+  try{ localStorage.setItem('cafe-ledger-entries', JSON.stringify(entries)); }
   catch(e){ console.error('Storage error', e); }
 }
 
