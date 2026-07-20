@@ -168,7 +168,8 @@
       <span id="excelStatusText"><b>Not connected.</b> Connect a file so every entry writes straight to it.</span>
     </div>
     <div class="excel-actions">
-      <button class="btn btn-connect" id="connectBtn" onclick="connectExcelFile()">🔗 Connect Excel File</button>
+      <button class="btn btn-connect" id="openBtn" onclick="openExistingFile()">📂 Open Existing File</button>
+      <button class="btn btn-connect" id="createBtn" onclick="createNewFile()" style="background:var(--gold);">🆕 Create New File</button>
       <button class="btn btn-export" onclick="downloadCopy()">⬇ Download a Copy</button>
     </div>
   </div>
@@ -398,12 +399,13 @@ async function idbGet(key){
 
 function markConnected(name){
   document.getElementById('excelDot').classList.add('on');
-  document.getElementById('excelStatusText').innerHTML = `<b>Connected:</b> ${name} — every entry writes here automatically.`;
+  document.getElementById('excelStatusText').innerHTML = `<b>Connected:</b> ${name} — every entry writes here automatically. (Note: this app only writes; edits made directly in Excel won't be read back in.)`;
   document.getElementById('footNote').textContent = 'Every entry you add is written straight into your connected Excel file.';
-  document.getElementById('connectBtn').textContent = '🔗 Reconnect / Change File';
+  document.getElementById('openBtn').textContent = '📂 Reopen This File';
+  document.getElementById('createBtn').textContent = '🆕 Create Different File';
 }
 
-/* Try to silently resume a previously-connected file (no file picker, at most a one-click permission prompt) */
+/* Try to silently resume a previously-connected file (no dialog, at most a one-click permission prompt) */
 async function tryAutoReconnect(){
   if(!fsApiSupported) return;
   try{
@@ -418,15 +420,41 @@ async function tryAutoReconnect(){
       markConnected(fileHandle.name);
     }else{
       document.getElementById('excelStatusText').innerHTML =
-        "<b>Found your file, but access wasn't granted.</b> Click Connect to re-allow it (one click, same file).";
+        "<b>Found your last file, but access wasn't re-granted.</b> Click 'Open Existing File' and pick the same file again.";
     }
   }catch(e){
-    // no permission API support in this context, or handle no longer valid — user can reconnect manually
+    // handle no longer valid, or storage didn't survive this session — user can reconnect manually
   }
 }
 
-/* ---- Excel file connection (File System Access API) ---- */
-async function connectExcelFile(){
+/* ---- Open an existing .xlsx file and take it over as the live-write target ---- */
+async function openExistingFile(){
+  if(!fsApiSupported){
+    document.getElementById('excelStatusText').innerHTML =
+      "<b>Live-write isn't supported in this browser.</b> Use 'Download a Copy' after each session instead.";
+    return;
+  }
+  try{
+    const [handle] = await window.showOpenFilePicker({
+      types: [{ description:'Excel Workbook', accept:{ 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':['.xlsx'] } }],
+      multiple:false
+    });
+    const perm = await handle.requestPermission({mode:'readwrite'});
+    if(perm !== 'granted'){
+      document.getElementById('excelStatusText').innerHTML = "<b>Write permission wasn't granted.</b> Try again and allow write access.";
+      return;
+    }
+    fileHandle = handle;
+    await idbSet('fileHandle', fileHandle);
+    markConnected(fileHandle.name);
+    await writeToExcelFile();
+  }catch(e){
+    // user cancelled the picker — do nothing
+  }
+}
+
+/* ---- Create a brand-new .xlsx file as the live-write target ---- */
+async function createNewFile(){
   if(!fsApiSupported){
     document.getElementById('excelStatusText').innerHTML =
       "<b>Live-write isn't supported in this browser.</b> Use 'Download a Copy' after each session instead.";
@@ -616,6 +644,8 @@ function renderAll(){
   if(!fsApiSupported){
     document.getElementById('excelStatusText').innerHTML =
       "<b>Live-write isn't supported in this browser.</b> Use 'Download a Copy' regularly instead.";
+    document.getElementById('openBtn').disabled = true;
+    document.getElementById('createBtn').disabled = true;
   }
   await loadEntries();
   renderAll();
