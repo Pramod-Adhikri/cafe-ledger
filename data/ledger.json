@@ -29678,5 +29678,13 @@
     "type": "Income",
     "amount": 270,
     "notes": ""
+  },
+  {
+    "id": "mrx5zo97r5wm",
+    "bs": "2081-09-07",
+    "ad": "2024-12-22",
+    "type": "Income",
+    "amount": 3000,
+    "notes": ""
   }
 ]
