@@ -37358,5 +37358,13 @@
     "type": "Income",
     "amount": 570,
     "notes": ""
+  },
+  {
+    "id": "mrxacycpnjor",
+    "bs": "2081-11-24",
+    "ad": "2025-03-08",
+    "type": "Income",
+    "amount": 620,
+    "notes": ""
   }
 ]
