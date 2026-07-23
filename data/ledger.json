@@ -34224,30 +34224,6 @@
     "notes": ""
   },
   {
-    "id": "mrx8bd4i1vc6",
-    "bs": "2081-10-19",
-    "ad": "2025-02-01",
-    "type": "Expense",
-    "amount": 150,
-    "notes": ""
-  },
-  {
-    "id": "mrx8bdpuksc6",
-    "bs": "2081-10-19",
-    "ad": "2025-02-01",
-    "type": "Expense",
-    "amount": 520,
-    "notes": ""
-  },
-  {
-    "id": "mrx8behcslnh",
-    "bs": "2081-10-19",
-    "ad": "2025-02-01",
-    "type": "Expense",
-    "amount": 160,
-    "notes": ""
-  },
-  {
     "id": "mrx8bf3usqz8",
     "bs": "2081-10-19",
     "ad": "2025-02-01",
@@ -34285,86 +34261,6 @@
     "ad": "2025-02-01",
     "type": "Income",
     "amount": 1760,
-    "notes": ""
-  },
-  {
-    "id": "mrx8d3zg3vct",
-    "bs": "2081-10-20",
-    "ad": "2025-02-02",
-    "type": "Income",
-    "amount": 50,
-    "notes": ""
-  },
-  {
-    "id": "mrx8d4litqr2",
-    "bs": "2081-10-20",
-    "ad": "2025-02-02",
-    "type": "Income",
-    "amount": 150,
-    "notes": ""
-  },
-  {
-    "id": "mrx8d5ej5sag",
-    "bs": "2081-10-20",
-    "ad": "2025-02-02",
-    "type": "Income",
-    "amount": 470,
-    "notes": ""
-  },
-  {
-    "id": "mrx8d6bn6r7v",
-    "bs": "2081-10-20",
-    "ad": "2025-02-02",
-    "type": "Income",
-    "amount": 900,
-    "notes": ""
-  },
-  {
-    "id": "mrx8d70hgqkr",
-    "bs": "2081-10-20",
-    "ad": "2025-02-02",
-    "type": "Income",
-    "amount": 590,
-    "notes": ""
-  },
-  {
-    "id": "mrx8d7i4vsl9",
-    "bs": "2081-10-20",
-    "ad": "2025-02-02",
-    "type": "Income",
-    "amount": 90,
-    "notes": ""
-  },
-  {
-    "id": "mrx8d8djmfzk",
-    "bs": "2081-10-20",
-    "ad": "2025-02-02",
-    "type": "Income",
-    "amount": 280,
-    "notes": ""
-  },
-  {
-    "id": "mrx8d9xxus5y",
-    "bs": "2081-10-20",
-    "ad": "2025-02-02",
-    "type": "Income",
-    "amount": 490,
-    "notes": ""
-  },
-  {
-    "id": "mrx8dalryl57",
-    "bs": "2081-10-20",
-    "ad": "2025-02-02",
-    "type": "Income",
-    "amount": 70,
-    "notes": ""
-  },
-  {
-    "id": "mrx8dbk7lwr1",
-    "bs": "2081-10-20",
-    "ad": "2025-02-02",
-    "type": "Income",
-    "amount": 100,
     "notes": ""
   }
 ]
