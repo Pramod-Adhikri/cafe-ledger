@@ -34374,5 +34374,13 @@
     "type": "Income",
     "amount": 3520,
     "notes": ""
+  },
+  {
+    "id": "mrx8f224fasq",
+    "bs": "2081-10-20",
+    "ad": "2025-02-02",
+    "type": "Income",
+    "amount": 1210,
+    "notes": ""
   }
 ]
