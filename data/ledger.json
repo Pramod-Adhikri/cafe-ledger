@@ -35310,5 +35310,21 @@
     "type": "Expense",
     "amount": 515,
     "notes": ""
+  },
+  {
+    "id": "mrx94n0sxz2z",
+    "bs": "2081-11-01",
+    "ad": "2025-02-13",
+    "type": "Expense",
+    "amount": 1000,
+    "notes": ""
+  },
+  {
+    "id": "mrx94np82gtc",
+    "bs": "2081-11-01",
+    "ad": "2025-02-13",
+    "type": "Expense",
+    "amount": 360,
+    "notes": ""
   }
 ]
