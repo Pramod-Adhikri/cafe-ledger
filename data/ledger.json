@@ -37654,5 +37654,21 @@
     "type": "Income",
     "amount": 220,
     "notes": ""
+  },
+  {
+    "id": "mrxalatznt9s",
+    "bs": "2081-12-03",
+    "ad": "2025-03-16",
+    "type": "Expense",
+    "amount": 100,
+    "notes": ""
+  },
+  {
+    "id": "mrxalbjiaoak",
+    "bs": "2081-12-03",
+    "ad": "2025-03-16",
+    "type": "Expense",
+    "amount": 320,
+    "notes": ""
   }
 ]
