@@ -28478,5 +28478,29 @@
     "type": "Income",
     "amount": 60,
     "notes": ""
+  },
+  {
+    "id": "mrx5nejobaco",
+    "bs": "2081-09-02",
+    "ad": "2024-12-17",
+    "type": "Income",
+    "amount": 125,
+    "notes": ""
+  },
+  {
+    "id": "mrx5nf2ux6yi",
+    "bs": "2081-09-02",
+    "ad": "2024-12-17",
+    "type": "Income",
+    "amount": 30,
+    "notes": ""
+  },
+  {
+    "id": "mrx5nfrzhys7",
+    "bs": "2081-09-02",
+    "ad": "2024-12-17",
+    "type": "Income",
+    "amount": 105,
+    "notes": ""
   }
 ]
