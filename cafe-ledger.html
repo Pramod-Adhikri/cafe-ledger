@@ -162,6 +162,18 @@
     <p>Every rupee logged, dated the Nepali way.</p>
   </div>
 
+  <div class="excel-bar" style="border-color:var(--gold);">
+    <div class="excel-status">
+      <span class="dot" id="ghDot"></span>
+      <span id="ghStatusText"><b>Not synced.</b> Connect GitHub so your data survives even if this browser wipes it.</span>
+    </div>
+    <div class="excel-actions">
+      <button class="btn btn-connect" id="ghConnectBtn" onclick="connectGithub()">🔗 Connect GitHub</button>
+      <button class="btn btn-export" id="ghSyncBtn" onclick="manualSync()" style="display:none;">↻ Sync Now</button>
+      <button class="btn btn-del" id="ghDisconnectBtn" onclick="disconnectGithub()" style="display:none;">Disconnect</button>
+    </div>
+  </div>
+
   <div class="excel-bar">
     <div class="excel-status">
       <span class="dot" id="excelDot"></span>
@@ -253,7 +265,7 @@
   </div>
 
   <div style="text-align:center;font-size:.72rem;color:var(--ink-soft);margin-top:10px;" id="footNote">
-    Entries are saved automatically. Connect an Excel file above and every entry writes to it in real time.
+    Entries save to this browser instantly. Connect GitHub above so they're also safe if this browser's storage ever gets wiped.
   </div>
 
 </div>
@@ -367,6 +379,240 @@ async function loadEntries(){
 async function saveEntries(){
   try{ localStorage.setItem('cafe-ledger-entries', JSON.stringify(entries)); }
   catch(e){ console.error('Storage error', e); }
+}
+
+/* ============ GitHub Sync — this is now the real source of truth ============
+   Every entry is pushed to a JSON file in a GitHub repo via the Contents API,
+   and on load we pull from GitHub first. This means a wiped browser (cleared
+   localStorage, different device, whatever) no longer means lost data — just
+   reconnect with the same token and everything comes back. */
+let ghConfig = null;   // {owner, repo, path, branch, token}
+let ghSha = null;      // sha of the last-known remote file, needed to update it
+let ghSyncing = false;
+
+function ghLoadConfig(){
+  try{
+    const raw = localStorage.getItem('gh-sync-config');
+    ghConfig = raw ? JSON.parse(raw) : null;
+  }catch(e){ ghConfig = null; }
+}
+function ghSaveConfig(cfg){
+  ghConfig = cfg;
+  try{ localStorage.setItem('gh-sync-config', JSON.stringify(cfg)); }
+  catch(e){ console.error('Could not save GitHub config', e); }
+}
+function ghClearConfig(){
+  ghConfig = null; ghSha = null;
+  try{ localStorage.removeItem('gh-sync-config'); }catch(e){}
+}
+
+function ghApiUrl(cfg){
+  return `https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${cfg.path}`;
+}
+function b64EncodeUnicode(str){
+  return btoa(unescape(encodeURIComponent(str)));
+}
+function b64DecodeUnicode(str){
+  return decodeURIComponent(escape(atob(str)));
+}
+
+function setGhStatus(html, ok){
+  document.getElementById('ghStatusText').innerHTML = html;
+  document.getElementById('ghDot').classList.toggle('on', !!ok);
+}
+
+function ghUiConnected(name){
+  setGhStatus(`<b>Synced with GitHub:</b> ${name} — every entry is saved there automatically.`, true);
+  document.getElementById('ghConnectBtn').textContent = '🔗 Reconnect';
+  document.getElementById('ghSyncBtn').style.display = '';
+  document.getElementById('ghDisconnectBtn').style.display = '';
+}
+function ghUiDisconnected(msg){
+  setGhStatus(msg || '<b>Not synced.</b> Connect GitHub so your data survives even if this browser wipes it.', false);
+  document.getElementById('ghConnectBtn').textContent = '🔗 Connect GitHub';
+  document.getElementById('ghSyncBtn').style.display = 'none';
+  document.getElementById('ghDisconnectBtn').style.display = 'none';
+}
+
+/* Fetch the current remote file. Returns {entries, sha} — entries is null if the
+   file doesn't exist yet (fresh repo), sha is null in that case too. */
+async function ghGetFile(cfg){
+  const res = await fetch(`${ghApiUrl(cfg)}?ref=${encodeURIComponent(cfg.branch)}`, {
+    headers: {
+      'Authorization': `token ${cfg.token}`,
+      'Accept': 'application/vnd.github+json'
+    }
+  });
+  if(res.status === 404){
+    return {entries: null, sha: null};
+  }
+  if(!res.ok){
+    const body = await res.text().catch(()=> '');
+    throw new Error(`GitHub read failed (${res.status}): ${body.slice(0,200)}`);
+  }
+  const data = await res.json();
+  const jsonStr = b64DecodeUnicode(data.content.replace(/\n/g,''));
+  const parsed = JSON.parse(jsonStr);
+  return {entries: Array.isArray(parsed) ? parsed : (parsed.entries || []), sha: data.sha};
+}
+
+/* Push the current entries array to GitHub, creating or updating the file. */
+async function ghPutFile(cfg, entriesArr, message){
+  const body = {
+    message: message || `Update ledger (${entriesArr.length} entries)`,
+    content: b64EncodeUnicode(JSON.stringify(entriesArr, null, 2)),
+    branch: cfg.branch
+  };
+  if(ghSha) body.sha = ghSha;
+  const res = await fetch(ghApiUrl(cfg), {
+    method: 'PUT',
+    headers: {
+      'Authorization': `token ${cfg.token}`,
+      'Accept': 'application/vnd.github+json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(body)
+  });
+  if(!res.ok){
+    const errBody = await res.json().catch(()=>({}));
+    // 409 = sha mismatch (someone/something else wrote in the meantime) — refetch and retry once
+    if(res.status === 409){
+      const fresh = await ghGetFile(cfg);
+      ghSha = fresh.sha;
+      body.sha = ghSha;
+      const retry = await fetch(ghApiUrl(cfg), {
+        method: 'PUT',
+        headers: {
+          'Authorization': `token ${cfg.token}`,
+          'Accept': 'application/vnd.github+json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(body)
+      });
+      if(!retry.ok) throw new Error(`GitHub write failed after retry (${retry.status})`);
+      const retryData = await retry.json();
+      ghSha = retryData.content.sha;
+      return;
+    }
+    throw new Error(`GitHub write failed (${res.status}): ${errBody.message || ''}`);
+  }
+  const data = await res.json();
+  ghSha = data.content.sha;
+}
+
+/* Push current in-memory entries to GitHub. Called after every add/delete. */
+async function syncToGithub(){
+  if(!ghConfig || ghSyncing) return;
+  ghSyncing = true;
+  try{
+    await ghPutFile(ghConfig, entries);
+    ghUiConnected(`${ghConfig.owner}/${ghConfig.repo}`);
+  }catch(e){
+    console.error('GitHub sync failed', e);
+    setGhStatus(`<b>Sync failed.</b> ${e.message} — click "Sync Now" to retry.`, false);
+  }finally{
+    ghSyncing = false;
+  }
+}
+
+/* Manual re-sync button: pulls from GitHub and takes it as truth (safe default
+   for recovering onto a fresh/wiped browser). */
+async function manualSync(){
+  if(!ghConfig) return;
+  setGhStatus('<b>Syncing…</b>', false);
+  try{
+    const remote = await ghGetFile(ghConfig);
+    ghSha = remote.sha;
+    if(remote.entries !== null){
+      entries = remote.entries;
+      await saveEntries();
+      renderAll();
+    }
+    ghUiConnected(`${ghConfig.owner}/${ghConfig.repo}`);
+  }catch(e){
+    setGhStatus(`<b>Sync failed.</b> ${e.message}`, false);
+  }
+}
+
+async function connectGithub(){
+  const existing = ghConfig || {};
+  const owner = prompt('GitHub username (repo owner):', existing.owner || 'pramod-adhikri');
+  if(!owner) return;
+  const repo = prompt('Repository name:', existing.repo || 'cafe-ledger');
+  if(!repo) return;
+  const branch = prompt('Branch:', existing.branch || 'main');
+  if(!branch) return;
+  const path = prompt('File path to store data at (inside the repo):', existing.path || 'data/ledger.json');
+  if(!path) return;
+  const token = prompt('GitHub Personal Access Token (needs "Contents" read/write on this repo):', '');
+  if(!token) return;
+
+  const cfg = {owner: owner.trim(), repo: repo.trim(), branch: branch.trim(), path: path.trim(), token: token.trim()};
+  setGhStatus('<b>Connecting…</b>', false);
+  try{
+    const remote = await ghGetFile(cfg);
+    ghSha = remote.sha;
+    ghSaveConfig(cfg);
+
+    if(remote.entries === null){
+      // File doesn't exist yet — create it from whatever we have locally right now.
+      await ghPutFile(cfg, entries, 'Create ledger data file');
+      ghUiConnected(`${cfg.owner}/${cfg.repo}`);
+      return;
+    }
+
+    // File exists. If it has data and differs from local, ask which wins.
+    const remoteHasData = remote.entries.length > 0;
+    const localHasData = entries.length > 0;
+    if(remoteHasData && localHasData && JSON.stringify(remote.entries) !== JSON.stringify(entries)){
+      const useRemote = confirm(
+        `GitHub already has ${remote.entries.length} saved entries, and this browser has ${entries.length}.\n\n` +
+        `Click OK to load the ${remote.entries.length} entries from GitHub (recommended if this browser's copy is incomplete/stale).\n` +
+        `Click Cancel to keep this browser's ${entries.length} entries and overwrite GitHub with them.`
+      );
+      if(useRemote){
+        entries = remote.entries;
+      }
+      await saveEntries();
+      renderAll();
+      await ghPutFile(cfg, entries, 'Sync after reconnect');
+    } else if(remoteHasData && !localHasData){
+      entries = remote.entries;
+      await saveEntries();
+      renderAll();
+    } else {
+      await ghPutFile(cfg, entries, 'Sync after reconnect');
+    }
+    ghUiConnected(`${cfg.owner}/${cfg.repo}`);
+  }catch(e){
+    ghUiDisconnected(`<b>Couldn't connect.</b> ${e.message}`);
+  }
+}
+
+function disconnectGithub(){
+  if(!confirm('Disconnect GitHub sync? Your data stays in the repo — you can reconnect any time with the same token.')) return;
+  ghClearConfig();
+  ghUiDisconnected();
+}
+
+/* Try to silently resume a previously-connected GitHub sync on page load. */
+async function tryGithubAutoConnect(){
+  ghLoadConfig();
+  if(!ghConfig) return;
+  setGhStatus('<b>Reconnecting to GitHub…</b>', false);
+  try{
+    const remote = await ghGetFile(ghConfig);
+    ghSha = remote.sha;
+    if(remote.entries !== null){
+      entries = remote.entries;   // GitHub is the source of truth
+      await saveEntries();
+    }
+    ghUiConnected(`${ghConfig.owner}/${ghConfig.repo}`);
+  }catch(e){
+    setGhStatus(`<b>Couldn't reach GitHub.</b> ${e.message} — your local copy is still shown below. Click "Sync Now" to retry.`, false);
+    document.getElementById('ghSyncBtn').style.display = '';
+    document.getElementById('ghDisconnectBtn').style.display = '';
+  }
 }
 
 /* ---- Tiny IndexedDB wrapper to remember the file handle between sessions ---- */
@@ -554,12 +800,14 @@ async function addEntry(){
 
   renderAll();
   if(fileHandle) await writeToExcelFile();
+  syncToGithub(); // fire-and-forget; UI shows failure state if it doesn't land
 }
 async function deleteEntry(id){
   entries = entries.filter(e => e.id !== id);
   await saveEntries();
   renderAll();
   if(fileHandle) await writeToExcelFile();
+  syncToGithub();
 }
 
 /* ---- Rendering ---- */
@@ -647,9 +895,11 @@ function renderAll(){
     document.getElementById('openBtn').disabled = true;
     document.getElementById('createBtn').disabled = true;
   }
-  await loadEntries();
+  await loadEntries();          // fast local cache, shown immediately
   renderAll();
-  await tryAutoReconnect();
+  await tryGithubAutoConnect(); // then pull the durable copy from GitHub, if connected
+  renderAll();
+  await tryAutoReconnect();     // optional: reconnect local Excel mirror file
 })();
 </script>
 </body>
