@@ -32110,5 +32110,13 @@
     "type": "Income",
     "amount": 8645,
     "notes": ""
+  },
+  {
+    "id": "mrx70w946xyb",
+    "bs": "2081-09-25",
+    "ad": "2025-01-09",
+    "type": "Expense",
+    "amount": 150,
+    "notes": ""
   }
 ]
