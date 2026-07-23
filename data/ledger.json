@@ -30526,5 +30526,29 @@
     "type": "Expense",
     "amount": 225,
     "notes": ""
+  },
+  {
+    "id": "mrx6dim1lkkq",
+    "bs": "2081-09-10",
+    "ad": "2024-12-25",
+    "type": "Expense",
+    "amount": 85,
+    "notes": ""
+  },
+  {
+    "id": "mrx6djd2jieb",
+    "bs": "2081-09-10",
+    "ad": "2024-12-25",
+    "type": "Expense",
+    "amount": 45,
+    "notes": ""
+  },
+  {
+    "id": "mrx6dk4wiqj0",
+    "bs": "2081-09-10",
+    "ad": "2024-12-25",
+    "type": "Expense",
+    "amount": 265,
+    "notes": ""
   }
 ]
