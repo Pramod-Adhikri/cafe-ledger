@@ -37302,5 +37302,29 @@
     "type": "Income",
     "amount": 2800,
     "notes": ""
+  },
+  {
+    "id": "mrxabd3koa6y",
+    "bs": "2081-11-23",
+    "ad": "2025-03-07",
+    "type": "Income",
+    "amount": 275,
+    "notes": ""
+  },
+  {
+    "id": "mrxabe1av2od",
+    "bs": "2081-11-23",
+    "ad": "2025-03-07",
+    "type": "Income",
+    "amount": 545,
+    "notes": ""
+  },
+  {
+    "id": "mrxabem8579w",
+    "bs": "2081-11-23",
+    "ad": "2025-03-07",
+    "type": "Income",
+    "amount": 30,
+    "notes": ""
   }
 ]
