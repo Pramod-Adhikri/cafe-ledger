@@ -29702,5 +29702,13 @@
     "type": "Income",
     "amount": 335,
     "notes": ""
+  },
+  {
+    "id": "mrx60ki77al6",
+    "bs": "2081-09-07",
+    "ad": "2024-12-22",
+    "type": "Income",
+    "amount": 160,
+    "notes": ""
   }
 ]
