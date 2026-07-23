@@ -38222,5 +38222,29 @@
     "type": "Expense",
     "amount": 4600,
     "notes": ""
+  },
+  {
+    "id": "mrxet1b04aa5",
+    "bs": "2081-12-10",
+    "ad": "2025-03-23",
+    "type": "Expense",
+    "amount": 1040,
+    "notes": ""
+  },
+  {
+    "id": "mrxet27tht7g",
+    "bs": "2081-12-10",
+    "ad": "2025-03-23",
+    "type": "Expense",
+    "amount": 305,
+    "notes": ""
+  },
+  {
+    "id": "mrxet2vz0q0x",
+    "bs": "2081-12-10",
+    "ad": "2025-03-23",
+    "type": "Expense",
+    "amount": 60,
+    "notes": ""
   }
 ]
