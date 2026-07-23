@@ -36502,5 +36502,21 @@
     "type": "Income",
     "amount": 2170,
     "notes": ""
+  },
+  {
+    "id": "mrx9n106ngac",
+    "bs": "2081-11-14",
+    "ad": "2025-02-26",
+    "type": "Expense",
+    "amount": 110,
+    "notes": ""
+  },
+  {
+    "id": "mrx9n29odvli",
+    "bs": "2081-11-14",
+    "ad": "2025-02-26",
+    "type": "Expense",
+    "amount": 200,
+    "notes": ""
   }
 ]
