@@ -38262,5 +38262,13 @@
     "type": "Expense",
     "amount": 545,
     "notes": ""
+  },
+  {
+    "id": "mrxetc04kmv3",
+    "bs": "2081-12-10",
+    "ad": "2025-03-23",
+    "type": "Income",
+    "amount": 6360,
+    "notes": ""
   }
 ]
