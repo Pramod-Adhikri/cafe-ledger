@@ -37606,5 +37606,13 @@
     "type": "Income",
     "amount": 1710,
     "notes": ""
+  },
+  {
+    "id": "mrxajtytvm8c",
+    "bs": "2081-12-01",
+    "ad": "2025-03-14",
+    "type": "Income",
+    "amount": 670,
+    "notes": ""
   }
 ]
