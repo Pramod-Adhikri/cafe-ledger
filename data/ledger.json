@@ -33014,5 +33014,13 @@
     "type": "Expense",
     "amount": 1600,
     "notes": ""
+  },
+  {
+    "id": "mrx7mwsmro25",
+    "bs": "2081-10-06",
+    "ad": "2025-01-19",
+    "type": "Expense",
+    "amount": 2510,
+    "notes": ""
   }
 ]
