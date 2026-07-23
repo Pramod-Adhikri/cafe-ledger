@@ -34934,5 +34934,21 @@
     "type": "Income",
     "amount": 885,
     "notes": ""
+  },
+  {
+    "id": "mrx8osx1sekd",
+    "bs": "2081-10-27",
+    "ad": "2025-02-09",
+    "type": "Income",
+    "amount": 50,
+    "notes": ""
+  },
+  {
+    "id": "mrx8ozx37mu2",
+    "bs": "2081-10-27",
+    "ad": "2025-02-09",
+    "type": "Income",
+    "amount": 1375,
+    "notes": ""
   }
 ]
