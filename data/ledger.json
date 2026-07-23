@@ -34694,5 +34694,13 @@
     "type": "Income",
     "amount": 6750,
     "notes": ""
+  },
+  {
+    "id": "mrx8k8e2jau9",
+    "bs": "2081-10-23",
+    "ad": "2025-02-05",
+    "type": "Income",
+    "amount": 2080,
+    "notes": ""
   }
 ]
