@@ -28254,5 +28254,29 @@
     "type": "Expense",
     "amount": 200,
     "notes": ""
+  },
+  {
+    "id": "mrx5lfr9fnty",
+    "bs": "2081-09-01",
+    "ad": "2024-12-16",
+    "type": "Expense",
+    "amount": 100,
+    "notes": ""
+  },
+  {
+    "id": "mrx5lgzh7ot2",
+    "bs": "2081-09-01",
+    "ad": "2024-12-16",
+    "type": "Expense",
+    "amount": 135,
+    "notes": ""
+  },
+  {
+    "id": "mrx5lhtzo9se",
+    "bs": "2081-09-01",
+    "ad": "2024-12-16",
+    "type": "Expense",
+    "amount": 50,
+    "notes": ""
   }
 ]
