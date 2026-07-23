@@ -30934,5 +30934,13 @@
     "type": "Income",
     "amount": 35,
     "notes": ""
+  },
+  {
+    "id": "mrx6g0klpftf",
+    "bs": "2081-09-12",
+    "ad": "2024-12-27",
+    "type": "Income",
+    "amount": 90,
+    "notes": ""
   }
 ]
