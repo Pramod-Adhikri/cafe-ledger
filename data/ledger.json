@@ -37782,5 +37782,13 @@
     "type": "Expense",
     "amount": 775,
     "notes": ""
+  },
+  {
+    "id": "mrxam9n0i0cm",
+    "bs": "2081-12-03",
+    "ad": "2025-03-16",
+    "type": "Expense",
+    "amount": 678,
+    "notes": ""
   }
 ]
