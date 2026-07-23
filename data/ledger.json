@@ -31446,5 +31446,13 @@
     "type": "Income",
     "amount": 7050,
     "notes": ""
+  },
+  {
+    "id": "mrx6n0mr7y18",
+    "bs": "2081-09-15",
+    "ad": "2024-12-30",
+    "type": "Income",
+    "amount": 120,
+    "notes": ""
   }
 ]
