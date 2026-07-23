@@ -35398,5 +35398,37 @@
     "type": "Income",
     "amount": 100,
     "notes": ""
+  },
+  {
+    "id": "mrx953pkof0o",
+    "bs": "2081-11-01",
+    "ad": "2025-02-13",
+    "type": "Income",
+    "amount": 120,
+    "notes": ""
+  },
+  {
+    "id": "mrx954o7bfq7",
+    "bs": "2081-11-01",
+    "ad": "2025-02-13",
+    "type": "Income",
+    "amount": 275,
+    "notes": ""
+  },
+  {
+    "id": "mrx955dmx09z",
+    "bs": "2081-11-01",
+    "ad": "2025-02-13",
+    "type": "Income",
+    "amount": 105,
+    "notes": ""
+  },
+  {
+    "id": "mrx956ipymy0",
+    "bs": "2081-11-01",
+    "ad": "2025-02-13",
+    "type": "Income",
+    "amount": 900,
+    "notes": ""
   }
 ]
