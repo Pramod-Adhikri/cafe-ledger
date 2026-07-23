@@ -37630,5 +37630,13 @@
     "type": "Income",
     "amount": 1000,
     "notes": ""
+  },
+  {
+    "id": "mrxakeoi21uo",
+    "bs": "2081-12-02",
+    "ad": "2025-03-15",
+    "type": "Expense",
+    "amount": 840,
+    "notes": ""
   }
 ]
