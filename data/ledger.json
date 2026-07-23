@@ -29934,5 +29934,21 @@
     "type": "Income",
     "amount": 185,
     "notes": ""
+  },
+  {
+    "id": "mrx62r6usfqh",
+    "bs": "2081-09-08",
+    "ad": "2024-12-23",
+    "type": "Income",
+    "amount": 480,
+    "notes": ""
+  },
+  {
+    "id": "mrx62xbw0ac2",
+    "bs": "2081-09-08",
+    "ad": "2024-12-23",
+    "type": "Expense",
+    "amount": 265,
+    "notes": ""
   }
 ]
