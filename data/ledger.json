@@ -33694,5 +33694,13 @@
     "type": "Income",
     "amount": 10,
     "notes": ""
+  },
+  {
+    "id": "mrx818q880cs",
+    "bs": "2081-10-13",
+    "ad": "2025-01-26",
+    "type": "Income",
+    "amount": 1585,
+    "notes": ""
   }
 ]
