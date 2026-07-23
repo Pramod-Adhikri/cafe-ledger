@@ -37670,5 +37670,21 @@
     "type": "Expense",
     "amount": 320,
     "notes": ""
+  },
+  {
+    "id": "mrxalcnobt72",
+    "bs": "2081-12-03",
+    "ad": "2025-03-16",
+    "type": "Expense",
+    "amount": 265,
+    "notes": ""
+  },
+  {
+    "id": "mrxaldaweptm",
+    "bs": "2081-12-03",
+    "ad": "2025-03-16",
+    "type": "Expense",
+    "amount": 40,
+    "notes": ""
   }
 ]
