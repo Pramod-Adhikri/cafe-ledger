@@ -33758,5 +33758,13 @@
     "type": "Income",
     "amount": 1685,
     "notes": ""
+  },
+  {
+    "id": "mrx829folgg5",
+    "bs": "2081-10-14",
+    "ad": "2025-01-27",
+    "type": "Income",
+    "amount": 505,
+    "notes": ""
   }
 ]
