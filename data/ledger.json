@@ -29878,5 +29878,13 @@
     "type": "Expense",
     "amount": 1500,
     "notes": ""
+  },
+  {
+    "id": "mrx6280pmwth",
+    "bs": "2081-09-08",
+    "ad": "2024-12-23",
+    "type": "Expense",
+    "amount": 10010,
+    "notes": ""
   }
 ]
