@@ -29486,5 +29486,13 @@
     "type": "Income",
     "amount": 70,
     "notes": ""
+  },
+  {
+    "id": "mrx5yaqsd56o",
+    "bs": "2081-09-05",
+    "ad": "2024-12-20",
+    "type": "Income",
+    "amount": 190,
+    "notes": ""
   }
 ]
