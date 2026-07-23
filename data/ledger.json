@@ -33046,5 +33046,13 @@
     "type": "Income",
     "amount": 490,
     "notes": ""
+  },
+  {
+    "id": "mrx7nhuihmoc",
+    "bs": "2081-10-06",
+    "ad": "2025-01-19",
+    "type": "Income",
+    "amount": 190,
+    "notes": ""
   }
 ]
