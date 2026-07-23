@@ -32222,5 +32222,13 @@
     "type": "Income",
     "amount": 1150,
     "notes": ""
+  },
+  {
+    "id": "mrx75onud4aq",
+    "bs": "2081-09-27",
+    "ad": "2025-01-11",
+    "type": "Expense",
+    "amount": 820,
+    "notes": ""
   }
 ]
