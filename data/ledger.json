@@ -32310,5 +32310,13 @@
     "type": "Expense",
     "amount": 520,
     "notes": ""
+  },
+  {
+    "id": "mrx79znmibgr",
+    "bs": "2081-09-28",
+    "ad": "2025-01-12",
+    "type": "Expense",
+    "amount": 1600,
+    "notes": ""
   }
 ]
