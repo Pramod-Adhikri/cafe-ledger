@@ -31702,5 +31702,13 @@
     "type": "Expense",
     "amount": 700,
     "notes": ""
+  },
+  {
+    "id": "mrx6u8eayvgh",
+    "bs": "2081-09-19",
+    "ad": "2025-01-03",
+    "type": "Income",
+    "amount": 540,
+    "notes": ""
   }
 ]
