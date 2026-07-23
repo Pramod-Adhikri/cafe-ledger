@@ -31606,5 +31606,13 @@
     "type": "Expense",
     "amount": 700,
     "notes": ""
+  },
+  {
+    "id": "mrx6s61tjgtw",
+    "bs": "2081-09-17",
+    "ad": "2025-01-01",
+    "type": "Expense",
+    "amount": 870,
+    "notes": ""
   }
 ]
