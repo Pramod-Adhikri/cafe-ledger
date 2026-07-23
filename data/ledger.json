@@ -37510,5 +37510,13 @@
     "type": "Expense",
     "amount": 10000,
     "notes": ""
+  },
+  {
+    "id": "mrxaggyq8g1y",
+    "bs": "2081-11-27",
+    "ad": "2025-03-11",
+    "type": "Income",
+    "amount": 1440,
+    "notes": ""
   }
 ]
