@@ -35110,5 +35110,13 @@
     "type": "Income",
     "amount": 2685,
     "notes": ""
+  },
+  {
+    "id": "mrx8slxz8l5o",
+    "bs": "2081-10-29",
+    "ad": "2025-02-11",
+    "type": "Income",
+    "amount": 220,
+    "notes": ""
   }
 ]
