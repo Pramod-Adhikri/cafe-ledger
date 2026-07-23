@@ -37990,5 +37990,21 @@
     "type": "Income",
     "amount": 170,
     "notes": ""
+  },
+  {
+    "id": "mrxeit2ranmk",
+    "bs": "2081-12-05",
+    "ad": "2025-03-18",
+    "type": "Income",
+    "amount": 1980,
+    "notes": ""
+  },
+  {
+    "id": "mrxeits7gmfm",
+    "bs": "2081-12-05",
+    "ad": "2025-03-18",
+    "type": "Income",
+    "amount": 60,
+    "notes": ""
   }
 ]
