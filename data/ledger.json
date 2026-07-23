@@ -31454,5 +31454,13 @@
     "type": "Income",
     "amount": 120,
     "notes": ""
+  },
+  {
+    "id": "mrx6n45d2rlr",
+    "bs": "2081-09-15",
+    "ad": "2024-12-30",
+    "type": "Income",
+    "amount": 3000,
+    "notes": ""
   }
 ]
