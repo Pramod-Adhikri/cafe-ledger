@@ -34278,5 +34278,13 @@
     "type": "Income",
     "amount": 135,
     "notes": ""
+  },
+  {
+    "id": "mrx8cul9oc24",
+    "bs": "2081-10-19",
+    "ad": "2025-02-01",
+    "type": "Income",
+    "amount": 1760,
+    "notes": ""
   }
 ]
