@@ -36030,5 +36030,13 @@
     "type": "Income",
     "amount": 2215,
     "notes": ""
+  },
+  {
+    "id": "mrx9cpkvhtnf",
+    "bs": "2081-11-06",
+    "ad": "2025-02-18",
+    "type": "Income",
+    "amount": 2245,
+    "notes": ""
   }
 ]
