@@ -31166,5 +31166,37 @@
     "type": "Income",
     "amount": 250,
     "notes": ""
+  },
+  {
+    "id": "mrx6ianfxi57",
+    "bs": "2081-09-13",
+    "ad": "2024-12-28",
+    "type": "Income",
+    "amount": 225,
+    "notes": ""
+  },
+  {
+    "id": "mrx6ib27vqq9",
+    "bs": "2081-09-13",
+    "ad": "2024-12-28",
+    "type": "Income",
+    "amount": 30,
+    "notes": ""
+  },
+  {
+    "id": "mrx6ibsoq0td",
+    "bs": "2081-09-13",
+    "ad": "2024-12-28",
+    "type": "Income",
+    "amount": 270,
+    "notes": ""
+  },
+  {
+    "id": "mrx6ic9h6e65",
+    "bs": "2081-09-13",
+    "ad": "2024-12-28",
+    "type": "Income",
+    "amount": 60,
+    "notes": ""
   }
 ]
