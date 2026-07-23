@@ -30142,5 +30142,21 @@
     "type": "Income",
     "amount": 670,
     "notes": ""
+  },
+  {
+    "id": "mrx65yha6stt",
+    "bs": "2081-09-09",
+    "ad": "2024-12-24",
+    "type": "Income",
+    "amount": 80,
+    "notes": ""
+  },
+  {
+    "id": "mrx660lg88gs",
+    "bs": "2081-09-09",
+    "ad": "2024-12-24",
+    "type": "Income",
+    "amount": 240,
+    "notes": ""
   }
 ]
