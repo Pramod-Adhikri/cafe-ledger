@@ -32622,5 +32622,13 @@
     "type": "Income",
     "amount": 1835,
     "notes": ""
+  },
+  {
+    "id": "mrx7gixnpzva",
+    "bs": "2081-10-02",
+    "ad": "2025-01-15",
+    "type": "Income",
+    "amount": 3050,
+    "notes": ""
   }
 ]
