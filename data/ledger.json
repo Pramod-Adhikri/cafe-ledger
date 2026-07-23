@@ -29422,5 +29422,13 @@
     "type": "Expense",
     "amount": 300,
     "notes": ""
+  },
+  {
+    "id": "mrx5xyzz8ie1",
+    "bs": "2081-09-05",
+    "ad": "2024-12-20",
+    "type": "Expense",
+    "amount": 1000,
+    "notes": ""
   }
 ]
