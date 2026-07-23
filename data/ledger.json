@@ -29606,5 +29606,21 @@
     "type": "Expense",
     "amount": 120,
     "notes": ""
+  },
+  {
+    "id": "mrx5z9r3yk49",
+    "bs": "2081-09-06",
+    "ad": "2024-12-21",
+    "type": "Income",
+    "amount": 150,
+    "notes": ""
+  },
+  {
+    "id": "mrx5za6glwl1",
+    "bs": "2081-09-06",
+    "ad": "2024-12-21",
+    "type": "Income",
+    "amount": 35,
+    "notes": ""
   }
 ]
