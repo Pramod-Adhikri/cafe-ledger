@@ -31382,5 +31382,29 @@
     "type": "Income",
     "amount": 3190,
     "notes": ""
+  },
+  {
+    "id": "mrx6klc5bsjd",
+    "bs": "2081-09-15",
+    "ad": "2024-12-30",
+    "type": "Income",
+    "amount": 85,
+    "notes": ""
+  },
+  {
+    "id": "mrx6ksjfmr78",
+    "bs": "2081-09-15",
+    "ad": "2024-12-30",
+    "type": "Expense",
+    "amount": 300,
+    "notes": ""
+  },
+  {
+    "id": "mrx6kt36u7d8",
+    "bs": "2081-09-15",
+    "ad": "2024-12-30",
+    "type": "Expense",
+    "amount": 100,
+    "notes": ""
   }
 ]
