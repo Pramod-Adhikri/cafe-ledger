@@ -33486,5 +33486,37 @@
     "type": "Expense",
     "amount": 420,
     "notes": ""
+  },
+  {
+    "id": "mrx7xmcgr4u9",
+    "bs": "2081-10-11",
+    "ad": "2025-01-24",
+    "type": "Expense",
+    "amount": 200,
+    "notes": ""
+  },
+  {
+    "id": "mrx7xmtr6n8y",
+    "bs": "2081-10-11",
+    "ad": "2025-01-24",
+    "type": "Expense",
+    "amount": 50,
+    "notes": ""
+  },
+  {
+    "id": "mrx7xni5xuic",
+    "bs": "2081-10-11",
+    "ad": "2025-01-24",
+    "type": "Expense",
+    "amount": 290,
+    "notes": ""
+  },
+  {
+    "id": "mrx7xo24rjfj",
+    "bs": "2081-10-11",
+    "ad": "2025-01-24",
+    "type": "Expense",
+    "amount": 100,
+    "notes": ""
   }
 ]
