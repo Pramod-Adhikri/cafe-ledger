@@ -30022,5 +30022,21 @@
     "type": "Income",
     "amount": 240,
     "notes": ""
+  },
+  {
+    "id": "mrx63d28uzlo",
+    "bs": "2081-09-08",
+    "ad": "2024-12-23",
+    "type": "Income",
+    "amount": 240,
+    "notes": ""
+  },
+  {
+    "id": "mrx63e0vp02f",
+    "bs": "2081-09-08",
+    "ad": "2024-12-23",
+    "type": "Income",
+    "amount": 140,
+    "notes": ""
   }
 ]
