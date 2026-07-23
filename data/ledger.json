@@ -34478,5 +34478,29 @@
     "type": "Expense",
     "amount": 360,
     "notes": ""
+  },
+  {
+    "id": "mrx8hmgboihs",
+    "bs": "2081-10-22",
+    "ad": "2025-02-04",
+    "type": "Expense",
+    "amount": 175,
+    "notes": ""
+  },
+  {
+    "id": "mrx8hnx717gz",
+    "bs": "2081-10-22",
+    "ad": "2025-02-04",
+    "type": "Expense",
+    "amount": 170,
+    "notes": ""
+  },
+  {
+    "id": "mrx8holev909",
+    "bs": "2081-10-22",
+    "ad": "2025-02-04",
+    "type": "Expense",
+    "amount": 30,
+    "notes": ""
   }
 ]
