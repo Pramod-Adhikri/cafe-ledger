@@ -36134,5 +36134,13 @@
     "type": "Expense",
     "amount": 400,
     "notes": ""
+  },
+  {
+    "id": "mrx9f1sa0go2",
+    "bs": "2081-11-08",
+    "ad": "2025-02-20",
+    "type": "Expense",
+    "amount": 1000,
+    "notes": ""
   }
 ]
