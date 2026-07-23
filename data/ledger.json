@@ -37638,5 +37638,13 @@
     "type": "Expense",
     "amount": 840,
     "notes": ""
+  },
+  {
+    "id": "mrxakinovgw8",
+    "bs": "2081-12-02",
+    "ad": "2025-03-15",
+    "type": "Income",
+    "amount": 810,
+    "notes": ""
   }
 ]
