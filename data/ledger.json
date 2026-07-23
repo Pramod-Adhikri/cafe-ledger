@@ -30758,5 +30758,13 @@
     "type": "Expense",
     "amount": 90,
     "notes": ""
+  },
+  {
+    "id": "mrx6f1emguge",
+    "bs": "2081-09-11",
+    "ad": "2024-12-26",
+    "type": "Expense",
+    "amount": 270,
+    "notes": ""
   }
 ]
