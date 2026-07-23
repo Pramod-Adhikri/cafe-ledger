@@ -38302,5 +38302,13 @@
     "type": "Expense",
     "amount": 1000,
     "notes": ""
+  },
+  {
+    "id": "mrxeuv44we6e",
+    "bs": "2081-12-11",
+    "ad": "2025-03-24",
+    "type": "Income",
+    "amount": 550,
+    "notes": ""
   }
 ]
