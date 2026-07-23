@@ -32166,5 +32166,13 @@
     "type": "Expense",
     "amount": 350,
     "notes": ""
+  },
+  {
+    "id": "mrx7147wn6t0",
+    "bs": "2081-09-25",
+    "ad": "2025-01-09",
+    "type": "Expense",
+    "amount": 200,
+    "notes": ""
   }
 ]
