@@ -34710,5 +34710,13 @@
     "type": "Income",
     "amount": 900,
     "notes": ""
+  },
+  {
+    "id": "mrx8knoo2h2g",
+    "bs": "2081-10-24",
+    "ad": "2025-02-06",
+    "type": "Expense",
+    "amount": 100,
+    "notes": ""
   }
 ]
