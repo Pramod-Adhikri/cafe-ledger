@@ -29822,5 +29822,21 @@
     "type": "Expense",
     "amount": 180,
     "notes": ""
+  },
+  {
+    "id": "mrx61bmk6l6n",
+    "bs": "2081-09-07",
+    "ad": "2024-12-22",
+    "type": "Expense",
+    "amount": 170,
+    "notes": ""
+  },
+  {
+    "id": "mrx61eumabuu",
+    "bs": "2081-09-07",
+    "ad": "2024-12-22",
+    "type": "Income",
+    "amount": 300,
+    "notes": ""
   }
 ]
