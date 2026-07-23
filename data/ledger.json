@@ -37390,5 +37390,13 @@
     "type": "Expense",
     "amount": 110,
     "notes": ""
+  },
+  {
+    "id": "mrxae50ag29p",
+    "bs": "2081-11-25",
+    "ad": "2025-03-09",
+    "type": "Income",
+    "amount": 765,
+    "notes": ""
   }
 ]
