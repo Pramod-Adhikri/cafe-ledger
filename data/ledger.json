@@ -30494,5 +30494,13 @@
     "type": "Income",
     "amount": 1450,
     "notes": ""
+  },
+  {
+    "id": "mrx6a64uiday",
+    "bs": "2081-09-10",
+    "ad": "2024-12-25",
+    "type": "Income",
+    "amount": 120,
+    "notes": ""
   }
 ]
