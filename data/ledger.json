@@ -34006,5 +34006,13 @@
     "type": "Income",
     "amount": 280,
     "notes": ""
+  },
+  {
+    "id": "mrx867ypdsbe",
+    "bs": "2081-10-16",
+    "ad": "2025-01-29",
+    "type": "Income",
+    "amount": 10270,
+    "notes": ""
   }
 ]
