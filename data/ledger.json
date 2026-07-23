@@ -30334,5 +30334,21 @@
     "type": "Income",
     "amount": 400,
     "notes": ""
+  },
+  {
+    "id": "mrx675ix82x5",
+    "bs": "2081-09-09",
+    "ad": "2024-12-24",
+    "type": "Income",
+    "amount": 750,
+    "notes": ""
+  },
+  {
+    "id": "mrx676lgo8za",
+    "bs": "2081-09-09",
+    "ad": "2024-12-24",
+    "type": "Income",
+    "amount": 750,
+    "notes": ""
   }
 ]
