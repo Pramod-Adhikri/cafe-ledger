@@ -32046,5 +32046,13 @@
     "type": "Income",
     "amount": 3730,
     "notes": ""
+  },
+  {
+    "id": "mrx6zpp50bbj",
+    "bs": "2081-09-24",
+    "ad": "2025-01-08",
+    "type": "Income",
+    "amount": 3560,
+    "notes": ""
   }
 ]
