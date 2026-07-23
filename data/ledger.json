@@ -38182,5 +38182,13 @@
     "type": "Income",
     "amount": 520,
     "notes": ""
+  },
+  {
+    "id": "mrxerzvuldoq",
+    "bs": "2081-12-09",
+    "ad": "2025-03-22",
+    "type": "Income",
+    "amount": 1590,
+    "notes": ""
   }
 ]
