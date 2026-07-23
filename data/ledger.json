@@ -34054,5 +34054,13 @@
     "type": "Income",
     "amount": 1440,
     "notes": ""
+  },
+  {
+    "id": "mrx87076n3hd",
+    "bs": "2081-10-16",
+    "ad": "2025-01-29",
+    "type": "Income",
+    "amount": 30,
+    "notes": ""
   }
 ]
