@@ -29902,5 +29902,37 @@
     "type": "Income",
     "amount": 35,
     "notes": ""
+  },
+  {
+    "id": "mrx62kqpqj54",
+    "bs": "2081-09-08",
+    "ad": "2024-12-23",
+    "type": "Income",
+    "amount": 120,
+    "notes": ""
+  },
+  {
+    "id": "mrx62lezjnx0",
+    "bs": "2081-09-08",
+    "ad": "2024-12-23",
+    "type": "Income",
+    "amount": 80,
+    "notes": ""
+  },
+  {
+    "id": "mrx62lw56vul",
+    "bs": "2081-09-08",
+    "ad": "2024-12-23",
+    "type": "Income",
+    "amount": 55,
+    "notes": ""
+  },
+  {
+    "id": "mrx62qfgxsne",
+    "bs": "2081-09-08",
+    "ad": "2024-12-23",
+    "type": "Income",
+    "amount": 185,
+    "notes": ""
   }
 ]
