@@ -31078,5 +31078,29 @@
     "type": "Income",
     "amount": 1220,
     "notes": ""
+  },
+  {
+    "id": "mrx6hp4fnvoa",
+    "bs": "2081-09-13",
+    "ad": "2024-12-28",
+    "type": "Income",
+    "amount": 260,
+    "notes": ""
+  },
+  {
+    "id": "mrx6hpqwuck6",
+    "bs": "2081-09-13",
+    "ad": "2024-12-28",
+    "type": "Income",
+    "amount": 300,
+    "notes": ""
+  },
+  {
+    "id": "mrx6hqgtqznp",
+    "bs": "2081-09-13",
+    "ad": "2024-12-28",
+    "type": "Income",
+    "amount": 50,
+    "notes": ""
   }
 ]
