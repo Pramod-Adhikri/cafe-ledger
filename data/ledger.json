@@ -28894,5 +28894,37 @@
     "type": "Income",
     "amount": 150,
     "notes": ""
+  },
+  {
+    "id": "mrx5uhhzoxgl",
+    "bs": "2081-09-04",
+    "ad": "2024-12-19",
+    "type": "Income",
+    "amount": 375,
+    "notes": ""
+  },
+  {
+    "id": "mrx5ui384r2y",
+    "bs": "2081-09-04",
+    "ad": "2024-12-19",
+    "type": "Income",
+    "amount": 80,
+    "notes": ""
+  },
+  {
+    "id": "mrx5uj7pehbv",
+    "bs": "2081-09-04",
+    "ad": "2024-12-19",
+    "type": "Income",
+    "amount": 30,
+    "notes": ""
+  },
+  {
+    "id": "mrx5ujpp9zb2",
+    "bs": "2081-09-04",
+    "ad": "2024-12-19",
+    "type": "Income",
+    "amount": 30,
+    "notes": ""
   }
 ]
