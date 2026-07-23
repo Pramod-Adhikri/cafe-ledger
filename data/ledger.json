@@ -37614,5 +37614,21 @@
     "type": "Income",
     "amount": 670,
     "notes": ""
+  },
+  {
+    "id": "mrxak246rsgc",
+    "bs": "2081-12-01",
+    "ad": "2025-03-14",
+    "type": "Income",
+    "amount": 1845,
+    "notes": ""
+  },
+  {
+    "id": "mrxak3l3hog1",
+    "bs": "2081-12-01",
+    "ad": "2025-03-14",
+    "type": "Income",
+    "amount": 1000,
+    "notes": ""
   }
 ]
