@@ -35246,5 +35246,13 @@
     "type": "Expense",
     "amount": 170,
     "notes": ""
+  },
+  {
+    "id": "mrx941rt6k3k",
+    "bs": "2081-11-01",
+    "ad": "2025-02-13",
+    "type": "Expense",
+    "amount": 5500,
+    "notes": ""
   }
 ]
