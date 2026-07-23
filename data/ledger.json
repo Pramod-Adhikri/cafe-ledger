@@ -31542,5 +31542,13 @@
     "type": "Expense",
     "amount": 120,
     "notes": ""
+  },
+  {
+    "id": "mrx6qwxvdutt",
+    "bs": "2081-09-16",
+    "ad": "2024-12-31",
+    "type": "Income",
+    "amount": 520,
+    "notes": ""
   }
 ]
