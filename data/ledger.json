@@ -37886,5 +37886,29 @@
     "type": "Income",
     "amount": 220,
     "notes": ""
+  },
+  {
+    "id": "mrxaomb655au",
+    "bs": "2081-12-04",
+    "ad": "2025-03-17",
+    "type": "Income",
+    "amount": 240,
+    "notes": ""
+  },
+  {
+    "id": "mrxaorhafvkt",
+    "bs": "2081-12-04",
+    "ad": "2025-03-17",
+    "type": "Income",
+    "amount": 380,
+    "notes": ""
+  },
+  {
+    "id": "mrxaos3h5syh",
+    "bs": "2081-12-04",
+    "ad": "2025-03-17",
+    "type": "Income",
+    "amount": 35,
+    "notes": ""
   }
 ]
