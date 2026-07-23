@@ -32102,5 +32102,13 @@
     "type": "Expense",
     "amount": 2920,
     "notes": ""
+  },
+  {
+    "id": "mrx70rpuzamv",
+    "bs": "2081-09-25",
+    "ad": "2025-01-09",
+    "type": "Income",
+    "amount": 8645,
+    "notes": ""
   }
 ]
