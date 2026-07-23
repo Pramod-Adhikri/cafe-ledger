@@ -37974,5 +37974,13 @@
     "type": "Income",
     "amount": 7595,
     "notes": ""
+  },
+  {
+    "id": "mrxeil5cwkdm",
+    "bs": "2081-12-05",
+    "ad": "2025-03-18",
+    "type": "Expense",
+    "amount": 1795,
+    "notes": ""
   }
 ]
