@@ -28150,5 +28150,13 @@
     "type": "Expense",
     "amount": 5000,
     "notes": ""
+  },
+  {
+    "id": "mrx5kof1abvn",
+    "bs": "2081-09-01",
+    "ad": "2024-12-16",
+    "type": "Expense",
+    "amount": 5000,
+    "notes": ""
   }
 ]
