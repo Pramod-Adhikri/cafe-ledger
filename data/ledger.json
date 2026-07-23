@@ -34846,5 +34846,13 @@
     "type": "Expense",
     "amount": 5670,
     "notes": ""
+  },
+  {
+    "id": "mrx8npanzbnu",
+    "bs": "2081-10-26",
+    "ad": "2025-02-08",
+    "type": "Expense",
+    "amount": 500,
+    "notes": ""
   }
 ]
