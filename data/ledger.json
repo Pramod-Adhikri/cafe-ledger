@@ -36054,5 +36054,13 @@
     "type": "Income",
     "amount": 120,
     "notes": ""
+  },
+  {
+    "id": "mrx9d572xri7",
+    "bs": "2081-11-06",
+    "ad": "2025-02-18",
+    "type": "Income",
+    "amount": 2960,
+    "notes": ""
   }
 ]
