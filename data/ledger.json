@@ -37438,5 +37438,13 @@
     "type": "Expense",
     "amount": 960,
     "notes": ""
+  },
+  {
+    "id": "mrxaffka84mt",
+    "bs": "2081-11-27",
+    "ad": "2025-03-11",
+    "type": "Expense",
+    "amount": 380,
+    "notes": ""
   }
 ]
