@@ -30878,5 +30878,13 @@
     "type": "Expense",
     "amount": 2200,
     "notes": ""
+  },
+  {
+    "id": "mrx6fsu14nel",
+    "bs": "2081-09-12",
+    "ad": "2024-12-27",
+    "type": "Income",
+    "amount": 160,
+    "notes": ""
   }
 ]
