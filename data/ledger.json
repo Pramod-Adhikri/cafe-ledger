@@ -30366,5 +30366,13 @@
     "type": "Income",
     "amount": 80,
     "notes": ""
+  },
+  {
+    "id": "mrx67eyasqmt",
+    "bs": "2081-09-09",
+    "ad": "2024-12-24",
+    "type": "Income",
+    "amount": 200,
+    "notes": ""
   }
 ]
