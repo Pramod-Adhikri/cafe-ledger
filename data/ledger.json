@@ -28446,5 +28446,37 @@
     "type": "Expense",
     "amount": 80,
     "notes": ""
+  },
+  {
+    "id": "mrx5n9wdoi7f",
+    "bs": "2081-09-02",
+    "ad": "2024-12-17",
+    "type": "Expense",
+    "amount": 35,
+    "notes": ""
+  },
+  {
+    "id": "mrx5nctnkkrt",
+    "bs": "2081-09-02",
+    "ad": "2024-12-17",
+    "type": "Income",
+    "amount": 115,
+    "notes": ""
+  },
+  {
+    "id": "mrx5ndfcytk2",
+    "bs": "2081-09-02",
+    "ad": "2024-12-17",
+    "type": "Income",
+    "amount": 60,
+    "notes": ""
+  },
+  {
+    "id": "mrx5ndwspnw4",
+    "bs": "2081-09-02",
+    "ad": "2024-12-17",
+    "type": "Income",
+    "amount": 60,
+    "notes": ""
   }
 ]
