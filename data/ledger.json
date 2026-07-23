@@ -36934,5 +36934,13 @@
     "type": "Income",
     "amount": 90,
     "notes": ""
+  },
+  {
+    "id": "mrx9t95biabs",
+    "bs": "2081-11-19",
+    "ad": "2025-03-03",
+    "type": "Income",
+    "amount": 70,
+    "notes": ""
   }
 ]
