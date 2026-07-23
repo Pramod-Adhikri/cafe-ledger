@@ -38166,5 +38166,13 @@
     "type": "Income",
     "amount": 3140,
     "notes": ""
+  },
+  {
+    "id": "mrxerg7vi8je",
+    "bs": "2081-12-09",
+    "ad": "2025-03-22",
+    "type": "Expense",
+    "amount": 700,
+    "notes": ""
   }
 ]
