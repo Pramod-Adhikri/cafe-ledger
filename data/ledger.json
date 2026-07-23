@@ -32256,22 +32256,6 @@
     "notes": ""
   },
   {
-    "id": "mrx76inuns14",
-    "bs": "2081-09-27",
-    "ad": "2025-01-11",
-    "type": "Expense",
-    "amount": 520,
-    "notes": ""
-  },
-  {
-    "id": "mrx76jzl1j8e",
-    "bs": "2081-09-27",
-    "ad": "2025-01-11",
-    "type": "Expense",
-    "amount": 1500,
-    "notes": ""
-  },
-  {
     "id": "mrx76kyz4bck",
     "bs": "2081-09-27",
     "ad": "2025-01-11",
@@ -32325,6 +32309,14 @@
     "ad": "2025-01-11",
     "type": "Income",
     "amount": 2105,
+    "notes": ""
+  },
+  {
+    "id": "mrx772yxlnhg",
+    "bs": "2081-09-27",
+    "ad": "2025-01-11",
+    "type": "Expense",
+    "amount": 55,
     "notes": ""
   }
 ]
