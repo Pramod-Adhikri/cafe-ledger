@@ -35582,5 +35582,29 @@
     "type": "Income",
     "amount": 1645,
     "notes": ""
+  },
+  {
+    "id": "mrx96kyo7xsi",
+    "bs": "2081-11-01",
+    "ad": "2025-02-13",
+    "type": "Income",
+    "amount": 275,
+    "notes": ""
+  },
+  {
+    "id": "mrx96lsiguf8",
+    "bs": "2081-11-01",
+    "ad": "2025-02-13",
+    "type": "Income",
+    "amount": 300,
+    "notes": ""
+  },
+  {
+    "id": "mrx96mn6pxgv",
+    "bs": "2081-11-01",
+    "ad": "2025-02-13",
+    "type": "Income",
+    "amount": 80,
+    "notes": ""
   }
 ]
