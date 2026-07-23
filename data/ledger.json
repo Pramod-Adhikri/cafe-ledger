@@ -32598,5 +32598,21 @@
     "type": "Expense",
     "amount": 140,
     "notes": ""
+  },
+  {
+    "id": "mrx7fh8p2q3w",
+    "bs": "2081-10-01",
+    "ad": "2025-01-14",
+    "type": "Expense",
+    "amount": 100,
+    "notes": ""
+  },
+  {
+    "id": "mrx7foj7hyah",
+    "bs": "2081-10-01",
+    "ad": "2025-01-14",
+    "type": "Income",
+    "amount": 1460,
+    "notes": ""
   }
 ]
