@@ -37582,5 +37582,13 @@
     "type": "Income",
     "amount": 60,
     "notes": ""
+  },
+  {
+    "id": "mrxai023890u",
+    "bs": "2081-11-29",
+    "ad": "2025-03-13",
+    "type": "Income",
+    "amount": 5495,
+    "notes": ""
   }
 ]
