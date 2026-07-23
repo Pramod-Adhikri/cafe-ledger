@@ -30526,21 +30526,5 @@
     "type": "Expense",
     "amount": 840,
     "notes": ""
-  },
-  {
-    "id": "mrx6asmaq7fz",
-    "bs": "2081-09-10",
-    "ad": "2024-12-25",
-    "type": "Expense",
-    "amount": 850,
-    "notes": ""
-  },
-  {
-    "id": "mrx6atniajif",
-    "bs": "2081-09-10",
-    "ad": "2024-12-25",
-    "type": "Expense",
-    "amount": 240,
-    "notes": ""
   }
 ]
