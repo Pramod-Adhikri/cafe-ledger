@@ -36822,5 +36822,21 @@
     "type": "Expense",
     "amount": 100,
     "notes": ""
+  },
+  {
+    "id": "mrx9s1a5pms2",
+    "bs": "2081-11-18",
+    "ad": "2025-03-02",
+    "type": "Expense",
+    "amount": 100,
+    "notes": ""
+  },
+  {
+    "id": "mrx9s2h2vdx3",
+    "bs": "2081-11-18",
+    "ad": "2025-03-02",
+    "type": "Expense",
+    "amount": 200,
+    "notes": ""
   }
 ]
