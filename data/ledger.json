@@ -31670,5 +31670,21 @@
     "type": "Income",
     "amount": 940,
     "notes": ""
+  },
+  {
+    "id": "mrx6thw0461t",
+    "bs": "2081-09-18",
+    "ad": "2025-01-02",
+    "type": "Income",
+    "amount": 30,
+    "notes": ""
+  },
+  {
+    "id": "mrx6tprch8yw",
+    "bs": "2081-09-19",
+    "ad": "2025-01-03",
+    "type": "Expense",
+    "amount": 7200,
+    "notes": ""
   }
 ]
