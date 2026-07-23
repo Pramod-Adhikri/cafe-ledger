@@ -33686,5 +33686,13 @@
     "type": "Income",
     "amount": 30,
     "notes": ""
+  },
+  {
+    "id": "mrx80bx4gcyu",
+    "bs": "2081-10-13",
+    "ad": "2025-01-26",
+    "type": "Income",
+    "amount": 10,
+    "notes": ""
   }
 ]
