@@ -37486,5 +37486,29 @@
     "type": "Income",
     "amount": 150,
     "notes": ""
+  },
+  {
+    "id": "mrxafzs7f2gc",
+    "bs": "2081-11-27",
+    "ad": "2025-03-11",
+    "type": "Income",
+    "amount": 50,
+    "notes": ""
+  },
+  {
+    "id": "mrxag0iz0msn",
+    "bs": "2081-11-27",
+    "ad": "2025-03-11",
+    "type": "Income",
+    "amount": 30,
+    "notes": ""
+  },
+  {
+    "id": "mrxag9kb6xrd",
+    "bs": "2081-11-27",
+    "ad": "2025-03-11",
+    "type": "Expense",
+    "amount": 10000,
+    "notes": ""
   }
 ]
