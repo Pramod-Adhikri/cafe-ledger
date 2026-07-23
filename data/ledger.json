@@ -28182,5 +28182,21 @@
     "type": "Income",
     "amount": 650,
     "notes": ""
+  },
+  {
+    "id": "mrx5kv21qbvy",
+    "bs": "2081-09-01",
+    "ad": "2024-12-16",
+    "type": "Income",
+    "amount": 900,
+    "notes": ""
+  },
+  {
+    "id": "mrx5kvlusygn",
+    "bs": "2081-09-01",
+    "ad": "2024-12-16",
+    "type": "Income",
+    "amount": 35,
+    "notes": ""
   }
 ]
