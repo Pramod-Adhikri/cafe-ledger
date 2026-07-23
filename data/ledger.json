@@ -32414,5 +32414,29 @@
     "type": "Income",
     "amount": 120,
     "notes": ""
+  },
+  {
+    "id": "mrx7ch2lsrxx",
+    "bs": "2081-10-01",
+    "ad": "2025-01-14",
+    "type": "Income",
+    "amount": 140,
+    "notes": ""
+  },
+  {
+    "id": "mrx7chyv3ift",
+    "bs": "2081-10-01",
+    "ad": "2025-01-14",
+    "type": "Income",
+    "amount": 25,
+    "notes": ""
+  },
+  {
+    "id": "mrx7cn145ygj",
+    "bs": "2081-10-01",
+    "ad": "2025-01-14",
+    "type": "Income",
+    "amount": 250,
+    "notes": ""
   }
 ]
