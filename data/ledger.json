@@ -29854,5 +29854,21 @@
     "type": "Income",
     "amount": 800,
     "notes": ""
+  },
+  {
+    "id": "mrx61iqjpc47",
+    "bs": "2081-09-07",
+    "ad": "2024-12-22",
+    "type": "Income",
+    "amount": 420,
+    "notes": ""
+  },
+  {
+    "id": "mrx61ojckdcm",
+    "bs": "2081-09-07",
+    "ad": "2024-12-22",
+    "type": "Income",
+    "amount": 340,
+    "notes": ""
   }
 ]
