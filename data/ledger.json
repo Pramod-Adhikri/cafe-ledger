@@ -37870,5 +37870,13 @@
     "type": "Income",
     "amount": 120,
     "notes": ""
+  },
+  {
+    "id": "mrxanzh11po6",
+    "bs": "2081-12-03",
+    "ad": "2025-03-16",
+    "type": "Income",
+    "amount": 2125,
+    "notes": ""
   }
 ]
