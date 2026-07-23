@@ -37014,5 +37014,13 @@
     "type": "Expense",
     "amount": 2150,
     "notes": ""
+  },
+  {
+    "id": "mrxa2wbirmm7",
+    "bs": "2081-11-21",
+    "ad": "2025-03-05",
+    "type": "Income",
+    "amount": 5420,
+    "notes": ""
   }
 ]
