@@ -38062,5 +38062,13 @@
     "type": "Income",
     "amount": 4305,
     "notes": ""
+  },
+  {
+    "id": "mrxemtb52paz",
+    "bs": "2081-12-06",
+    "ad": "2025-03-19",
+    "type": "Expense",
+    "amount": 9250,
+    "notes": ""
   }
 ]
