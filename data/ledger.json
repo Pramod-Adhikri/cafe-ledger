@@ -32190,5 +32190,21 @@
     "type": "Expense",
     "amount": 41000,
     "notes": ""
+  },
+  {
+    "id": "mrx71v6luy14",
+    "bs": "2081-09-26",
+    "ad": "2025-01-10",
+    "type": "Expense",
+    "amount": 7000,
+    "notes": ""
+  },
+  {
+    "id": "mrx72062gben",
+    "bs": "2081-09-26",
+    "ad": "2025-01-10",
+    "type": "Income",
+    "amount": 2730,
+    "notes": ""
   }
 ]
