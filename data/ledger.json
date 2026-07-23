@@ -35006,5 +35006,13 @@
     "type": "Income",
     "amount": 35,
     "notes": ""
+  },
+  {
+    "id": "mrx8qtdw735b",
+    "bs": "2081-10-28",
+    "ad": "2025-02-10",
+    "type": "Income",
+    "amount": 2145,
+    "notes": ""
   }
 ]
