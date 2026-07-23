@@ -34190,5 +34190,13 @@
     "type": "Expense",
     "amount": 5000,
     "notes": ""
+  },
+  {
+    "id": "mrx8ae3q08o7",
+    "bs": "2081-10-18",
+    "ad": "2025-01-31",
+    "type": "Expense",
+    "amount": 3310,
+    "notes": ""
   }
 ]
