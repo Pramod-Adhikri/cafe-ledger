@@ -30086,5 +30086,13 @@
     "type": "Expense",
     "amount": 3750,
     "notes": ""
+  },
+  {
+    "id": "mrx65m7d44gn",
+    "bs": "2081-09-09",
+    "ad": "2024-12-24",
+    "type": "Expense",
+    "amount": 1345,
+    "notes": ""
   }
 ]
