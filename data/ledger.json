@@ -37278,5 +37278,13 @@
     "type": "Expense",
     "amount": 2150,
     "notes": ""
+  },
+  {
+    "id": "mrxaachytuvr",
+    "bs": "2081-11-21",
+    "ad": "2025-03-05",
+    "type": "Expense",
+    "amount": 1680,
+    "notes": ""
   }
 ]
