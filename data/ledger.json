@@ -38398,5 +38398,13 @@
     "type": "Income",
     "amount": 550,
     "notes": ""
+  },
+  {
+    "id": "mrxexeimgdei",
+    "bs": "2081-12-12",
+    "ad": "2025-03-25",
+    "type": "Income",
+    "amount": 10435,
+    "notes": ""
   }
 ]
