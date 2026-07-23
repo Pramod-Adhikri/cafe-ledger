@@ -34022,5 +34022,29 @@
     "type": "Expense",
     "amount": 100,
     "notes": ""
+  },
+  {
+    "id": "mrx86hubyjdw",
+    "bs": "2081-10-16",
+    "ad": "2025-01-29",
+    "type": "Expense",
+    "amount": 200,
+    "notes": ""
+  },
+  {
+    "id": "mrx86imncyiy",
+    "bs": "2081-10-16",
+    "ad": "2025-01-29",
+    "type": "Expense",
+    "amount": 550,
+    "notes": ""
+  },
+  {
+    "id": "mrx86k8r47ya",
+    "bs": "2081-10-16",
+    "ad": "2025-01-29",
+    "type": "Expense",
+    "amount": 125,
+    "notes": ""
   }
 ]
