@@ -38126,5 +38126,21 @@
     "type": "Expense",
     "amount": 520,
     "notes": ""
+  },
+  {
+    "id": "mrxer03o12dg",
+    "bs": "2081-12-08",
+    "ad": "2025-03-21",
+    "type": "Income",
+    "amount": 2555,
+    "notes": ""
+  },
+  {
+    "id": "mrxer118olz2",
+    "bs": "2081-12-08",
+    "ad": "2025-03-21",
+    "type": "Income",
+    "amount": 170,
+    "notes": ""
   }
 ]
