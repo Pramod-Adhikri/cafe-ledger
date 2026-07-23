@@ -32774,5 +32774,13 @@
     "type": "Income",
     "amount": 2455,
     "notes": ""
+  },
+  {
+    "id": "mrx7k20yqojw",
+    "bs": "2081-10-04",
+    "ad": "2025-01-17",
+    "type": "Income",
+    "amount": 3295,
+    "notes": ""
   }
 ]
