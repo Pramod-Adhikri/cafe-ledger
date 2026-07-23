@@ -28526,5 +28526,13 @@
     "type": "Income",
     "amount": 50,
     "notes": ""
+  },
+  {
+    "id": "mrx5qxsi412g",
+    "bs": "2081-09-03",
+    "ad": "2024-12-18",
+    "type": "Expense",
+    "amount": 2250,
+    "notes": ""
   }
 ]
