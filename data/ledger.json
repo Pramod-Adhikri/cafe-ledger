@@ -37414,5 +37414,13 @@
     "type": "Expense",
     "amount": 550,
     "notes": ""
+  },
+  {
+    "id": "mrxaesforywx",
+    "bs": "2081-11-26",
+    "ad": "2025-03-10",
+    "type": "Income",
+    "amount": 750,
+    "notes": ""
   }
 ]
