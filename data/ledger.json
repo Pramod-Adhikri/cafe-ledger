@@ -32182,5 +32182,13 @@
     "type": "Income",
     "amount": 6310,
     "notes": ""
+  },
+  {
+    "id": "mrx71tncr33h",
+    "bs": "2081-09-26",
+    "ad": "2025-01-10",
+    "type": "Expense",
+    "amount": 41000,
+    "notes": ""
   }
 ]
