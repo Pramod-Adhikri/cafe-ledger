@@ -34078,5 +34078,13 @@
     "type": "Expense",
     "amount": 50,
     "notes": ""
+  },
+  {
+    "id": "mrx87srexaut",
+    "bs": "2081-10-17",
+    "ad": "2025-01-30",
+    "type": "Expense",
+    "amount": 3360,
+    "notes": ""
   }
 ]
