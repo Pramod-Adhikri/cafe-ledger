@@ -34310,5 +34310,29 @@
     "type": "Expense",
     "amount": 470,
     "notes": ""
+  },
+  {
+    "id": "mrx8elm944t6",
+    "bs": "2081-10-20",
+    "ad": "2025-02-02",
+    "type": "Expense",
+    "amount": 900,
+    "notes": ""
+  },
+  {
+    "id": "mrx8embajzuq",
+    "bs": "2081-10-20",
+    "ad": "2025-02-02",
+    "type": "Expense",
+    "amount": 590,
+    "notes": ""
+  },
+  {
+    "id": "mrx8emszsv0p",
+    "bs": "2081-10-20",
+    "ad": "2025-02-02",
+    "type": "Expense",
+    "amount": 90,
+    "notes": ""
   }
 ]
