@@ -35998,5 +35998,13 @@
     "type": "Income",
     "amount": 1270,
     "notes": ""
+  },
+  {
+    "id": "mrx9bgkp45oz",
+    "bs": "2081-11-05",
+    "ad": "2025-02-17",
+    "type": "Expense",
+    "amount": 1000,
+    "notes": ""
   }
 ]
