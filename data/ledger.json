@@ -36150,5 +36150,13 @@
     "type": "Income",
     "amount": 5800,
     "notes": ""
+  },
+  {
+    "id": "mrx9fg85ybln",
+    "bs": "2081-11-08",
+    "ad": "2025-02-20",
+    "type": "Income",
+    "amount": 2200,
+    "notes": ""
   }
 ]
