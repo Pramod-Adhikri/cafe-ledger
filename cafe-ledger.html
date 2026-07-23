@@ -177,11 +177,11 @@
   <div class="excel-bar">
     <div class="excel-status">
       <span class="dot" id="excelDot"></span>
-      <span id="excelStatusText"><b>Not connected.</b> Connect a file so every entry writes straight to it.</span>
+      <span id="excelStatusText"><b>No Excel file connected.</b> Import your existing ledger to load its history.</span>
     </div>
     <div class="excel-actions">
-      <button class="btn btn-connect" id="openBtn" onclick="openExistingFile()">📂 Open Existing File</button>
-      <button class="btn btn-connect" id="createBtn" onclick="createNewFile()" style="background:var(--gold);">🆕 Create New File</button>
+      <button class="btn btn-connect" id="importBtn" onclick="importFromExcel()">📥 Import from Excel</button>
+      <button class="btn btn-export" id="syncExcelBtn" onclick="syncToExcelNow()" style="display:none;">↻ Sync to Excel</button>
       <button class="btn btn-export" onclick="downloadCopy()">⬇ Download a Copy</button>
     </div>
   </div>
@@ -643,12 +643,13 @@ async function idbGet(key){
   });
 }
 
-function markConnected(name){
+function markConnected(name, count){
   document.getElementById('excelDot').classList.add('on');
-  document.getElementById('excelStatusText').innerHTML = `<b>Connected:</b> ${name} — every entry writes here automatically. (Note: this app only writes; edits made directly in Excel won't be read back in.)`;
-  document.getElementById('footNote').textContent = 'Every entry you add is written straight into your connected Excel file.';
-  document.getElementById('openBtn').textContent = '📂 Reopen This File';
-  document.getElementById('createBtn').textContent = '🆕 Create Different File';
+  const countMsg = (typeof count === 'number') ? ` — ${count} entries loaded.` : ' — ready to sync.';
+  document.getElementById('excelStatusText').innerHTML = `<b>Connected:</b> ${name}${countMsg} Use "Sync to Excel" any time to push the latest data back into this file.`;
+  document.getElementById('footNote').textContent = 'Every entry is also written into your connected Excel file when you sync.';
+  document.getElementById('importBtn').textContent = '📥 Re-import / Replace File';
+  document.getElementById('syncExcelBtn').style.display = '';
 }
 
 /* Try to silently resume a previously-connected file (no dialog, at most a one-click permission prompt) */
@@ -666,57 +667,108 @@ async function tryAutoReconnect(){
       markConnected(fileHandle.name);
     }else{
       document.getElementById('excelStatusText').innerHTML =
-        "<b>Found your last file, but access wasn't re-granted.</b> Click 'Open Existing File' and pick the same file again.";
+        "<b>Found your last file, but access wasn't re-granted.</b> Click 'Import from Excel' and pick the same file again.";
     }
   }catch(e){
     // handle no longer valid, or storage didn't survive this session — user can reconnect manually
   }
 }
 
-/* ---- Open an existing .xlsx file and take it over as the live-write target ---- */
-async function openExistingFile(){
-  if(!fsApiSupported){
-    document.getElementById('excelStatusText').innerHTML =
-      "<b>Live-write isn't supported in this browser.</b> Use 'Download a Copy' after each session instead.";
-    return;
-  }
-  try{
-    const [handle] = await window.showOpenFilePicker({
-      types: [{ description:'Excel Workbook', accept:{ 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':['.xlsx'] } }],
-      multiple:false
-    });
-    const perm = await handle.requestPermission({mode:'readwrite'});
-    if(perm !== 'granted'){
-      document.getElementById('excelStatusText').innerHTML = "<b>Write permission wasn't granted.</b> Try again and allow write access.";
-      return;
-    }
-    fileHandle = handle;
-    await idbSet('fileHandle', fileHandle);
-    markConnected(fileHandle.name);
-    await writeToExcelFile();
-  }catch(e){
-    // user cancelled the picker — do nothing
-  }
+/* ---- Parse a "Date (BS)" cell from the Transactions sheet into our internal
+   zero-padded bs format. Import files use "2081/3/21" (no zero-padding);
+   our internal format is "2081-03-21". Handles both, just in case. */
+function parseImportedBsDate(raw){
+  const s = String(raw).trim().replace(/\//g, '-');
+  const [y, m, d] = s.split('-').map(n => parseInt(n, 10));
+  return bsDateStr(y, m, d);
 }
 
-/* ---- Create a brand-new .xlsx file as the live-write target ---- */
-async function createNewFile(){
-  if(!fsApiSupported){
-    document.getElementById('excelStatusText').innerHTML =
-      "<b>Live-write isn't supported in this browser.</b> Use 'Download a Copy' after each session instead.";
+/* ---- Import an existing .xlsx: reads it (never blindly overwrites), pulls
+   entries out of the Transactions sheet, and keeps the file connected so you
+   can sync updates back to it later with the "Sync to Excel" button. ---- */
+async function importFromExcel(){
+  let file, handle = null;
+  try{
+    if(fsApiSupported){
+      [handle] = await window.showOpenFilePicker({
+        types: [{ description:'Excel Workbook', accept:{ 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':['.xlsx'] } }],
+        multiple:false
+      });
+      const perm = await handle.requestPermission({mode:'readwrite'});
+      if(perm !== 'granted'){
+        document.getElementById('excelStatusText').innerHTML = "<b>Permission wasn't granted.</b> Try again and allow read/write access.";
+        return;
+      }
+      file = await handle.getFile();
+    }else{
+      file = await new Promise((resolve, reject)=>{
+        const input = document.createElement('input');
+        input.type = 'file';
+        input.accept = '.xlsx';
+        input.onchange = ()=> input.files[0] ? resolve(input.files[0]) : reject(new Error('No file chosen'));
+        input.click();
+      });
+    }
+  }catch(e){
+    return; // user cancelled the picker
+  }
+
+  let imported;
+  try{
+    const buf = await file.arrayBuffer();
+    const wb = XLSX.read(buf, {type:'array'});
+    const sheetName = wb.SheetNames.find(n => /transaction/i.test(n)) || wb.SheetNames[0];
+    const rows = XLSX.utils.sheet_to_json(wb.Sheets[sheetName], {header:1, raw:true});
+    // Skip header row, skip any blank rows
+    const dataRows = rows.slice(1).filter(r => r && r[0] && r[2] && r[3] !== undefined && r[3] !== '');
+    imported = dataRows.map((r, i) => ({
+      id: 'imp_' + Date.now().toString(36) + '_' + i,
+      bs: parseImportedBsDate(r[0]),
+      ad: r[1] ? String(r[1]).trim() : bsToAdString(...parseImportedBsDate(r[0]).split('-').map(Number)),
+      type: String(r[2]).trim(),
+      amount: Number(r[3]),
+      notes: r[4] ? String(r[4]).trim() : ''
+    })).filter(e => !isNaN(e.amount) && (e.type === 'Income' || e.type === 'Expense'));
+  }catch(e){
+    document.getElementById('excelStatusText').innerHTML = `<b>Couldn't read that file.</b> ${e.message}`;
     return;
   }
-  try{
-    fileHandle = await window.showSaveFilePicker({
-      suggestedName: 'Cafe_Ledger.xlsx',
-      types: [{ description:'Excel Workbook', accept:{ 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':['.xlsx'] } }]
-    });
-    await idbSet('fileHandle', fileHandle);
-    markConnected(fileHandle.name);
-    await writeToExcelFile();
-  }catch(e){
-    // user cancelled the picker — do nothing
+
+  if(imported.length === 0){
+    document.getElementById('excelStatusText').innerHTML = "<b>No transaction rows found</b> in that file's Transactions sheet.";
+    return;
   }
+
+  let finalEntries = imported;
+  if(entries.length > 0){
+    const merge = confirm(
+      `This file has ${imported.length} entries. This app currently shows ${entries.length}.\n\n` +
+      `Click OK to MERGE (keep both, imported history + your current entries).\n` +
+      `Click Cancel to REPLACE (use only the ${imported.length} imported entries, discarding what's currently shown).`
+    );
+    finalEntries = merge ? [...imported, ...entries] : imported;
+  }
+
+  entries = finalEntries;
+  await saveEntries();
+  renderAll();
+
+  if(handle){
+    fileHandle = handle;
+    await idbSet('fileHandle', fileHandle);
+  }
+  markConnected(file.name, imported.length);
+  syncToGithub(); // keep the GitHub backup current too
+}
+
+/* ---- Push current entries back into the connected Excel file, on demand. ---- */
+async function syncToExcelNow(){
+  if(!fileHandle){
+    document.getElementById('excelStatusText').innerHTML = "<b>No file connected.</b> Use 'Import from Excel' first.";
+    return;
+  }
+  await writeToExcelFile();
+  document.getElementById('excelStatusText').innerHTML = `<b>Synced:</b> ${fileHandle.name} now matches what's shown here (${entries.length} entries).`;
 }
 function buildWorkbook(){
   const wb = XLSX.utils.book_new();
@@ -872,10 +924,27 @@ function renderReceipt(){
   const todayBs = adToBs(new Date());
   const todayBsStr = bsDateStr(todayBs.year, todayBs.month, todayBs.day);
   const map = groupBy(e=>e.bs);
-  const t = map[todayBsStr] || {income:0, expense:0};
+  let labelDate = todayBsStr;
+  let titleText = "Today's Tally";
+  let t = map[todayBsStr];
+  if(!t){
+    // No entries for today yet (e.g. right after importing older history) —
+    // fall back to the most recent day that actually has entries.
+    const dates = Object.keys(map).sort();
+    if(dates.length){
+      labelDate = dates[dates.length - 1];
+      titleText = "Latest Recorded Day";
+      t = map[labelDate];
+    }else{
+      t = {income:0, expense:0};
+    }
+  }
   document.getElementById('todayIncome').textContent = fmt(t.income);
   document.getElementById('todayExpense').textContent = fmt(t.expense);
   document.getElementById('todayNet').textContent = fmt(t.income - t.expense);
+  document.querySelector('.receipt .r-title').textContent = titleText;
+  const [ly, lm, ld] = labelDate.split('-').map(Number);
+  document.getElementById('todayDateLabel').textContent = `${NEP_MONTHS[lm-1]} ${ld}, ${ly} BS`;
 }
 function renderAll(){
   renderTransactions();
@@ -892,8 +961,7 @@ function renderAll(){
   if(!fsApiSupported){
     document.getElementById('excelStatusText').innerHTML =
       "<b>Live-write isn't supported in this browser.</b> Use 'Download a Copy' regularly instead.";
-    document.getElementById('openBtn').disabled = true;
-    document.getElementById('createBtn').disabled = true;
+    document.getElementById('importBtn').disabled = true;
   }
   await loadEntries();          // fast local cache, shown immediately
   renderAll();
