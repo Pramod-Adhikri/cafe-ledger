@@ -38278,5 +38278,13 @@
     "type": "Income",
     "amount": 140,
     "notes": ""
+  },
+  {
+    "id": "mrxets1hbr8x",
+    "bs": "2081-12-10",
+    "ad": "2025-03-23",
+    "type": "Income",
+    "amount": 700,
+    "notes": ""
   }
 ]
