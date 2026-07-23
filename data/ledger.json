@@ -34166,5 +34166,13 @@
     "type": "Income",
     "amount": 6000,
     "notes": ""
+  },
+  {
+    "id": "mrx89ugaojes",
+    "bs": "2081-10-17",
+    "ad": "2025-01-30",
+    "type": "Income",
+    "amount": 4085,
+    "notes": ""
   }
 ]
