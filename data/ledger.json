@@ -28726,5 +28726,21 @@
     "type": "Expense",
     "amount": 170,
     "notes": ""
+  },
+  {
+    "id": "mrx5s5424u1k",
+    "bs": "2081-09-03",
+    "ad": "2024-12-18",
+    "type": "Expense",
+    "amount": 300,
+    "notes": ""
+  },
+  {
+    "id": "mrx5s89fa05c",
+    "bs": "2081-09-03",
+    "ad": "2024-12-18",
+    "type": "Income",
+    "amount": 170,
+    "notes": ""
   }
 ]
