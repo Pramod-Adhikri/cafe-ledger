@@ -37806,5 +37806,21 @@
     "type": "Income",
     "amount": 650,
     "notes": ""
+  },
+  {
+    "id": "mrxamvvdqd2n",
+    "bs": "2081-12-03",
+    "ad": "2025-03-16",
+    "type": "Income",
+    "amount": 470,
+    "notes": ""
+  },
+  {
+    "id": "mrxamwyw8voe",
+    "bs": "2081-12-03",
+    "ad": "2025-03-16",
+    "type": "Income",
+    "amount": 730,
+    "notes": ""
   }
 ]
