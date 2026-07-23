@@ -31902,5 +31902,29 @@
     "type": "Expense",
     "amount": 180,
     "notes": ""
+  },
+  {
+    "id": "mrx6xcawpo7y",
+    "bs": "2081-09-22",
+    "ad": "2025-01-06",
+    "type": "Expense",
+    "amount": 200,
+    "notes": ""
+  },
+  {
+    "id": "mrx6xd5ix478",
+    "bs": "2081-09-22",
+    "ad": "2025-01-06",
+    "type": "Expense",
+    "amount": 270,
+    "notes": ""
+  },
+  {
+    "id": "mrx6xevl00vy",
+    "bs": "2081-09-22",
+    "ad": "2025-01-06",
+    "type": "Expense",
+    "amount": 310,
+    "notes": ""
   }
 ]
