@@ -35222,5 +35222,13 @@
     "type": "Expense",
     "amount": 70,
     "notes": ""
+  },
+  {
+    "id": "mrx8u7gbmi94",
+    "bs": "2081-10-30",
+    "ad": "2025-02-12",
+    "type": "Expense",
+    "amount": 100,
+    "notes": ""
   }
 ]
