@@ -35846,5 +35846,53 @@
     "type": "Income",
     "amount": 30,
     "notes": ""
+  },
+  {
+    "id": "mrx97uhf7npw",
+    "bs": "2081-11-01",
+    "ad": "2025-02-13",
+    "type": "Income",
+    "amount": 1600,
+    "notes": ""
+  },
+  {
+    "id": "mrx97vboe7x4",
+    "bs": "2081-11-01",
+    "ad": "2025-02-13",
+    "type": "Income",
+    "amount": 280,
+    "notes": ""
+  },
+  {
+    "id": "mrx97w9zzfgu",
+    "bs": "2081-11-01",
+    "ad": "2025-02-13",
+    "type": "Income",
+    "amount": 70,
+    "notes": ""
+  },
+  {
+    "id": "mrx97wyv44zy",
+    "bs": "2081-11-01",
+    "ad": "2025-02-13",
+    "type": "Income",
+    "amount": 70,
+    "notes": ""
+  },
+  {
+    "id": "mrx97xnu2oir",
+    "bs": "2081-11-01",
+    "ad": "2025-02-13",
+    "type": "Income",
+    "amount": 50,
+    "notes": ""
+  },
+  {
+    "id": "mrx97zjkzfc7",
+    "bs": "2081-11-01",
+    "ad": "2025-02-13",
+    "type": "Income",
+    "amount": 60,
+    "notes": ""
   }
 ]
