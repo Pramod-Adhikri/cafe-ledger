@@ -28238,5 +28238,21 @@
     "type": "Income",
     "amount": 1496,
     "notes": ""
+  },
+  {
+    "id": "mrx5ldgcr5vz",
+    "bs": "2081-09-01",
+    "ad": "2024-12-16",
+    "type": "Expense",
+    "amount": 15,
+    "notes": ""
+  },
+  {
+    "id": "mrx5les95ee4",
+    "bs": "2081-09-01",
+    "ad": "2024-12-16",
+    "type": "Expense",
+    "amount": 200,
+    "notes": ""
   }
 ]
