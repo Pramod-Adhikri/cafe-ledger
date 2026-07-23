@@ -28790,5 +28790,13 @@
     "type": "Income",
     "amount": 30,
     "notes": ""
+  },
+  {
+    "id": "mrx5sz8panpy",
+    "bs": "2081-09-04",
+    "ad": "2024-12-19",
+    "type": "Expense",
+    "amount": 9031,
+    "notes": ""
   }
 ]
