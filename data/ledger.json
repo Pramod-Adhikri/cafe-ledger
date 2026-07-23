@@ -31222,5 +31222,29 @@
     "type": "Income",
     "amount": 35,
     "notes": ""
+  },
+  {
+    "id": "mrx6ierz6y4u",
+    "bs": "2081-09-13",
+    "ad": "2024-12-28",
+    "type": "Income",
+    "amount": 320,
+    "notes": ""
+  },
+  {
+    "id": "mrx6ifel9syb",
+    "bs": "2081-09-13",
+    "ad": "2024-12-28",
+    "type": "Income",
+    "amount": 40,
+    "notes": ""
+  },
+  {
+    "id": "mrx6iftrcm3o",
+    "bs": "2081-09-13",
+    "ad": "2024-12-28",
+    "type": "Income",
+    "amount": 30,
+    "notes": ""
   }
 ]
