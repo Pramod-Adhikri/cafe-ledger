@@ -30094,5 +30094,21 @@
     "type": "Expense",
     "amount": 1345,
     "notes": ""
+  },
+  {
+    "id": "mrx65o246hrk",
+    "bs": "2081-09-09",
+    "ad": "2024-12-24",
+    "type": "Expense",
+    "amount": 1000,
+    "notes": ""
+  },
+  {
+    "id": "mrx65qtkeu0z",
+    "bs": "2081-09-09",
+    "ad": "2024-12-24",
+    "type": "Expense",
+    "amount": 820,
+    "notes": ""
   }
 ]
