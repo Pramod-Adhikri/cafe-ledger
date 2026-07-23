@@ -31102,5 +31102,21 @@
     "type": "Income",
     "amount": 50,
     "notes": ""
+  },
+  {
+    "id": "mrx6hrdv189i",
+    "bs": "2081-09-13",
+    "ad": "2024-12-28",
+    "type": "Income",
+    "amount": 240,
+    "notes": ""
+  },
+  {
+    "id": "mrx6hti3nwj3",
+    "bs": "2081-09-13",
+    "ad": "2024-12-28",
+    "type": "Income",
+    "amount": 80,
+    "notes": ""
   }
 ]
