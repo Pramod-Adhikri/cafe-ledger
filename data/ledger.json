@@ -38406,5 +38406,29 @@
     "type": "Income",
     "amount": 10435,
     "notes": ""
+  },
+  {
+    "id": "mrxey12od88j",
+    "bs": "2081-12-12",
+    "ad": "2025-03-25",
+    "type": "Income",
+    "amount": 180,
+    "notes": ""
+  },
+  {
+    "id": "mrxey1wnpngc",
+    "bs": "2081-12-12",
+    "ad": "2025-03-25",
+    "type": "Income",
+    "amount": 800,
+    "notes": ""
+  },
+  {
+    "id": "mrxey2ghkqit",
+    "bs": "2081-12-12",
+    "ad": "2025-03-25",
+    "type": "Income",
+    "amount": 35,
+    "notes": ""
   }
 ]
