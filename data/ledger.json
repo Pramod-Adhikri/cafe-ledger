@@ -33814,5 +33814,21 @@
     "type": "Expense",
     "amount": 900,
     "notes": ""
+  },
+  {
+    "id": "mrx82o47j5v3",
+    "bs": "2081-10-14",
+    "ad": "2025-01-27",
+    "type": "Expense",
+    "amount": 225,
+    "notes": ""
+  },
+  {
+    "id": "mrx82pohfmty",
+    "bs": "2081-10-14",
+    "ad": "2025-01-27",
+    "type": "Expense",
+    "amount": 200,
+    "notes": ""
   }
 ]
