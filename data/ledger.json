@@ -44158,5 +44158,13 @@
     "type": "Income",
     "amount": 400,
     "notes": ""
+  },
+  {
+    "id": "mrymzmu7flgi",
+    "bs": "2082-04-02",
+    "ad": "2025-07-18",
+    "type": "Expense",
+    "amount": 25000,
+    "notes": ""
   }
 ]
