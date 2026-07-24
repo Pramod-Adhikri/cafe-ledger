@@ -45534,5 +45534,13 @@
     "type": "Income",
     "amount": 4825,
     "notes": ""
+  },
+  {
+    "id": "mryr34bzstau",
+    "bs": "2082-05-18",
+    "ad": "2025-09-03",
+    "type": "Income",
+    "amount": 2860,
+    "notes": ""
   }
 ]
