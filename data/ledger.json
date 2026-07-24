@@ -42566,5 +42566,13 @@
     "type": "Income",
     "amount": 360,
     "notes": ""
+  },
+  {
+    "id": "mrylyfjxbpsg",
+    "bs": "2082-02-30",
+    "ad": "2025-06-13",
+    "type": "Expense",
+    "amount": 6380,
+    "notes": ""
   }
 ]
