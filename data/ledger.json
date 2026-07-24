@@ -44174,5 +44174,13 @@
     "type": "Expense",
     "amount": 16010,
     "notes": ""
+  },
+  {
+    "id": "mryn01txwcm4",
+    "bs": "2082-04-02",
+    "ad": "2025-07-18",
+    "type": "Income",
+    "amount": 5856,
+    "notes": ""
   }
 ]
