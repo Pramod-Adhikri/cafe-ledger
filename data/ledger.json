@@ -46398,5 +46398,13 @@
     "type": "Expense",
     "amount": 3930,
     "notes": ""
+  },
+  {
+    "id": "mryruwre83pi",
+    "bs": "2082-06-26",
+    "ad": "2025-10-12",
+    "type": "Income",
+    "amount": 3885,
+    "notes": ""
   }
 ]
