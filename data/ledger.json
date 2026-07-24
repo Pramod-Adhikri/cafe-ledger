@@ -43798,5 +43798,13 @@
     "type": "Income",
     "amount": 1835,
     "notes": ""
+  },
+  {
+    "id": "mrymmth3v9sl",
+    "bs": "2082-03-23",
+    "ad": "2025-07-07",
+    "type": "Income",
+    "amount": 110,
+    "notes": ""
   }
 ]
