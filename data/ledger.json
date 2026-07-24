@@ -45678,5 +45678,13 @@
     "type": "Income",
     "amount": 4945,
     "notes": ""
+  },
+  {
+    "id": "mryr7ar38lz4",
+    "bs": "2082-05-22",
+    "ad": "2025-09-07",
+    "type": "Income",
+    "amount": 1000,
+    "notes": ""
   }
 ]
