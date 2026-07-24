@@ -41598,5 +41598,13 @@
     "type": "Income",
     "amount": 480,
     "notes": ""
+  },
+  {
+    "id": "mryld3l2z8bt",
+    "bs": "2082-02-14",
+    "ad": "2025-05-28",
+    "type": "Income",
+    "amount": 1730,
+    "notes": ""
   }
 ]
