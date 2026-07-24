@@ -43230,5 +43230,13 @@
     "type": "Expense",
     "amount": 2685,
     "notes": ""
+  },
+  {
+    "id": "mrymahzulz0y",
+    "bs": "2082-03-07",
+    "ad": "2025-06-21",
+    "type": "Income",
+    "amount": 5200,
+    "notes": ""
   }
 ]
