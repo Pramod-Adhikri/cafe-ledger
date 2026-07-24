@@ -43478,5 +43478,21 @@
     "type": "Expense",
     "amount": 2125,
     "notes": ""
+  },
+  {
+    "id": "mrymgke405ek",
+    "bs": "2082-03-13",
+    "ad": "2025-06-27",
+    "type": "Expense",
+    "amount": 210,
+    "notes": ""
+  },
+  {
+    "id": "mrymgphpto2g",
+    "bs": "2082-03-13",
+    "ad": "2025-06-27",
+    "type": "Income",
+    "amount": 500,
+    "notes": ""
   }
 ]
