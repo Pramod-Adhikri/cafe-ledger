@@ -40374,5 +40374,13 @@
     "type": "Expense",
     "amount": 5500,
     "notes": ""
+  },
+  {
+    "id": "mryjsyslryci",
+    "bs": "2082-01-17",
+    "ad": "2025-04-30",
+    "type": "Income",
+    "amount": 960,
+    "notes": ""
   }
 ]
