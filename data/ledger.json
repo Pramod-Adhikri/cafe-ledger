@@ -38718,5 +38718,13 @@
     "type": "Income",
     "amount": 4295,
     "notes": ""
+  },
+  {
+    "id": "mryicb2018zz",
+    "bs": "2081-12-19",
+    "ad": "2025-04-01",
+    "type": "Expense",
+    "amount": 2565,
+    "notes": ""
   }
 ]
