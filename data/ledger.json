@@ -40454,5 +40454,13 @@
     "type": "Income",
     "amount": 250,
     "notes": ""
+  },
+  {
+    "id": "mryjvijrtemy",
+    "bs": "2082-01-19",
+    "ad": "2025-05-02",
+    "type": "Income",
+    "amount": 4950,
+    "notes": ""
   }
 ]
