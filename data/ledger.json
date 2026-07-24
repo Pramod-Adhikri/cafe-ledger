@@ -42182,5 +42182,21 @@
     "type": "Income",
     "amount": 590,
     "notes": ""
+  },
+  {
+    "id": "mryllmvqoear",
+    "bs": "2082-02-21",
+    "ad": "2025-06-04",
+    "type": "Income",
+    "amount": 50,
+    "notes": ""
+  },
+  {
+    "id": "mrylloybx9s2",
+    "bs": "2082-02-21",
+    "ad": "2025-06-04",
+    "type": "Income",
+    "amount": 300,
+    "notes": ""
   }
 ]
