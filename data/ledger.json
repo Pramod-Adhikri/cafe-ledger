@@ -44102,5 +44102,13 @@
     "type": "Income",
     "amount": 1480,
     "notes": ""
+  },
+  {
+    "id": "mrymu669kel9",
+    "bs": "2082-03-32",
+    "ad": "2025-07-16",
+    "type": "Income",
+    "amount": 2435,
+    "notes": ""
   }
 ]
