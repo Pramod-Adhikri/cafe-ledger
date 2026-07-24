@@ -44742,5 +44742,13 @@
     "type": "Expense",
     "amount": 2005,
     "notes": ""
+  },
+  {
+    "id": "mryntwanjd3i",
+    "bs": "2082-04-19",
+    "ad": "2025-08-04",
+    "type": "Income",
+    "amount": 1815,
+    "notes": ""
   }
 ]
