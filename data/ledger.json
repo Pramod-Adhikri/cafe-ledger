@@ -39222,5 +39222,21 @@
     "type": "Income",
     "amount": 180,
     "notes": ""
+  },
+  {
+    "id": "mryisc2rdwca",
+    "bs": "2081-12-27",
+    "ad": "2025-04-09",
+    "type": "Income",
+    "amount": 170,
+    "notes": ""
+  },
+  {
+    "id": "mryisk5f1rb8",
+    "bs": "2081-12-28",
+    "ad": "2025-04-10",
+    "type": "Expense",
+    "amount": 1080,
+    "notes": ""
   }
 ]
