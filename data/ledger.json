@@ -44902,5 +44902,13 @@
     "type": "Expense",
     "amount": 3024,
     "notes": ""
+  },
+  {
+    "id": "mryny75duvvt",
+    "bs": "2082-04-26",
+    "ad": "2025-08-11",
+    "type": "Income",
+    "amount": 1245,
+    "notes": ""
   }
 ]
