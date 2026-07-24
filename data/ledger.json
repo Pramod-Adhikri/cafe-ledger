@@ -40566,5 +40566,13 @@
     "type": "Income",
     "amount": 1965,
     "notes": ""
+  },
+  {
+    "id": "mryk0faulffs",
+    "bs": "2082-01-20",
+    "ad": "2025-05-03",
+    "type": "Expense",
+    "amount": 5480,
+    "notes": ""
   }
 ]
