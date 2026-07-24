@@ -47118,5 +47118,13 @@
     "type": "Income",
     "amount": 1050,
     "notes": ""
+  },
+  {
+    "id": "mrysaomalpej",
+    "bs": "2082-07-23",
+    "ad": "2025-11-09",
+    "type": "Income",
+    "amount": 5480,
+    "notes": ""
   }
 ]
