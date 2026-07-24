@@ -47254,5 +47254,13 @@
     "type": "Income",
     "amount": 30,
     "notes": ""
+  },
+  {
+    "id": "mrysduw2bszx",
+    "bs": "2082-07-25",
+    "ad": "2025-11-11",
+    "type": "Income",
+    "amount": 330,
+    "notes": ""
   }
 ]
