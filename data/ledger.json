@@ -46510,5 +46510,21 @@
     "type": "Income",
     "amount": 2465,
     "notes": ""
+  },
+  {
+    "id": "mryrwxtyzy5r",
+    "bs": "2082-06-30",
+    "ad": "2025-10-16",
+    "type": "Income",
+    "amount": 170,
+    "notes": ""
+  },
+  {
+    "id": "mryrx65gark7",
+    "bs": "2082-06-30",
+    "ad": "2025-10-16",
+    "type": "Income",
+    "amount": 2170,
+    "notes": ""
   }
 ]
