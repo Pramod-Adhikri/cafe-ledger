@@ -44366,5 +44366,13 @@
     "type": "Income",
     "amount": 2885,
     "notes": ""
+  },
+  {
+    "id": "mryn66phnk3r",
+    "bs": "2082-04-08",
+    "ad": "2025-07-24",
+    "type": "Income",
+    "amount": 6540,
+    "notes": ""
   }
 ]
