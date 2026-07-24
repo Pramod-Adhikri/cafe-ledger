@@ -46470,5 +46470,13 @@
     "type": "Income",
     "amount": 775,
     "notes": ""
+  },
+  {
+    "id": "mryrwdfltbxp",
+    "bs": "2082-06-29",
+    "ad": "2025-10-15",
+    "type": "Expense",
+    "amount": 1810,
+    "notes": ""
   }
 ]
