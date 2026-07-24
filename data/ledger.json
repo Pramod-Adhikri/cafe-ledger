@@ -40062,5 +40062,13 @@
     "type": "Income",
     "amount": 2020,
     "notes": ""
+  },
+  {
+    "id": "mryjlxaqeoi8",
+    "bs": "2082-01-12",
+    "ad": "2025-04-25",
+    "type": "Income",
+    "amount": 130,
+    "notes": ""
   }
 ]
