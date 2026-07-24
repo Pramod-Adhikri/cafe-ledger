@@ -42310,5 +42310,13 @@
     "type": "Income",
     "amount": 550,
     "notes": ""
+  },
+  {
+    "id": "mrylou0148og",
+    "bs": "2082-02-24",
+    "ad": "2025-06-07",
+    "type": "Income",
+    "amount": 1040,
+    "notes": ""
   }
 ]
