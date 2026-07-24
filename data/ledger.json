@@ -38742,5 +38742,13 @@
     "type": "Expense",
     "amount": 3300,
     "notes": ""
+  },
+  {
+    "id": "mryicyu0305n",
+    "bs": "2081-12-19",
+    "ad": "2025-04-01",
+    "type": "Income",
+    "amount": 4390,
+    "notes": ""
   }
 ]
