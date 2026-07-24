@@ -42478,5 +42478,13 @@
     "type": "Income",
     "amount": 4000,
     "notes": ""
+  },
+  {
+    "id": "mrylvqs2y13y",
+    "bs": "2082-02-28",
+    "ad": "2025-06-11",
+    "type": "Income",
+    "amount": 15000,
+    "notes": ""
   }
 ]
