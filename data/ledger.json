@@ -42350,5 +42350,13 @@
     "type": "Income",
     "amount": 2075,
     "notes": ""
+  },
+  {
+    "id": "mryls74exotl",
+    "bs": "2082-02-25",
+    "ad": "2025-06-08",
+    "type": "Income",
+    "amount": 1630,
+    "notes": ""
   }
 ]
