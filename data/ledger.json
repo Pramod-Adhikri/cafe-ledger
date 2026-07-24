@@ -39582,5 +39582,13 @@
     "type": "Income",
     "amount": 3570,
     "notes": ""
+  },
+  {
+    "id": "mryj4sce6m1p",
+    "bs": "2082-01-01",
+    "ad": "2025-04-14",
+    "type": "Income",
+    "amount": 2230,
+    "notes": ""
   }
 ]
