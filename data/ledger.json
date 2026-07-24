@@ -39334,5 +39334,21 @@
     "type": "Expense",
     "amount": 2525,
     "notes": ""
+  },
+  {
+    "id": "mryiu08v81r8",
+    "bs": "2081-12-28",
+    "ad": "2025-04-10",
+    "type": "Expense",
+    "amount": 2350,
+    "notes": ""
+  },
+  {
+    "id": "mryiu15w7njk",
+    "bs": "2081-12-28",
+    "ad": "2025-04-10",
+    "type": "Expense",
+    "amount": 770,
+    "notes": ""
   }
 ]
