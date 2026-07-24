@@ -47358,5 +47358,13 @@
     "type": "Income",
     "amount": 730,
     "notes": ""
+  },
+  {
+    "id": "mrysg3g1oqbq",
+    "bs": "2082-07-28",
+    "ad": "2025-11-14",
+    "type": "Income",
+    "amount": 2770,
+    "notes": ""
   }
 ]
