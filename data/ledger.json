@@ -38454,5 +38454,13 @@
     "type": "Expense",
     "amount": 7000,
     "notes": "895"
+  },
+  {
+    "id": "mryi3t012fmu",
+    "bs": "2083-04-08",
+    "ad": "2026-07-24",
+    "type": "Income",
+    "amount": 240,
+    "notes": ""
   }
 ]
