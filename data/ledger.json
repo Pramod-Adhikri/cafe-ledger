@@ -43686,5 +43686,13 @@
     "type": "Expense",
     "amount": 1870,
     "notes": ""
+  },
+  {
+    "id": "mrymklidiy9u",
+    "bs": "2082-03-19",
+    "ad": "2025-07-03",
+    "type": "Income",
+    "amount": 1855,
+    "notes": ""
   }
 ]
