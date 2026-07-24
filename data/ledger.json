@@ -46582,5 +46582,13 @@
     "type": "Income",
     "amount": 250,
     "notes": ""
+  },
+  {
+    "id": "mryryimp4yip",
+    "bs": "2082-07-02",
+    "ad": "2025-10-19",
+    "type": "Expense",
+    "amount": 2005,
+    "notes": ""
   }
 ]
