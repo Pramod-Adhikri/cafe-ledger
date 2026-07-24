@@ -43662,5 +43662,13 @@
     "type": "Expense",
     "amount": 1180,
     "notes": ""
+  },
+  {
+    "id": "mrymk66cusvi",
+    "bs": "2082-03-18",
+    "ad": "2025-07-02",
+    "type": "Income",
+    "amount": 2910,
+    "notes": ""
   }
 ]
