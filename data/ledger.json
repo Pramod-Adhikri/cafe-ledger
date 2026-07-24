@@ -47238,5 +47238,21 @@
     "type": "Income",
     "amount": 670,
     "notes": ""
+  },
+  {
+    "id": "mrysdi3x44ev",
+    "bs": "2082-07-25",
+    "ad": "2025-11-11",
+    "type": "Income",
+    "amount": 240,
+    "notes": ""
+  },
+  {
+    "id": "mrysdjfcvpme",
+    "bs": "2082-07-25",
+    "ad": "2025-11-11",
+    "type": "Income",
+    "amount": 30,
+    "notes": ""
   }
 ]
