@@ -45790,5 +45790,13 @@
     "type": "Income",
     "amount": 120,
     "notes": ""
+  },
+  {
+    "id": "mryr9y1yzuyb",
+    "bs": "2082-05-31",
+    "ad": "2025-09-16",
+    "type": "Income",
+    "amount": 1895,
+    "notes": ""
   }
 ]
