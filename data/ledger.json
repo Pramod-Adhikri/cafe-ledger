@@ -39990,5 +39990,13 @@
     "type": "Income",
     "amount": 300,
     "notes": ""
+  },
+  {
+    "id": "mryji6hdtuxx",
+    "bs": "2082-01-10",
+    "ad": "2025-04-23",
+    "type": "Income",
+    "amount": 2680,
+    "notes": ""
   }
 ]
