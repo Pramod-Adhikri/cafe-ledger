@@ -45526,5 +45526,13 @@
     "type": "Expense",
     "amount": 1720,
     "notes": ""
+  },
+  {
+    "id": "mryr315eruhl",
+    "bs": "2082-05-18",
+    "ad": "2025-09-03",
+    "type": "Income",
+    "amount": 4825,
+    "notes": ""
   }
 ]
