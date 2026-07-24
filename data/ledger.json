@@ -42774,5 +42774,21 @@
     "type": "Income",
     "amount": 100,
     "notes": ""
+  },
+  {
+    "id": "mrym0pye1pyb",
+    "bs": "2082-02-31",
+    "ad": "2025-06-14",
+    "type": "Income",
+    "amount": 170,
+    "notes": ""
+  },
+  {
+    "id": "mrym0seertwt",
+    "bs": "2082-02-31",
+    "ad": "2025-06-14",
+    "type": "Income",
+    "amount": 200,
+    "notes": ""
   }
 ]
