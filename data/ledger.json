@@ -39142,5 +39142,21 @@
     "type": "Expense",
     "amount": 740,
     "notes": ""
+  },
+  {
+    "id": "mryiqvnnmxsw",
+    "bs": "2081-12-27",
+    "ad": "2025-04-09",
+    "type": "Expense",
+    "amount": 370,
+    "notes": ""
+  },
+  {
+    "id": "mryiqwhd2ufi",
+    "bs": "2081-12-27",
+    "ad": "2025-04-09",
+    "type": "Expense",
+    "amount": 65,
+    "notes": ""
   }
 ]
