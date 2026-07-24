@@ -42414,5 +42414,13 @@
     "type": "Income",
     "amount": 2450,
     "notes": ""
+  },
+  {
+    "id": "mrylu9116unf",
+    "bs": "2082-02-27",
+    "ad": "2025-06-10",
+    "type": "Income",
+    "amount": 870,
+    "notes": ""
   }
 ]
