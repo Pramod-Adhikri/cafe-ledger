@@ -38670,5 +38670,13 @@
     "type": "Income",
     "amount": 3855,
     "notes": ""
+  },
+  {
+    "id": "mryiavuie02j",
+    "bs": "2081-12-17",
+    "ad": "2025-03-30",
+    "type": "Income",
+    "amount": 2270,
+    "notes": ""
   }
 ]
