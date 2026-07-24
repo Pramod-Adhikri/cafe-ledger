@@ -38902,5 +38902,13 @@
     "type": "Income",
     "amount": 2770,
     "notes": ""
+  },
+  {
+    "id": "mryil1cspttp",
+    "bs": "2081-12-22",
+    "ad": "2025-04-04",
+    "type": "Income",
+    "amount": 4130,
+    "notes": ""
   }
 ]
