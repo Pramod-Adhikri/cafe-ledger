@@ -44230,5 +44230,13 @@
     "type": "Income",
     "amount": 2550,
     "notes": ""
+  },
+  {
+    "id": "mryn2hnl8lzl",
+    "bs": "2082-04-05",
+    "ad": "2025-07-21",
+    "type": "Expense",
+    "amount": 1860,
+    "notes": ""
   }
 ]
