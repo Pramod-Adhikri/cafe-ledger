@@ -43494,5 +43494,13 @@
     "type": "Income",
     "amount": 500,
     "notes": ""
+  },
+  {
+    "id": "mrymgu36s3l8",
+    "bs": "2082-03-13",
+    "ad": "2025-06-27",
+    "type": "Income",
+    "amount": 4740,
+    "notes": ""
   }
 ]
