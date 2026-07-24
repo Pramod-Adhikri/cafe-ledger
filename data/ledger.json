@@ -46198,5 +46198,13 @@
     "type": "Income",
     "amount": 3720,
     "notes": ""
+  },
+  {
+    "id": "mryrnz25aipg",
+    "bs": "2082-06-13",
+    "ad": "2025-09-29",
+    "type": "Income",
+    "amount": 6290,
+    "notes": ""
   }
 ]
