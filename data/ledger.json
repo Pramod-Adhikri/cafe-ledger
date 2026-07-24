@@ -38630,5 +38630,13 @@
     "type": "Income",
     "amount": 550,
     "notes": ""
+  },
+  {
+    "id": "mryi9phq5z3g",
+    "bs": "2081-12-16",
+    "ad": "2025-03-29",
+    "type": "Income",
+    "amount": 3295,
+    "notes": ""
   }
 ]
