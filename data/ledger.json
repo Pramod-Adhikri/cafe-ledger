@@ -45646,5 +45646,13 @@
     "type": "Expense",
     "amount": 800,
     "notes": ""
+  },
+  {
+    "id": "mryr5vfmej6z",
+    "bs": "2082-05-21",
+    "ad": "2025-09-06",
+    "type": "Income",
+    "amount": 2420,
+    "notes": ""
   }
 ]
