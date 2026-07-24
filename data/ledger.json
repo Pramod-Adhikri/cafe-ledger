@@ -42222,5 +42222,13 @@
     "type": "Income",
     "amount": 1690,
     "notes": ""
+  },
+  {
+    "id": "mrylmerpn53v",
+    "bs": "2082-02-22",
+    "ad": "2025-06-05",
+    "type": "Income",
+    "amount": 7665,
+    "notes": ""
   }
 ]
