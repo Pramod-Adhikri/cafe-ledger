@@ -41222,5 +41222,13 @@
     "type": "Expense",
     "amount": 5000,
     "notes": ""
+  },
+  {
+    "id": "mrykmiy8zqum",
+    "bs": "2082-02-08",
+    "ad": "2025-05-22",
+    "type": "Expense",
+    "amount": 2470,
+    "notes": ""
   }
 ]
