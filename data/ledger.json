@@ -41974,5 +41974,13 @@
     "type": "Income",
     "amount": 2100,
     "notes": ""
+  },
+  {
+    "id": "mryliwb2jqad",
+    "bs": "2082-02-19",
+    "ad": "2025-06-02",
+    "type": "Expense",
+    "amount": 2390,
+    "notes": ""
   }
 ]
