@@ -43782,5 +43782,13 @@
     "type": "Income",
     "amount": 4105,
     "notes": ""
+  },
+  {
+    "id": "mrymmjbwohl5",
+    "bs": "2082-03-23",
+    "ad": "2025-07-07",
+    "type": "Expense",
+    "amount": 880,
+    "notes": ""
   }
 ]
