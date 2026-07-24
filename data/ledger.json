@@ -40998,5 +40998,13 @@
     "type": "Expense",
     "amount": 12348,
     "notes": ""
+  },
+  {
+    "id": "mrykg3xdai02",
+    "bs": "2082-02-02",
+    "ad": "2025-05-16",
+    "type": "Income",
+    "amount": 3895,
+    "notes": ""
   }
 ]
