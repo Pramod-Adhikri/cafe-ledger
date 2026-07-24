@@ -45614,5 +45614,13 @@
     "type": "Income",
     "amount": 8090,
     "notes": ""
+  },
+  {
+    "id": "mryr4ykvsdld",
+    "bs": "2082-05-20",
+    "ad": "2025-09-05",
+    "type": "Income",
+    "amount": 400,
+    "notes": ""
   }
 ]
