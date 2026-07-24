@@ -42910,5 +42910,21 @@
     "type": "Income",
     "amount": 440,
     "notes": ""
+  },
+  {
+    "id": "mrym2b1fvxsv",
+    "bs": "2082-03-01",
+    "ad": "2025-06-15",
+    "type": "Income",
+    "amount": 430,
+    "notes": ""
+  },
+  {
+    "id": "mrym2c7li3xi",
+    "bs": "2082-03-01",
+    "ad": "2025-06-15",
+    "type": "Income",
+    "amount": 30,
+    "notes": ""
   }
 ]
