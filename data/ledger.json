@@ -46382,5 +46382,21 @@
     "type": "Income",
     "amount": 1120,
     "notes": ""
+  },
+  {
+    "id": "mryruk631nqo",
+    "bs": "2082-06-26",
+    "ad": "2025-10-12",
+    "type": "Income",
+    "amount": 590,
+    "notes": ""
+  },
+  {
+    "id": "mryruofreclz",
+    "bs": "2082-06-26",
+    "ad": "2025-10-12",
+    "type": "Expense",
+    "amount": 3930,
+    "notes": ""
   }
 ]
