@@ -44262,5 +44262,13 @@
     "type": "Income",
     "amount": 400,
     "notes": ""
+  },
+  {
+    "id": "mryn2rg4vodh",
+    "bs": "2082-04-05",
+    "ad": "2025-07-21",
+    "type": "Income",
+    "amount": 1820,
+    "notes": ""
   }
 ]
