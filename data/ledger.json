@@ -40182,5 +40182,13 @@
     "type": "Income",
     "amount": 830,
     "notes": ""
+  },
+  {
+    "id": "mryjoulx7yf8",
+    "bs": "2082-01-14",
+    "ad": "2025-04-27",
+    "type": "Income",
+    "amount": 2130,
+    "notes": ""
   }
 ]
