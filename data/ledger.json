@@ -41510,5 +41510,13 @@
     "type": "Income",
     "amount": 440,
     "notes": ""
+  },
+  {
+    "id": "mrykssl6arci",
+    "bs": "2082-02-12",
+    "ad": "2025-05-26",
+    "type": "Expense",
+    "amount": 7500,
+    "notes": ""
   }
 ]
