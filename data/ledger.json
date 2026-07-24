@@ -42982,5 +42982,13 @@
     "type": "Expense",
     "amount": 2800,
     "notes": ""
+  },
+  {
+    "id": "mrym4571wa57",
+    "bs": "2082-03-02",
+    "ad": "2025-06-16",
+    "type": "Expense",
+    "amount": 620,
+    "notes": ""
   }
 ]
