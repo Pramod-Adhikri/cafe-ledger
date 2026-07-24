@@ -38886,5 +38886,13 @@
     "type": "Income",
     "amount": 2120,
     "notes": ""
+  },
+  {
+    "id": "mryikmobme9d",
+    "bs": "2081-12-22",
+    "ad": "2025-04-04",
+    "type": "Expense",
+    "amount": 9610,
+    "notes": ""
   }
 ]
