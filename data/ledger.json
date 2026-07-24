@@ -45038,5 +45038,13 @@
     "type": "Expense",
     "amount": 11010,
     "notes": ""
+  },
+  {
+    "id": "mryo119hk1vt",
+    "bs": "2082-04-30",
+    "ad": "2025-08-15",
+    "type": "Expense",
+    "amount": 20800,
+    "notes": ""
   }
 ]
