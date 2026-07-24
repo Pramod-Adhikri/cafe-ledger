@@ -38966,5 +38966,21 @@
     "type": "Income",
     "amount": 710,
     "notes": ""
+  },
+  {
+    "id": "mryimz2suggf",
+    "bs": "2081-12-23",
+    "ad": "2025-04-05",
+    "type": "Income",
+    "amount": 345,
+    "notes": ""
+  },
+  {
+    "id": "mryin06jodk7",
+    "bs": "2081-12-23",
+    "ad": "2025-04-05",
+    "type": "Income",
+    "amount": 990,
+    "notes": ""
   }
 ]
