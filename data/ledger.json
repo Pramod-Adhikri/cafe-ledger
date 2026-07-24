@@ -46062,5 +46062,13 @@
     "type": "Income",
     "amount": 1490,
     "notes": ""
+  },
+  {
+    "id": "mryrkle76fzk",
+    "bs": "2082-06-09",
+    "ad": "2025-09-25",
+    "type": "Expense",
+    "amount": 690,
+    "notes": ""
   }
 ]
