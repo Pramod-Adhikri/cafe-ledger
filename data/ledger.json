@@ -46662,5 +46662,13 @@
     "type": "Income",
     "amount": 1960,
     "notes": ""
+  },
+  {
+    "id": "mrys01ot7t6p",
+    "bs": "2082-07-07",
+    "ad": "2025-10-24",
+    "type": "Income",
+    "amount": 360,
+    "notes": ""
   }
 ]
