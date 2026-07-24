@@ -43254,5 +43254,13 @@
     "type": "Income",
     "amount": 2510,
     "notes": ""
+  },
+  {
+    "id": "mrymasuuhbc5",
+    "bs": "2082-03-07",
+    "ad": "2025-06-21",
+    "type": "Income",
+    "amount": 2590,
+    "notes": ""
   }
 ]
