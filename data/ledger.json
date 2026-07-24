@@ -40806,5 +40806,13 @@
     "type": "Expense",
     "amount": 530,
     "notes": ""
+  },
+  {
+    "id": "mryk9ulrt2xx",
+    "bs": "2082-01-28",
+    "ad": "2025-05-11",
+    "type": "Expense",
+    "amount": 320,
+    "notes": ""
   }
 ]
