@@ -40494,5 +40494,21 @@
     "type": "Expense",
     "amount": 5480,
     "notes": ""
+  },
+  {
+    "id": "mryjxxdtxlc4",
+    "bs": "2082-01-19",
+    "ad": "2025-05-02",
+    "type": "Expense",
+    "amount": 3900,
+    "notes": ""
+  },
+  {
+    "id": "mryjxzmpp33g",
+    "bs": "2082-01-19",
+    "ad": "2025-05-02",
+    "type": "Expense",
+    "amount": 5470,
+    "notes": ""
   }
 ]
