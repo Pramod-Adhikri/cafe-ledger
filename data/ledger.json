@@ -43022,5 +43022,13 @@
     "type": "Income",
     "amount": 1970,
     "notes": ""
+  },
+  {
+    "id": "mrym6626apvl",
+    "bs": "2082-03-03",
+    "ad": "2025-06-17",
+    "type": "Expense",
+    "amount": 1595,
+    "notes": ""
   }
 ]
