@@ -45230,5 +45230,21 @@
     "type": "Income",
     "amount": 6755,
     "notes": ""
+  },
+  {
+    "id": "mryqwy8ndj5i",
+    "bs": "2082-05-05",
+    "ad": "2025-08-21",
+    "type": "Income",
+    "amount": 395,
+    "notes": ""
+  },
+  {
+    "id": "mryqx6pn75gy",
+    "bs": "2082-05-06",
+    "ad": "2025-08-22",
+    "type": "Expense",
+    "amount": 1130,
+    "notes": ""
   }
 ]
