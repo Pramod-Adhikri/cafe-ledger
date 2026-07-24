@@ -41998,5 +41998,13 @@
     "type": "Expense",
     "amount": 3240,
     "notes": ""
+  },
+  {
+    "id": "mryljaql61mt",
+    "bs": "2082-02-19",
+    "ad": "2025-06-02",
+    "type": "Income",
+    "amount": 7085,
+    "notes": ""
   }
 ]
