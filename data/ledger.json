@@ -43814,5 +43814,13 @@
     "type": "Expense",
     "amount": 55,
     "notes": ""
+  },
+  {
+    "id": "mrymn31kepjr",
+    "bs": "2082-03-23",
+    "ad": "2025-07-07",
+    "type": "Expense",
+    "amount": 10100,
+    "notes": ""
   }
 ]
