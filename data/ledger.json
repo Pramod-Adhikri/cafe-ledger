@@ -38694,5 +38694,13 @@
     "type": "Income",
     "amount": 1660,
     "notes": ""
+  },
+  {
+    "id": "mryiboyzibpr",
+    "bs": "2081-12-18",
+    "ad": "2025-03-31",
+    "type": "Income",
+    "amount": 1210,
+    "notes": ""
   }
 ]
