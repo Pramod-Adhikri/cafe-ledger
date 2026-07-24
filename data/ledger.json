@@ -42686,5 +42686,37 @@
     "type": "Income",
     "amount": 60,
     "notes": ""
+  },
+  {
+    "id": "mrym0b37u5ts",
+    "bs": "2082-02-31",
+    "ad": "2025-06-14",
+    "type": "Income",
+    "amount": 750,
+    "notes": ""
+  },
+  {
+    "id": "mrym0bkv29fc",
+    "bs": "2082-02-31",
+    "ad": "2025-06-14",
+    "type": "Income",
+    "amount": 90,
+    "notes": ""
+  },
+  {
+    "id": "mrym0c6flhn1",
+    "bs": "2082-02-31",
+    "ad": "2025-06-14",
+    "type": "Income",
+    "amount": 60,
+    "notes": ""
+  },
+  {
+    "id": "mrym0d2wdtup",
+    "bs": "2082-02-31",
+    "ad": "2025-06-14",
+    "type": "Income",
+    "amount": 1500,
+    "notes": ""
   }
 ]
