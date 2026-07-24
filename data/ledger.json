@@ -38462,5 +38462,13 @@
     "type": "Income",
     "amount": 240,
     "notes": ""
+  },
+  {
+    "id": "mryi421nps6l",
+    "bs": "2083-04-08",
+    "ad": "2026-07-24",
+    "type": "Income",
+    "amount": 1675,
+    "notes": ""
   }
 ]
