@@ -46598,5 +46598,13 @@
     "type": "Income",
     "amount": 1530,
     "notes": ""
+  },
+  {
+    "id": "mryryu6oz0aa",
+    "bs": "2082-07-02",
+    "ad": "2025-10-19",
+    "type": "Income",
+    "amount": 1300,
+    "notes": ""
   }
 ]
