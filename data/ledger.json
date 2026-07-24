@@ -41038,5 +41038,13 @@
     "type": "Income",
     "amount": 2640,
     "notes": ""
+  },
+  {
+    "id": "mrykgp40mtet",
+    "bs": "2082-02-03",
+    "ad": "2025-05-17",
+    "type": "Income",
+    "amount": 120,
+    "notes": ""
   }
 ]
