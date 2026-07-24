@@ -45030,5 +45030,13 @@
     "type": "Income",
     "amount": 1640,
     "notes": ""
+  },
+  {
+    "id": "mryo0xibiawa",
+    "bs": "2082-04-30",
+    "ad": "2025-08-15",
+    "type": "Expense",
+    "amount": 11010,
+    "notes": ""
   }
 ]
