@@ -45894,5 +45894,13 @@
     "type": "Income",
     "amount": 2020,
     "notes": ""
+  },
+  {
+    "id": "mryrdlkl09st",
+    "bs": "2082-06-03",
+    "ad": "2025-09-19",
+    "type": "Expense",
+    "amount": 18205,
+    "notes": ""
   }
 ]
