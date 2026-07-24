@@ -43774,5 +43774,13 @@
     "type": "Expense",
     "amount": 3955,
     "notes": ""
+  },
+  {
+    "id": "mrymmant8ipc",
+    "bs": "2082-03-22",
+    "ad": "2025-07-06",
+    "type": "Income",
+    "amount": 4105,
+    "notes": ""
   }
 ]
