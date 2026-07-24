@@ -39870,5 +39870,13 @@
     "type": "Income",
     "amount": 1675,
     "notes": ""
+  },
+  {
+    "id": "mryjcake1qiy",
+    "bs": "2082-01-07",
+    "ad": "2025-04-20",
+    "type": "Income",
+    "amount": 2860,
+    "notes": ""
   }
 ]
