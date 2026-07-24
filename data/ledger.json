@@ -44206,5 +44206,13 @@
     "type": "Income",
     "amount": 1810,
     "notes": ""
+  },
+  {
+    "id": "mryn21vcdrds",
+    "bs": "2082-04-04",
+    "ad": "2025-07-20",
+    "type": "Expense",
+    "amount": 6000,
+    "notes": ""
   }
 ]
