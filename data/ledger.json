@@ -40822,5 +40822,13 @@
     "type": "Income",
     "amount": 1630,
     "notes": ""
+  },
+  {
+    "id": "mrykabxkincd",
+    "bs": "2082-01-29",
+    "ad": "2025-05-12",
+    "type": "Expense",
+    "amount": 1605,
+    "notes": ""
   }
 ]
