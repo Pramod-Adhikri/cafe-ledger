@@ -41542,5 +41542,13 @@
     "type": "Expense",
     "amount": 1390,
     "notes": ""
+  },
+  {
+    "id": "mryla66ygy6s",
+    "bs": "2082-02-13",
+    "ad": "2025-05-27",
+    "type": "Income",
+    "amount": 1170,
+    "notes": ""
   }
 ]
