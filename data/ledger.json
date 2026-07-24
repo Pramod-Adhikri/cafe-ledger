@@ -42070,5 +42070,21 @@
     "type": "Income",
     "amount": 260,
     "notes": ""
+  },
+  {
+    "id": "mrylkwk20dix",
+    "bs": "2082-02-21",
+    "ad": "2025-06-04",
+    "type": "Income",
+    "amount": 200,
+    "notes": ""
+  },
+  {
+    "id": "mrylkxrynkeg",
+    "bs": "2082-02-21",
+    "ad": "2025-06-04",
+    "type": "Income",
+    "amount": 390,
+    "notes": ""
   }
 ]
