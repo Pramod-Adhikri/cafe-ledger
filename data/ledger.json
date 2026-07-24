@@ -42318,5 +42318,13 @@
     "type": "Income",
     "amount": 1040,
     "notes": ""
+  },
+  {
+    "id": "mrylppu307c3",
+    "bs": "2082-02-25",
+    "ad": "2025-06-08",
+    "type": "Expense",
+    "amount": 1280,
+    "notes": ""
   }
 ]
