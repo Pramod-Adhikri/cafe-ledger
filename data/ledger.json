@@ -44782,5 +44782,13 @@
     "type": "Income",
     "amount": 1805,
     "notes": ""
+  },
+  {
+    "id": "mrynusmnf77y",
+    "bs": "2082-04-20",
+    "ad": "2025-08-05",
+    "type": "Income",
+    "amount": 2375,
+    "notes": ""
   }
 ]
