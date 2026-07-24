@@ -44342,5 +44342,13 @@
     "type": "Income",
     "amount": 1555,
     "notes": ""
+  },
+  {
+    "id": "mryn5h522p3i",
+    "bs": "2082-04-07",
+    "ad": "2025-07-23",
+    "type": "Income",
+    "amount": 2070,
+    "notes": ""
   }
 ]
