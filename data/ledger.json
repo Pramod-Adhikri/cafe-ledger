@@ -41246,5 +41246,29 @@
     "type": "Income",
     "amount": 170,
     "notes": ""
+  },
+  {
+    "id": "mrykmxbotim5",
+    "bs": "2082-02-08",
+    "ad": "2025-05-22",
+    "type": "Income",
+    "amount": 700,
+    "notes": ""
+  },
+  {
+    "id": "mrykmyrauw8s",
+    "bs": "2082-02-08",
+    "ad": "2025-05-22",
+    "type": "Income",
+    "amount": 340,
+    "notes": ""
+  },
+  {
+    "id": "mrykmzddx5lu",
+    "bs": "2082-02-08",
+    "ad": "2025-05-22",
+    "type": "Income",
+    "amount": 400,
+    "notes": ""
   }
 ]
