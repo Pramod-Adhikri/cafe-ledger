@@ -43310,5 +43310,13 @@
     "type": "Income",
     "amount": 2535,
     "notes": ""
+  },
+  {
+    "id": "mrymclbw27w1",
+    "bs": "2082-03-09",
+    "ad": "2025-06-23",
+    "type": "Expense",
+    "amount": 12010,
+    "notes": ""
   }
 ]
