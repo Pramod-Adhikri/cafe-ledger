@@ -39214,5 +39214,13 @@
     "type": "Income",
     "amount": 940,
     "notes": ""
+  },
+  {
+    "id": "mryisarzdw4u",
+    "bs": "2081-12-27",
+    "ad": "2025-04-09",
+    "type": "Income",
+    "amount": 180,
+    "notes": ""
   }
 ]
