@@ -41494,5 +41494,13 @@
     "type": "Income",
     "amount": 4710,
     "notes": ""
+  },
+  {
+    "id": "mrykscrerszi",
+    "bs": "2082-02-12",
+    "ad": "2025-05-26",
+    "type": "Expense",
+    "amount": 730,
+    "notes": ""
   }
 ]
