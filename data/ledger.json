@@ -44142,5 +44142,13 @@
     "type": "Expense",
     "amount": 470,
     "notes": ""
+  },
+  {
+    "id": "mrymz770l80m",
+    "bs": "2082-04-02",
+    "ad": "2025-07-18",
+    "type": "Income",
+    "amount": 1510,
+    "notes": ""
   }
 ]
