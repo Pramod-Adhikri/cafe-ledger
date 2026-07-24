@@ -44542,5 +44542,21 @@
     "type": "Income",
     "amount": 5365,
     "notes": ""
+  },
+  {
+    "id": "mrynaowg4uky",
+    "bs": "2082-04-13",
+    "ad": "2025-07-29",
+    "type": "Income",
+    "amount": 300,
+    "notes": ""
+  },
+  {
+    "id": "mrynapqiq3tb",
+    "bs": "2082-04-13",
+    "ad": "2025-07-29",
+    "type": "Income",
+    "amount": 215,
+    "notes": ""
   }
 ]
