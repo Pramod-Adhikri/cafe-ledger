@@ -44662,5 +44662,13 @@
     "type": "Income",
     "amount": 2415,
     "notes": ""
+  },
+  {
+    "id": "mrynscnc36a3",
+    "bs": "2082-04-17",
+    "ad": "2025-08-02",
+    "type": "Expense",
+    "amount": 6000,
+    "notes": ""
   }
 ]
