@@ -43830,5 +43830,13 @@
     "type": "Income",
     "amount": 1320,
     "notes": ""
+  },
+  {
+    "id": "mrymnapair1d",
+    "bs": "2082-03-23",
+    "ad": "2025-07-07",
+    "type": "Income",
+    "amount": 4655,
+    "notes": ""
   }
 ]
