@@ -46614,5 +46614,13 @@
     "type": "Income",
     "amount": 2995,
     "notes": ""
+  },
+  {
+    "id": "mryrz57395m5",
+    "bs": "2082-07-03",
+    "ad": "2025-10-20",
+    "type": "Expense",
+    "amount": 3610,
+    "notes": ""
   }
 ]
