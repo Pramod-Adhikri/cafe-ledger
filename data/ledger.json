@@ -41630,5 +41630,13 @@
     "type": "Income",
     "amount": 340,
     "notes": ""
+  },
+  {
+    "id": "mryle0lqjcsf",
+    "bs": "2082-02-15",
+    "ad": "2025-05-29",
+    "type": "Income",
+    "amount": 3130,
+    "notes": ""
   }
 ]
