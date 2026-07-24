@@ -41046,5 +41046,13 @@
     "type": "Income",
     "amount": 120,
     "notes": ""
+  },
+  {
+    "id": "mrykgyb8pg63",
+    "bs": "2082-02-04",
+    "ad": "2025-05-18",
+    "type": "Expense",
+    "amount": 540,
+    "notes": ""
   }
 ]
