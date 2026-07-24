@@ -41486,5 +41486,13 @@
     "type": "Income",
     "amount": 250,
     "notes": ""
+  },
+  {
+    "id": "mryks06z1bdt",
+    "bs": "2082-02-11",
+    "ad": "2025-05-25",
+    "type": "Income",
+    "amount": 4710,
+    "notes": ""
   }
 ]
