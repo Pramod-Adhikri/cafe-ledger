@@ -43430,5 +43430,13 @@
     "type": "Income",
     "amount": 3365,
     "notes": ""
+  },
+  {
+    "id": "mrymfoclelgx",
+    "bs": "2082-03-12",
+    "ad": "2025-06-26",
+    "type": "Expense",
+    "amount": 3620,
+    "notes": ""
   }
 ]
