@@ -43990,5 +43990,13 @@
     "type": "Expense",
     "amount": 3500,
     "notes": ""
+  },
+  {
+    "id": "mrymryzy57f0",
+    "bs": "2082-03-29",
+    "ad": "2025-07-13",
+    "type": "Expense",
+    "amount": 1485,
+    "notes": ""
   }
 ]
