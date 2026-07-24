@@ -41238,5 +41238,13 @@
     "type": "Income",
     "amount": 2445,
     "notes": ""
+  },
+  {
+    "id": "mrykmvvozhqf",
+    "bs": "2082-02-08",
+    "ad": "2025-05-22",
+    "type": "Income",
+    "amount": 170,
+    "notes": ""
   }
 ]
