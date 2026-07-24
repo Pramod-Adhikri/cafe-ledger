@@ -45966,5 +45966,13 @@
     "type": "Income",
     "amount": 120,
     "notes": ""
+  },
+  {
+    "id": "mryriesgnmiy",
+    "bs": "2082-06-06",
+    "ad": "2025-09-22",
+    "type": "Income",
+    "amount": 1600,
+    "notes": ""
   }
 ]
