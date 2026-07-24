@@ -46766,5 +46766,13 @@
     "type": "Income",
     "amount": 1190,
     "notes": ""
+  },
+  {
+    "id": "mrys27dpen55",
+    "bs": "2082-07-11",
+    "ad": "2025-10-28",
+    "type": "Expense",
+    "amount": 22000,
+    "notes": ""
   }
 ]
