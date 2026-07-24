@@ -44214,5 +44214,13 @@
     "type": "Expense",
     "amount": 6000,
     "notes": ""
+  },
+  {
+    "id": "mryn23yt4rig",
+    "bs": "2082-04-04",
+    "ad": "2025-07-20",
+    "type": "Expense",
+    "amount": 1525,
+    "notes": ""
   }
 ]
