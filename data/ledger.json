@@ -43838,5 +43838,13 @@
     "type": "Income",
     "amount": 4655,
     "notes": ""
+  },
+  {
+    "id": "mrymnjlkbe71",
+    "bs": "2082-03-24",
+    "ad": "2025-07-08",
+    "type": "Expense",
+    "amount": 2120,
+    "notes": ""
   }
 ]
