@@ -43238,5 +43238,13 @@
     "type": "Income",
     "amount": 5200,
     "notes": ""
+  },
+  {
+    "id": "mrymalq84hnh",
+    "bs": "2082-03-07",
+    "ad": "2025-06-21",
+    "type": "Expense",
+    "amount": 6000,
+    "notes": ""
   }
 ]
