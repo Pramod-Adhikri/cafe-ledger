@@ -42278,5 +42278,13 @@
     "type": "Income",
     "amount": 2895,
     "notes": ""
+  },
+  {
+    "id": "mrylny3i30ju",
+    "bs": "2082-02-23",
+    "ad": "2025-06-06",
+    "type": "Income",
+    "amount": 155,
+    "notes": ""
   }
 ]
