@@ -39526,5 +39526,29 @@
     "type": "Income",
     "amount": 870,
     "notes": ""
+  },
+  {
+    "id": "mryj2avnrnd9",
+    "bs": "2081-12-31",
+    "ad": "2025-04-13",
+    "type": "Income",
+    "amount": 30,
+    "notes": ""
+  },
+  {
+    "id": "mryj2c9i01ha",
+    "bs": "2081-12-31",
+    "ad": "2025-04-13",
+    "type": "Income",
+    "amount": 100,
+    "notes": ""
+  },
+  {
+    "id": "mryj2dqvcj16",
+    "bs": "2081-12-31",
+    "ad": "2025-04-13",
+    "type": "Income",
+    "amount": 150,
+    "notes": ""
   }
 ]
