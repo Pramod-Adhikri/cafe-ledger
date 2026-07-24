@@ -38838,5 +38838,13 @@
     "type": "Income",
     "amount": 240,
     "notes": ""
+  },
+  {
+    "id": "mryigkqvxu6c",
+    "bs": "2081-12-21",
+    "ad": "2025-04-03",
+    "type": "Income",
+    "amount": 4710,
+    "notes": ""
   }
 ]
