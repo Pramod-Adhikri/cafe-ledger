@@ -43950,5 +43950,13 @@
     "type": "Expense",
     "amount": 3030,
     "notes": ""
+  },
+  {
+    "id": "mrymq60hotxh",
+    "bs": "2082-03-27",
+    "ad": "2025-07-11",
+    "type": "Income",
+    "amount": 2795,
+    "notes": ""
   }
 ]
