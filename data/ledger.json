@@ -40214,5 +40214,13 @@
     "type": "Expense",
     "amount": 1280,
     "notes": ""
+  },
+  {
+    "id": "mryjpxib5glc",
+    "bs": "2082-01-15",
+    "ad": "2025-04-28",
+    "type": "Expense",
+    "amount": 3310,
+    "notes": ""
   }
 ]
