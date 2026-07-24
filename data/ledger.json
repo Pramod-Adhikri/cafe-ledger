@@ -40542,5 +40542,13 @@
     "type": "Income",
     "amount": 1060,
     "notes": ""
+  },
+  {
+    "id": "mryjzi1lileq",
+    "bs": "2082-01-20",
+    "ad": "2025-05-03",
+    "type": "Income",
+    "amount": 1530,
+    "notes": ""
   }
 ]
