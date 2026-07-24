@@ -39814,5 +39814,13 @@
     "type": "Expense",
     "amount": 10010,
     "notes": ""
+  },
+  {
+    "id": "mryjaqcj5ura",
+    "bs": "2082-01-06",
+    "ad": "2025-04-19",
+    "type": "Expense",
+    "amount": 100,
+    "notes": ""
   }
 ]
