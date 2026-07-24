@@ -47054,5 +47054,13 @@
     "type": "Income",
     "amount": 3360,
     "notes": ""
+  },
+  {
+    "id": "mrys95ihegzs",
+    "bs": "2082-07-20",
+    "ad": "2025-11-06",
+    "type": "Expense",
+    "amount": 688,
+    "notes": ""
   }
 ]
