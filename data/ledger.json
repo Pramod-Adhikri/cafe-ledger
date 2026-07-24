@@ -45142,5 +45142,13 @@
     "type": "Expense",
     "amount": 990,
     "notes": ""
+  },
+  {
+    "id": "mryquxv99rpi",
+    "bs": "2082-05-03",
+    "ad": "2025-08-19",
+    "type": "Income",
+    "amount": 3210,
+    "notes": ""
   }
 ]
