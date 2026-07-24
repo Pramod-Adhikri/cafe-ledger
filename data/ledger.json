@@ -45510,5 +45510,13 @@
     "type": "Income",
     "amount": 2855,
     "notes": ""
+  },
+  {
+    "id": "mryr2pgnnui2",
+    "bs": "2082-05-17",
+    "ad": "2025-09-02",
+    "type": "Income",
+    "amount": 130,
+    "notes": ""
   }
 ]
