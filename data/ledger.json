@@ -42494,5 +42494,13 @@
     "type": "Expense",
     "amount": 480,
     "notes": ""
+  },
+  {
+    "id": "mrylw7kvxlxg",
+    "bs": "2082-02-29",
+    "ad": "2025-06-12",
+    "type": "Income",
+    "amount": 1415,
+    "notes": ""
   }
 ]
