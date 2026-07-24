@@ -44422,5 +44422,21 @@
     "type": "Income",
     "amount": 4445,
     "notes": ""
+  },
+  {
+    "id": "mryn7axs9x06",
+    "bs": "2082-04-10",
+    "ad": "2025-07-26",
+    "type": "Income",
+    "amount": 550,
+    "notes": ""
+  },
+  {
+    "id": "mryn7c9olx8y",
+    "bs": "2082-04-10",
+    "ad": "2025-07-26",
+    "type": "Income",
+    "amount": 400,
+    "notes": ""
   }
 ]
