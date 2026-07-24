@@ -46790,5 +46790,21 @@
     "type": "Expense",
     "amount": 2200,
     "notes": ""
+  },
+  {
+    "id": "mrys2bvizru9",
+    "bs": "2082-07-11",
+    "ad": "2025-10-28",
+    "type": "Expense",
+    "amount": 840,
+    "notes": ""
+  },
+  {
+    "id": "mrys2hw0k2jq",
+    "bs": "2082-07-11",
+    "ad": "2025-10-28",
+    "type": "Income",
+    "amount": 3605,
+    "notes": ""
   }
 ]
