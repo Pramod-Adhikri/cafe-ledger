@@ -41638,5 +41638,13 @@
     "type": "Income",
     "amount": 3130,
     "notes": ""
+  },
+  {
+    "id": "mrylece271jc",
+    "bs": "2082-02-16",
+    "ad": "2025-05-30",
+    "type": "Expense",
+    "amount": 2795,
+    "notes": ""
   }
 ]
