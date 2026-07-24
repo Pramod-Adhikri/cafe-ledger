@@ -42614,5 +42614,13 @@
     "type": "Income",
     "amount": 1200,
     "notes": ""
+  },
+  {
+    "id": "mrym00ezy408",
+    "bs": "2082-02-31",
+    "ad": "2025-06-14",
+    "type": "Income",
+    "amount": 390,
+    "notes": ""
   }
 ]
