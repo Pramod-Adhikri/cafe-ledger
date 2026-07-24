@@ -46078,5 +46078,13 @@
     "type": "Income",
     "amount": 1940,
     "notes": ""
+  },
+  {
+    "id": "mryrl5hn528r",
+    "bs": "2082-06-09",
+    "ad": "2025-09-25",
+    "type": "Income",
+    "amount": 60,
+    "notes": ""
   }
 ]
