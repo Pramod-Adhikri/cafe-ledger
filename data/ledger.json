@@ -38862,5 +38862,13 @@
     "type": "Income",
     "amount": 770,
     "notes": ""
+  },
+  {
+    "id": "mryiioe4wilt",
+    "bs": "2081-12-21",
+    "ad": "2025-04-03",
+    "type": "Income",
+    "amount": 5945,
+    "notes": ""
   }
 ]
