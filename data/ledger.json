@@ -40638,5 +40638,13 @@
     "type": "Income",
     "amount": 720,
     "notes": ""
+  },
+  {
+    "id": "mryk4wptnnuv",
+    "bs": "2082-01-23",
+    "ad": "2025-05-06",
+    "type": "Income",
+    "amount": 3130,
+    "notes": ""
   }
 ]
