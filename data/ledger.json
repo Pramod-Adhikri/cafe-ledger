@@ -40014,5 +40014,13 @@
     "type": "Expense",
     "amount": 2855,
     "notes": ""
+  },
+  {
+    "id": "mryjkocinvfs",
+    "bs": "2082-01-11",
+    "ad": "2025-04-24",
+    "type": "Income",
+    "amount": 1655,
+    "notes": ""
   }
 ]
