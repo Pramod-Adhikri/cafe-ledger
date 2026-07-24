@@ -43158,5 +43158,13 @@
     "type": "Income",
     "amount": 1170,
     "notes": ""
+  },
+  {
+    "id": "mrym8feomafs",
+    "bs": "2082-03-05",
+    "ad": "2025-06-19",
+    "type": "Income",
+    "amount": 410,
+    "notes": ""
   }
 ]
