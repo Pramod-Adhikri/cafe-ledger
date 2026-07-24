@@ -40886,5 +40886,13 @@
     "type": "Income",
     "amount": 3015,
     "notes": ""
+  },
+  {
+    "id": "mrykciep106a",
+    "bs": "2082-01-31",
+    "ad": "2025-05-14",
+    "type": "Expense",
+    "amount": 2305,
+    "notes": ""
   }
 ]
