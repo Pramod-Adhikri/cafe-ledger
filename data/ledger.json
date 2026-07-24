@@ -43262,5 +43262,13 @@
     "type": "Income",
     "amount": 2590,
     "notes": ""
+  },
+  {
+    "id": "mrymb4oyobtp",
+    "bs": "2082-03-08",
+    "ad": "2025-06-22",
+    "type": "Expense",
+    "amount": 1535,
+    "notes": ""
   }
 ]
