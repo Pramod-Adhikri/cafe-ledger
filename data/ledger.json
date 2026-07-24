@@ -44766,5 +44766,13 @@
     "type": "Income",
     "amount": 2680,
     "notes": ""
+  },
+  {
+    "id": "mrynuduj5bbe",
+    "bs": "2082-04-20",
+    "ad": "2025-08-05",
+    "type": "Expense",
+    "amount": 2255,
+    "notes": ""
   }
 ]
