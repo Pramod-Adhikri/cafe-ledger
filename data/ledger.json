@@ -44086,5 +44086,13 @@
     "type": "Income",
     "amount": 3265,
     "notes": ""
+  },
+  {
+    "id": "mrymtuhnnjd7",
+    "bs": "2082-03-32",
+    "ad": "2025-07-16",
+    "type": "Expense",
+    "amount": 1420,
+    "notes": ""
   }
 ]
