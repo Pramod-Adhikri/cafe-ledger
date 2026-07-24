@@ -38998,5 +38998,21 @@
     "type": "Income",
     "amount": 3225,
     "notes": ""
+  },
+  {
+    "id": "mryino86xttv",
+    "bs": "2081-12-24",
+    "ad": "2025-04-06",
+    "type": "Income",
+    "amount": 450,
+    "notes": ""
+  },
+  {
+    "id": "mryio03qm1ox",
+    "bs": "2081-12-24",
+    "ad": "2025-04-06",
+    "type": "Income",
+    "amount": 3545,
+    "notes": ""
   }
 ]
