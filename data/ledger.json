@@ -44574,5 +44574,13 @@
     "type": "Income",
     "amount": 4120,
     "notes": ""
+  },
+  {
+    "id": "mrynb9y3vovu",
+    "bs": "2082-04-14",
+    "ad": "2025-07-30",
+    "type": "Expense",
+    "amount": 3055,
+    "notes": ""
   }
 ]
