@@ -38446,5 +38446,13 @@
     "type": "Expense",
     "amount": 820,
     "notes": ""
+  },
+  {
+    "id": "mryi3q5gz4da",
+    "bs": "2083-04-08",
+    "ad": "2026-07-24",
+    "type": "Expense",
+    "amount": 7000,
+    "notes": "895"
   }
 ]
