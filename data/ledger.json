@@ -44486,5 +44486,21 @@
     "type": "Income",
     "amount": 2380,
     "notes": ""
+  },
+  {
+    "id": "mryn8zugaeob",
+    "bs": "2082-04-12",
+    "ad": "2025-07-28",
+    "type": "Income",
+    "amount": 100,
+    "notes": ""
+  },
+  {
+    "id": "mryn96vn94zg",
+    "bs": "2082-04-12",
+    "ad": "2025-07-28",
+    "type": "Income",
+    "amount": 2025,
+    "notes": ""
   }
 ]
