@@ -47278,5 +47278,29 @@
     "type": "Income",
     "amount": 35,
     "notes": ""
+  },
+  {
+    "id": "mryse4l0vh2m",
+    "bs": "2082-07-25",
+    "ad": "2025-11-11",
+    "type": "Income",
+    "amount": 320,
+    "notes": ""
+  },
+  {
+    "id": "mryse59vhsgo",
+    "bs": "2082-07-25",
+    "ad": "2025-11-11",
+    "type": "Income",
+    "amount": 30,
+    "notes": ""
+  },
+  {
+    "id": "mryse96ol5sl",
+    "bs": "2082-07-25",
+    "ad": "2025-11-11",
+    "type": "Expense",
+    "amount": 1600,
+    "notes": ""
   }
 ]
