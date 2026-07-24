@@ -39454,5 +39454,13 @@
     "type": "Income",
     "amount": 1275,
     "notes": ""
+  },
+  {
+    "id": "mryixjwykqip",
+    "bs": "2081-12-30",
+    "ad": "2025-04-12",
+    "type": "Expense",
+    "amount": 5400,
+    "notes": ""
   }
 ]
