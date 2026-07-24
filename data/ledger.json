@@ -47334,5 +47334,13 @@
     "type": "Expense",
     "amount": 2711,
     "notes": ""
+  },
+  {
+    "id": "mrysfdnvgo4u",
+    "bs": "2082-07-26",
+    "ad": "2025-11-12",
+    "type": "Income",
+    "amount": 4465,
+    "notes": ""
   }
 ]
