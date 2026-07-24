@@ -45774,5 +45774,13 @@
     "type": "Expense",
     "amount": 1890,
     "notes": ""
+  },
+  {
+    "id": "mryr9pz93672",
+    "bs": "2082-05-31",
+    "ad": "2025-09-16",
+    "type": "Income",
+    "amount": 2320,
+    "notes": ""
   }
 ]
