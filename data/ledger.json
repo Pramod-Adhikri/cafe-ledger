@@ -42230,5 +42230,13 @@
     "type": "Income",
     "amount": 7665,
     "notes": ""
+  },
+  {
+    "id": "mrylmkflyes3",
+    "bs": "2082-02-22",
+    "ad": "2025-06-05",
+    "type": "Income",
+    "amount": 295,
+    "notes": ""
   }
 ]
