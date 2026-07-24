@@ -43070,5 +43070,13 @@
     "type": "Income",
     "amount": 1520,
     "notes": ""
+  },
+  {
+    "id": "mrym73k3bmin",
+    "bs": "2082-03-04",
+    "ad": "2025-06-18",
+    "type": "Expense",
+    "amount": 3025,
+    "notes": ""
   }
 ]
