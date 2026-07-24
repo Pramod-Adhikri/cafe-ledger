@@ -41134,5 +41134,13 @@
     "type": "Income",
     "amount": 1500,
     "notes": ""
+  },
+  {
+    "id": "mrykj1skai4h",
+    "bs": "2082-02-06",
+    "ad": "2025-05-20",
+    "type": "Income",
+    "amount": 1360,
+    "notes": ""
   }
 ]
