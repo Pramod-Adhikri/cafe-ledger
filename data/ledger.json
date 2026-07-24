@@ -46422,5 +46422,13 @@
     "type": "Income",
     "amount": 1135,
     "notes": ""
+  },
+  {
+    "id": "mryrvfltr6bh",
+    "bs": "2082-06-27",
+    "ad": "2025-10-13",
+    "type": "Income",
+    "amount": 5580,
+    "notes": ""
   }
 ]
