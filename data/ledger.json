@@ -40614,5 +40614,13 @@
     "type": "Expense",
     "amount": 7370,
     "notes": ""
+  },
+  {
+    "id": "mryk44h78don",
+    "bs": "2082-01-22",
+    "ad": "2025-05-05",
+    "type": "Income",
+    "amount": 5840,
+    "notes": ""
   }
 ]
