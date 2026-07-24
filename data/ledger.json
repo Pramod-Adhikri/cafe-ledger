@@ -45006,5 +45006,13 @@
     "type": "Income",
     "amount": 2345,
     "notes": ""
+  },
+  {
+    "id": "mryo08v72dsr",
+    "bs": "2082-04-29",
+    "ad": "2025-08-14",
+    "type": "Income",
+    "amount": 1200,
+    "notes": ""
   }
 ]
