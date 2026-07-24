@@ -40702,5 +40702,13 @@
     "type": "Income",
     "amount": 2145,
     "notes": ""
+  },
+  {
+    "id": "mryk7fhqtfow",
+    "bs": "2082-01-25",
+    "ad": "2025-05-08",
+    "type": "Income",
+    "amount": 2545,
+    "notes": ""
   }
 ]
