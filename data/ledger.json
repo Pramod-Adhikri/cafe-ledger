@@ -42662,5 +42662,29 @@
     "type": "Income",
     "amount": 150,
     "notes": ""
+  },
+  {
+    "id": "mrym089kseyv",
+    "bs": "2082-02-31",
+    "ad": "2025-06-14",
+    "type": "Income",
+    "amount": 800,
+    "notes": ""
+  },
+  {
+    "id": "mrym09toejfn",
+    "bs": "2082-02-31",
+    "ad": "2025-06-14",
+    "type": "Income",
+    "amount": 2750,
+    "notes": ""
+  },
+  {
+    "id": "mrym0acn798a",
+    "bs": "2082-02-31",
+    "ad": "2025-06-14",
+    "type": "Income",
+    "amount": 60,
+    "notes": ""
   }
 ]
