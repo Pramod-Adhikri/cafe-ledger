@@ -44910,5 +44910,13 @@
     "type": "Income",
     "amount": 1245,
     "notes": ""
+  },
+  {
+    "id": "mrynyhavelwm",
+    "bs": "2082-04-27",
+    "ad": "2025-08-12",
+    "type": "Expense",
+    "amount": 1725,
+    "notes": ""
   }
 ]
