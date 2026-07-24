@@ -47142,5 +47142,13 @@
     "type": "Income",
     "amount": 2370,
     "notes": ""
+  },
+  {
+    "id": "mrysb7oc7mhz",
+    "bs": "2082-07-24",
+    "ad": "2025-11-10",
+    "type": "Income",
+    "amount": 170,
+    "notes": ""
   }
 ]
