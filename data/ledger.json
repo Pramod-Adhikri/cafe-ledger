@@ -41470,5 +41470,21 @@
     "type": "Expense",
     "amount": 2011,
     "notes": ""
+  },
+  {
+    "id": "mrykrgwx6ra8",
+    "bs": "2082-02-11",
+    "ad": "2025-05-25",
+    "type": "Expense",
+    "amount": 6000,
+    "notes": ""
+  },
+  {
+    "id": "mrykrn8atdos",
+    "bs": "2082-02-11",
+    "ad": "2025-05-25",
+    "type": "Income",
+    "amount": 250,
+    "notes": ""
   }
 ]
