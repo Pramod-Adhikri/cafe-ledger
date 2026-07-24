@@ -41374,5 +41374,13 @@
     "type": "Income",
     "amount": 3265,
     "notes": ""
+  },
+  {
+    "id": "mrykone0fbeg",
+    "bs": "2082-02-09",
+    "ad": "2025-05-23",
+    "type": "Expense",
+    "amount": 250,
+    "notes": ""
   }
 ]
