@@ -42438,5 +42438,13 @@
     "type": "Expense",
     "amount": 1925,
     "notes": ""
+  },
+  {
+    "id": "mryluu6qx0fd",
+    "bs": "2082-02-28",
+    "ad": "2025-06-11",
+    "type": "Income",
+    "amount": 3250,
+    "notes": ""
   }
 ]
