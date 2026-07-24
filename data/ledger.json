@@ -46726,5 +46726,13 @@
     "type": "Expense",
     "amount": 390,
     "notes": ""
+  },
+  {
+    "id": "mrys167wggr1",
+    "bs": "2082-07-10",
+    "ad": "2025-10-27",
+    "type": "Income",
+    "amount": 1560,
+    "notes": ""
   }
 ]
