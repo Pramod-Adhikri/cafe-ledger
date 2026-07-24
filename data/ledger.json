@@ -39078,5 +39078,13 @@
     "type": "Income",
     "amount": 4150,
     "notes": ""
+  },
+  {
+    "id": "mryipzjvlvf4",
+    "bs": "2081-12-26",
+    "ad": "2025-04-08",
+    "type": "Income",
+    "amount": 2575,
+    "notes": ""
   }
 ]
