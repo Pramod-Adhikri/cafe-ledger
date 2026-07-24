@@ -42302,5 +42302,13 @@
     "type": "Expense",
     "amount": 285,
     "notes": ""
+  },
+  {
+    "id": "mrylors7p0jf",
+    "bs": "2082-02-24",
+    "ad": "2025-06-07",
+    "type": "Income",
+    "amount": 550,
+    "notes": ""
   }
 ]
