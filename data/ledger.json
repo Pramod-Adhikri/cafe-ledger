@@ -39158,5 +39158,29 @@
     "type": "Expense",
     "amount": 65,
     "notes": ""
+  },
+  {
+    "id": "mryiqxj4hjdu",
+    "bs": "2081-12-27",
+    "ad": "2025-04-09",
+    "type": "Expense",
+    "amount": 890,
+    "notes": ""
+  },
+  {
+    "id": "mryiqykj95aq",
+    "bs": "2081-12-27",
+    "ad": "2025-04-09",
+    "type": "Expense",
+    "amount": 50,
+    "notes": ""
+  },
+  {
+    "id": "mryiqzavldqs",
+    "bs": "2081-12-27",
+    "ad": "2025-04-09",
+    "type": "Expense",
+    "amount": 65,
+    "notes": ""
   }
 ]
