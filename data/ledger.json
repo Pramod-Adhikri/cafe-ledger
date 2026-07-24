@@ -42342,5 +42342,13 @@
     "type": "Expense",
     "amount": 6000,
     "notes": ""
+  },
+  {
+    "id": "mrylqesc3apr",
+    "bs": "2082-02-25",
+    "ad": "2025-06-08",
+    "type": "Income",
+    "amount": 2075,
+    "notes": ""
   }
 ]
