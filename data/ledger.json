@@ -41142,5 +41142,21 @@
     "type": "Income",
     "amount": 1360,
     "notes": ""
+  },
+  {
+    "id": "mrykj3zcqzsr",
+    "bs": "2082-02-06",
+    "ad": "2025-05-20",
+    "type": "Income",
+    "amount": 350,
+    "notes": ""
+  },
+  {
+    "id": "mrykj4txypfo",
+    "bs": "2082-02-06",
+    "ad": "2025-05-20",
+    "type": "Income",
+    "amount": 150,
+    "notes": ""
   }
 ]
