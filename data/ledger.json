@@ -40910,5 +40910,13 @@
     "type": "Income",
     "amount": 3980,
     "notes": ""
+  },
+  {
+    "id": "mrykefyn15g8",
+    "bs": "2082-02-01",
+    "ad": "2025-05-15",
+    "type": "Expense",
+    "amount": 1300,
+    "notes": ""
   }
 ]
