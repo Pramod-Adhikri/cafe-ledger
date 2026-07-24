@@ -47102,5 +47102,13 @@
     "type": "Expense",
     "amount": 3000,
     "notes": ""
+  },
+  {
+    "id": "mrysabnkqohp",
+    "bs": "2082-07-23",
+    "ad": "2025-11-09",
+    "type": "Expense",
+    "amount": 1875,
+    "notes": ""
   }
 ]
