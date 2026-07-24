@@ -42430,5 +42430,13 @@
     "type": "Income",
     "amount": 1675,
     "notes": ""
+  },
+  {
+    "id": "mryluld7mlt2",
+    "bs": "2082-02-28",
+    "ad": "2025-06-11",
+    "type": "Expense",
+    "amount": 1925,
+    "notes": ""
   }
 ]
