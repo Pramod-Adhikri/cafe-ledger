@@ -42526,5 +42526,13 @@
     "type": "Income",
     "amount": 3080,
     "notes": ""
+  },
+  {
+    "id": "mrylwn88nrti",
+    "bs": "2082-02-29",
+    "ad": "2025-06-12",
+    "type": "Income",
+    "amount": 1910,
+    "notes": ""
   }
 ]
