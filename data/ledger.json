@@ -41806,5 +41806,13 @@
     "type": "Income",
     "amount": 160,
     "notes": ""
+  },
+  {
+    "id": "mrylh88z5c66",
+    "bs": "2082-02-18",
+    "ad": "2025-06-01",
+    "type": "Income",
+    "amount": 60,
+    "notes": ""
   }
 ]
