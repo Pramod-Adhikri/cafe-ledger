@@ -46254,5 +46254,13 @@
     "type": "Income",
     "amount": 960,
     "notes": ""
+  },
+  {
+    "id": "mryrqptpg2no",
+    "bs": "2082-06-22",
+    "ad": "2025-10-08",
+    "type": "Expense",
+    "amount": 630,
+    "notes": ""
   }
 ]
