@@ -43278,5 +43278,13 @@
     "type": "Income",
     "amount": 3205,
     "notes": ""
+  },
+  {
+    "id": "mrymbfml88iu",
+    "bs": "2082-03-08",
+    "ad": "2025-06-22",
+    "type": "Income",
+    "amount": 1410,
+    "notes": ""
   }
 ]
