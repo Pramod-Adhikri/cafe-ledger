@@ -39558,5 +39558,13 @@
     "type": "Income",
     "amount": 1315,
     "notes": ""
+  },
+  {
+    "id": "mryj4b1nmp4m",
+    "bs": "2082-01-01",
+    "ad": "2025-04-14",
+    "type": "Expense",
+    "amount": 7340,
+    "notes": ""
   }
 ]
