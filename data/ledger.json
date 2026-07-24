@@ -41622,5 +41622,13 @@
     "type": "Income",
     "amount": 1320,
     "notes": ""
+  },
+  {
+    "id": "mryldxqlphki",
+    "bs": "2082-02-15",
+    "ad": "2025-05-29",
+    "type": "Income",
+    "amount": 340,
+    "notes": ""
   }
 ]
