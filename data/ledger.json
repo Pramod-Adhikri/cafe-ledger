@@ -40966,5 +40966,13 @@
     "type": "Income",
     "amount": 4280,
     "notes": ""
+  },
+  {
+    "id": "mrykfl1115hl",
+    "bs": "2082-02-02",
+    "ad": "2025-05-16",
+    "type": "Expense",
+    "amount": 2370,
+    "notes": ""
   }
 ]
