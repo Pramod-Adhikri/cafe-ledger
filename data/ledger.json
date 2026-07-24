@@ -42422,5 +42422,13 @@
     "type": "Income",
     "amount": 870,
     "notes": ""
+  },
+  {
+    "id": "mrylubwn8viu",
+    "bs": "2082-02-27",
+    "ad": "2025-06-10",
+    "type": "Income",
+    "amount": 1675,
+    "notes": ""
   }
 ]
