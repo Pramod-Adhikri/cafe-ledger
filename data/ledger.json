@@ -44726,5 +44726,21 @@
     "type": "Income",
     "amount": 2610,
     "notes": ""
+  },
+  {
+    "id": "mryntkgdqxrx",
+    "bs": "2082-04-18",
+    "ad": "2025-08-03",
+    "type": "Income",
+    "amount": 330,
+    "notes": ""
+  },
+  {
+    "id": "mryntqt2widm",
+    "bs": "2082-04-19",
+    "ad": "2025-08-04",
+    "type": "Expense",
+    "amount": 2005,
+    "notes": ""
   }
 ]
