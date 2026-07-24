@@ -39574,5 +39574,13 @@
     "type": "Income",
     "amount": 650,
     "notes": ""
+  },
+  {
+    "id": "mryj4ktu1v9g",
+    "bs": "2082-01-01",
+    "ad": "2025-04-14",
+    "type": "Income",
+    "amount": 3570,
+    "notes": ""
   }
 ]
