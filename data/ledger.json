@@ -42830,5 +42830,13 @@
     "type": "Income",
     "amount": 900,
     "notes": ""
+  },
+  {
+    "id": "mrym1xshegsu",
+    "bs": "2082-03-01",
+    "ad": "2025-06-15",
+    "type": "Income",
+    "amount": 300,
+    "notes": ""
   }
 ]
