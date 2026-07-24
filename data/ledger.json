@@ -40670,5 +40670,13 @@
     "type": "Expense",
     "amount": 7048,
     "notes": ""
+  },
+  {
+    "id": "mryk6ekmyvpc",
+    "bs": "2082-01-24",
+    "ad": "2025-05-07",
+    "type": "Income",
+    "amount": 1790,
+    "notes": ""
   }
 ]
