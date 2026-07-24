@@ -46862,5 +46862,21 @@
     "type": "Income",
     "amount": 770,
     "notes": ""
+  },
+  {
+    "id": "mrys4dmkk4fv",
+    "bs": "2082-07-13",
+    "ad": "2025-10-30",
+    "type": "Income",
+    "amount": 840,
+    "notes": ""
+  },
+  {
+    "id": "mrys4lrnvzfh",
+    "bs": "2082-07-14",
+    "ad": "2025-10-31",
+    "type": "Expense",
+    "amount": 1005,
+    "notes": ""
   }
 ]
