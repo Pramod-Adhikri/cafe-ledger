@@ -43718,5 +43718,13 @@
     "type": "Income",
     "amount": 3010,
     "notes": ""
+  },
+  {
+    "id": "mryml7plnemd",
+    "bs": "2082-03-20",
+    "ad": "2025-07-04",
+    "type": "Expense",
+    "amount": 1525,
+    "notes": ""
   }
 ]
