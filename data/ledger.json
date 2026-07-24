@@ -41302,5 +41302,13 @@
     "type": "Income",
     "amount": 10000,
     "notes": ""
+  },
+  {
+    "id": "mrykne6nlpdv",
+    "bs": "2082-02-08",
+    "ad": "2025-05-22",
+    "type": "Income",
+    "amount": 200,
+    "notes": ""
   }
 ]
