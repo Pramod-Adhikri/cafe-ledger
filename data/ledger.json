@@ -45902,5 +45902,13 @@
     "type": "Expense",
     "amount": 18205,
     "notes": ""
+  },
+  {
+    "id": "mryrdrtigldq",
+    "bs": "2082-06-03",
+    "ad": "2025-09-19",
+    "type": "Income",
+    "amount": 6495,
+    "notes": ""
   }
 ]
