@@ -46974,5 +46974,13 @@
     "type": "Income",
     "amount": 2090,
     "notes": ""
+  },
+  {
+    "id": "mrys71n556jl",
+    "bs": "2082-07-17",
+    "ad": "2025-11-03",
+    "type": "Expense",
+    "amount": 4090,
+    "notes": ""
   }
 ]
