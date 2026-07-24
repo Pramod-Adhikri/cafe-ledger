@@ -44646,5 +44646,13 @@
     "type": "Expense",
     "amount": 3000,
     "notes": ""
+  },
+  {
+    "id": "mryns5binn7r",
+    "bs": "2082-04-17",
+    "ad": "2025-08-02",
+    "type": "Expense",
+    "amount": 1225,
+    "notes": ""
   }
 ]
