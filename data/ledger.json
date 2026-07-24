@@ -44182,5 +44182,13 @@
     "type": "Income",
     "amount": 5856,
     "notes": ""
+  },
+  {
+    "id": "mryn05zp3qh5",
+    "bs": "2082-04-02",
+    "ad": "2025-07-18",
+    "type": "Income",
+    "amount": 1280,
+    "notes": ""
   }
 ]
