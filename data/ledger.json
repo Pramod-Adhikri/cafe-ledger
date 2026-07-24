@@ -44110,5 +44110,13 @@
     "type": "Income",
     "amount": 2435,
     "notes": ""
+  },
+  {
+    "id": "mrymymldqge3",
+    "bs": "2082-04-01",
+    "ad": "2025-07-17",
+    "type": "Expense",
+    "amount": 3665,
+    "notes": ""
   }
 ]
