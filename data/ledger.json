@@ -45830,5 +45830,13 @@
     "type": "Income",
     "amount": 6045,
     "notes": ""
+  },
+  {
+    "id": "mryrb81br11v",
+    "bs": "2082-06-01",
+    "ad": "2025-09-17",
+    "type": "Income",
+    "amount": 125,
+    "notes": ""
   }
 ]
