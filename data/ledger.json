@@ -44126,5 +44126,13 @@
     "type": "Income",
     "amount": 1725,
     "notes": ""
+  },
+  {
+    "id": "mrymyu1wg6pu",
+    "bs": "2082-04-01",
+    "ad": "2025-07-17",
+    "type": "Income",
+    "amount": 3300,
+    "notes": ""
   }
 ]
