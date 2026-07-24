@@ -47190,5 +47190,21 @@
     "type": "Income",
     "amount": 1940,
     "notes": ""
+  },
+  {
+    "id": "mryscqbn3ted",
+    "bs": "2082-07-25",
+    "ad": "2025-11-11",
+    "type": "Income",
+    "amount": 100,
+    "notes": ""
+  },
+  {
+    "id": "mryscszon4xt",
+    "bs": "2082-07-25",
+    "ad": "2025-11-11",
+    "type": "Income",
+    "amount": 240,
+    "notes": ""
   }
 ]
