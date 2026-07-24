@@ -41126,5 +41126,13 @@
     "type": "Expense",
     "amount": 2300,
     "notes": ""
+  },
+  {
+    "id": "mrykiru6wqlu",
+    "bs": "2082-02-06",
+    "ad": "2025-05-20",
+    "type": "Income",
+    "amount": 1500,
+    "notes": ""
   }
 ]
