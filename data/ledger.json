@@ -40918,5 +40918,13 @@
     "type": "Expense",
     "amount": 1300,
     "notes": ""
+  },
+  {
+    "id": "mrykel56o360",
+    "bs": "2082-02-01",
+    "ad": "2025-05-15",
+    "type": "Income",
+    "amount": 1300,
+    "notes": ""
   }
 ]
