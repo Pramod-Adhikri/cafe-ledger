@@ -42582,5 +42582,13 @@
     "type": "Income",
     "amount": 400,
     "notes": ""
+  },
+  {
+    "id": "mrylyu5ut3vm",
+    "bs": "2082-02-30",
+    "ad": "2025-06-13",
+    "type": "Income",
+    "amount": 7935,
+    "notes": ""
   }
 ]
