@@ -44150,5 +44150,13 @@
     "type": "Income",
     "amount": 1510,
     "notes": ""
+  },
+  {
+    "id": "mrymzibs99t8",
+    "bs": "2082-04-02",
+    "ad": "2025-07-18",
+    "type": "Income",
+    "amount": 400,
+    "notes": ""
   }
 ]
