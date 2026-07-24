@@ -39254,5 +39254,13 @@
     "type": "Income",
     "amount": 60,
     "notes": ""
+  },
+  {
+    "id": "mryit11z20u8",
+    "bs": "2081-12-28",
+    "ad": "2025-04-10",
+    "type": "Income",
+    "amount": 6700,
+    "notes": ""
   }
 ]
