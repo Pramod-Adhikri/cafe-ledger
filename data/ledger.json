@@ -39182,5 +39182,13 @@
     "type": "Expense",
     "amount": 65,
     "notes": ""
+  },
+  {
+    "id": "mryirp131000",
+    "bs": "2081-12-27",
+    "ad": "2025-04-09",
+    "type": "Income",
+    "amount": 2380,
+    "notes": ""
   }
 ]
