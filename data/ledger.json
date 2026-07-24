@@ -40758,5 +40758,13 @@
     "type": "Income",
     "amount": 165,
     "notes": ""
+  },
+  {
+    "id": "mryk901shrss",
+    "bs": "2082-01-27",
+    "ad": "2025-05-10",
+    "type": "Income",
+    "amount": 3815,
+    "notes": ""
   }
 ]
