@@ -47310,5 +47310,21 @@
     "type": "Expense",
     "amount": 3765,
     "notes": ""
+  },
+  {
+    "id": "mrysf1gwrtpr",
+    "bs": "2082-07-26",
+    "ad": "2025-11-12",
+    "type": "Income",
+    "amount": 1485,
+    "notes": ""
+  },
+  {
+    "id": "mrysf24fozz0",
+    "bs": "2082-07-26",
+    "ad": "2025-11-12",
+    "type": "Income",
+    "amount": 60,
+    "notes": ""
   }
 ]
