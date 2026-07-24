@@ -42390,5 +42390,13 @@
     "type": "Income",
     "amount": 1480,
     "notes": ""
+  },
+  {
+    "id": "mryltahknxdq",
+    "bs": "2082-02-26",
+    "ad": "2025-06-09",
+    "type": "Income",
+    "amount": 1600,
+    "notes": ""
   }
 ]
