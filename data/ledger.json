@@ -44814,13 +44814,5 @@
     "type": "Income",
     "amount": 1110,
     "notes": ""
-  },
-  {
-    "id": "mrynvis99fay",
-    "bs": "2082-04-22",
-    "ad": "2025-08-07",
-    "type": "Expense",
-    "amount": 1865,
-    "notes": ""
   }
 ]
