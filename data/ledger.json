@@ -40550,21 +40550,5 @@
     "type": "Income",
     "amount": 1530,
     "notes": ""
-  },
-  {
-    "id": "mryk0mu3tq40",
-    "bs": "2082-01-20",
-    "ad": "2025-05-03",
-    "type": "Income",
-    "amount": 7695,
-    "notes": ""
-  },
-  {
-    "id": "mryk0tvyv917",
-    "bs": "2082-01-20",
-    "ad": "2025-05-03",
-    "type": "Income",
-    "amount": 1065,
-    "notes": ""
   }
 ]
