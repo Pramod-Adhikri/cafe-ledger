@@ -44510,5 +44510,13 @@
     "type": "Expense",
     "amount": 45100,
     "notes": ""
+  },
+  {
+    "id": "mryna05bqe1n",
+    "bs": "2082-04-12",
+    "ad": "2025-07-28",
+    "type": "Income",
+    "amount": 5900,
+    "notes": ""
   }
 ]
