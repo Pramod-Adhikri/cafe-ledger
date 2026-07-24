@@ -41958,5 +41958,21 @@
     "type": "Expense",
     "amount": 3740,
     "notes": ""
+  },
+  {
+    "id": "mrylie9urywd",
+    "bs": "2082-02-18",
+    "ad": "2025-06-01",
+    "type": "Expense",
+    "amount": 430,
+    "notes": ""
+  },
+  {
+    "id": "mrylim9ri69p",
+    "bs": "2082-02-18",
+    "ad": "2025-06-01",
+    "type": "Income",
+    "amount": 2100,
+    "notes": ""
   }
 ]
