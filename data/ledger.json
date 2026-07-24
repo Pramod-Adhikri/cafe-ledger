@@ -46630,5 +46630,13 @@
     "type": "Income",
     "amount": 1970,
     "notes": ""
+  },
+  {
+    "id": "mryrzerfrdwq",
+    "bs": "2082-07-03",
+    "ad": "2025-10-20",
+    "type": "Income",
+    "amount": 1380,
+    "notes": ""
   }
 ]
