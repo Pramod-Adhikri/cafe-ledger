@@ -38926,5 +38926,21 @@
     "type": "Expense",
     "amount": 2270,
     "notes": ""
+  },
+  {
+    "id": "mryilof68157",
+    "bs": "2081-12-23",
+    "ad": "2025-04-05",
+    "type": "Income",
+    "amount": 1250,
+    "notes": ""
+  },
+  {
+    "id": "mryilp7tec11",
+    "bs": "2081-12-23",
+    "ad": "2025-04-05",
+    "type": "Income",
+    "amount": 100,
+    "notes": ""
   }
 ]
