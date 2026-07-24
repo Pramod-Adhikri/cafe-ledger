@@ -38750,5 +38750,13 @@
     "type": "Income",
     "amount": 4390,
     "notes": ""
+  },
+  {
+    "id": "mryid83j8weg",
+    "bs": "2081-12-19",
+    "ad": "2025-04-01",
+    "type": "Income",
+    "amount": 2000,
+    "notes": ""
   }
 ]
