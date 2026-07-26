@@ -88814,5 +88814,21 @@
     "type": "Income",
     "amount": 2480,
     "notes": ""
+  },
+  {
+    "id": "ms1eyxtpzuaf",
+    "bs": "2082-11-10",
+    "ad": "2026-02-22",
+    "type": "Income",
+    "amount": 1050,
+    "notes": ""
+  },
+  {
+    "id": "ms1ez6763fsz",
+    "bs": "2082-11-11",
+    "ad": "2026-02-23",
+    "type": "Expense",
+    "amount": 390,
+    "notes": ""
   }
 ]
