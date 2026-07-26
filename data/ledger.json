@@ -86006,5 +86006,13 @@
     "type": "Income",
     "amount": 2720,
     "notes": ""
+  },
+  {
+    "id": "ms1d0neq84gr",
+    "bs": "2083-08-04",
+    "ad": "2026-11-20",
+    "type": "Expense",
+    "amount": 1030,
+    "notes": ""
   }
 ]
