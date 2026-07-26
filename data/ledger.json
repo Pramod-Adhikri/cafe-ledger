@@ -89038,5 +89038,13 @@
     "type": "Income",
     "amount": 2700,
     "notes": ""
+  },
+  {
+    "id": "ms1f38214mae",
+    "bs": "2082-11-18",
+    "ad": "2026-03-02",
+    "type": "Expense",
+    "amount": 1220,
+    "notes": ""
   }
 ]
