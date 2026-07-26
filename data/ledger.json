@@ -87430,5 +87430,13 @@
     "type": "Income",
     "amount": 4115,
     "notes": ""
+  },
+  {
+    "id": "ms1dxkd898eo",
+    "bs": "2083-09-28",
+    "ad": "2027-01-12",
+    "type": "Expense",
+    "amount": 1385,
+    "notes": ""
   }
 ]
