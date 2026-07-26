@@ -88710,5 +88710,13 @@
     "type": "Income",
     "amount": 4840,
     "notes": ""
+  },
+  {
+    "id": "ms1ewx2ppvjg",
+    "bs": "2082-11-06",
+    "ad": "2026-02-18",
+    "type": "Income",
+    "amount": 5115,
+    "notes": ""
   }
 ]
