@@ -160,6 +160,7 @@
   <div class="shop-header">
     <h1>☕ Cafe Daily Ledger</h1>
     <p>Every rupee logged, dated the Nepali way.</p>
+    <p id="entryCounter" style="font-size:.75rem;color:var(--ink-soft);margin-top:2px;"></p>
   </div>
 
   <div class="excel-bar" style="border-color:var(--gold);">
@@ -435,7 +436,10 @@ function ghUiDisconnected(msg){
 }
 
 /* Fetch the current remote file. Returns {entries, sha} — entries is null if the
-   file doesn't exist yet (fresh repo), sha is null in that case too. */
+   file doesn't exist yet (fresh repo), sha is null in that case too.
+   GitHub's Contents API only inlines file content for files under 1MB; past that
+   it returns an empty content field, so we fall back to the Git Blobs API which
+   handles files up to 100MB. */
 async function ghGetFile(cfg){
   const res = await fetch(`${ghApiUrl(cfg)}?ref=${encodeURIComponent(cfg.branch)}`, {
     headers: {
@@ -451,7 +455,29 @@ async function ghGetFile(cfg){
     throw new Error(`GitHub read failed (${res.status}): ${body.slice(0,200)}`);
   }
   const data = await res.json();
-  const jsonStr = b64DecodeUnicode(data.content.replace(/\n/g,''));
+  let b64 = data.content;
+
+  if(!b64 && data.sha){
+    // File is over 1MB — Contents API omitted the body, pull it via the blob API instead.
+    const blobRes = await fetch(`https://api.github.com/repos/${cfg.owner}/${cfg.repo}/git/blobs/${data.sha}`, {
+      headers: {
+        'Authorization': `token ${cfg.token}`,
+        'Accept': 'application/vnd.github+json'
+      }
+    });
+    if(!blobRes.ok){
+      const body = await blobRes.text().catch(()=> '');
+      throw new Error(`GitHub blob read failed (${blobRes.status}): ${body.slice(0,200)}`);
+    }
+    const blobData = await blobRes.json();
+    b64 = blobData.content;
+  }
+
+  if(!b64){
+    throw new Error(`GitHub returned no content for this file (size: ${data.size ?? 'unknown'} bytes).`);
+  }
+
+  const jsonStr = b64DecodeUnicode(b64.replace(/\n/g,''));
   const parsed = JSON.parse(jsonStr);
   return {entries: Array.isArray(parsed) ? parsed : (parsed.entries || []), sha: data.sha};
 }
@@ -878,47 +904,67 @@ function groupBy(keyFn){
   });
   return map;
 }
+let showAllTransactions = false;
 function renderTransactions(){
   const body = document.getElementById('txBody');
   const empty = document.getElementById('txEmpty');
   const sorted = [...entries].sort((a,b)=> b.bs.localeCompare(a.bs));
-  body.innerHTML = '';
   empty.style.display = sorted.length ? 'none' : '';
-  sorted.forEach(e=>{
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
+
+  const CAP = 200;
+  const visible = showAllTransactions ? sorted : sorted.slice(0, CAP);
+
+  // Build one big HTML string and assign once — appendChild-per-row is fine for
+  // dozens of rows but forces a reflow each time and grinds to a halt (or freezes
+  // the tab) once you're into the thousands, which happens fast after an import.
+  let html = '';
+  for(const e of visible){
+    html += `<tr>
       <td>${e.bs}<span class="ad-sub">${e.ad} AD</span></td>
       <td><span class="type-pill ${e.type.toLowerCase()}">${e.type}</span></td>
       <td class="amt ${e.type.toLowerCase()}">${fmt(e.amount)}</td>
       <td>${e.notes || ''}</td>
       <td><button class="btn-del" onclick="deleteEntry('${e.id}')">Delete</button></td>
-    `;
-    body.appendChild(tr);
-  });
+    </tr>`;
+  }
+  body.innerHTML = html;
+
+  let toggle = document.getElementById('txShowAllRow');
+  if(sorted.length > CAP){
+    if(!toggle){
+      toggle = document.createElement('div');
+      toggle.id = 'txShowAllRow';
+      toggle.style.cssText = 'text-align:center;padding:14px;font-size:.85rem;';
+      body.parentElement.parentElement.appendChild(toggle);
+    }
+    toggle.innerHTML = showAllTransactions
+      ? `Showing all ${sorted.length} entries. <a href="#" onclick="showAllTransactions=false;renderTransactions();return false;" style="color:var(--ink);text-decoration:underline;">Show recent ${CAP} only</a>`
+      : `Showing most recent ${CAP} of ${sorted.length} entries. <a href="#" onclick="showAllTransactions=true;renderTransactions();return false;" style="color:var(--ink);text-decoration:underline;">Show all ${sorted.length}</a>`;
+  }else if(toggle){
+    toggle.remove();
+  }
 }
 function renderDaily(){
   const map = groupBy(e=>e.bs);
   const body = document.getElementById('dailyBody');
-  body.innerHTML = '';
+  let html = '';
   Object.keys(map).sort((a,b)=> b.localeCompare(a)).forEach(k=>{
     const {income, expense} = map[k];
     const net = income - expense;
-    const tr = document.createElement('tr');
-    tr.innerHTML = `<td>${k}</td><td class="amt income">${fmt(income)}</td><td class="amt expense">${fmt(expense)}</td><td class="amt ${net>=0?'income':'expense'}">${fmt(net)}</td>`;
-    body.appendChild(tr);
+    html += `<tr><td>${k}</td><td class="amt income">${fmt(income)}</td><td class="amt expense">${fmt(expense)}</td><td class="amt ${net>=0?'income':'expense'}">${fmt(net)}</td></tr>`;
   });
+  body.innerHTML = html;
 }
 function renderMonthly(){
   const map = groupBy(e=>e.bs.slice(0,7));
   const body = document.getElementById('monthlyBody');
-  body.innerHTML = '';
+  let html = '';
   Object.keys(map).sort((a,b)=> b.localeCompare(a)).forEach(k=>{
     const {income, expense} = map[k];
     const net = income - expense;
-    const tr = document.createElement('tr');
-    tr.innerHTML = `<td>${k}</td><td class="amt income">${fmt(income)}</td><td class="amt expense">${fmt(expense)}</td><td class="amt ${net>=0?'income':'expense'}">${fmt(net)}</td>`;
-    body.appendChild(tr);
+    html += `<tr><td>${k}</td><td class="amt income">${fmt(income)}</td><td class="amt expense">${fmt(expense)}</td><td class="amt ${net>=0?'income':'expense'}">${fmt(net)}</td></tr>`;
   });
+  body.innerHTML = html;
 }
 function renderReceipt(){
   const todayBs = adToBs(new Date());
@@ -951,6 +997,8 @@ function renderAll(){
   renderDaily();
   renderMonthly();
   renderReceipt();
+  const counter = document.getElementById('entryCounter');
+  if(counter) counter.textContent = `Total entries: ${entries.length}`;
 }
 
 (async function init(){
