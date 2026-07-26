@@ -88878,5 +88878,21 @@
     "type": "Income",
     "amount": 1090,
     "notes": ""
+  },
+  {
+    "id": "ms1f0exaeeec",
+    "bs": "2082-11-12",
+    "ad": "2026-02-24",
+    "type": "Income",
+    "amount": 550,
+    "notes": ""
+  },
+  {
+    "id": "ms1f0j1h5a0f",
+    "bs": "2082-11-12",
+    "ad": "2026-02-24",
+    "type": "Income",
+    "amount": 1180,
+    "notes": ""
   }
 ]
