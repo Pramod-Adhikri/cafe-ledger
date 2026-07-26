@@ -88102,5 +88102,13 @@
     "type": "Expense",
     "amount": 2645,
     "notes": ""
+  },
+  {
+    "id": "ms1enavetkfm",
+    "bs": "2082-10-22",
+    "ad": "2026-02-05",
+    "type": "Income",
+    "amount": 1585,
+    "notes": ""
   }
 ]
