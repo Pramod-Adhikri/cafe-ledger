@@ -86558,5 +86558,13 @@
     "type": "Expense",
     "amount": 1425,
     "notes": ""
+  },
+  {
+    "id": "ms1deso9i877",
+    "bs": "2083-08-24",
+    "ad": "2026-12-10",
+    "type": "Income",
+    "amount": 1300,
+    "notes": ""
   }
 ]
