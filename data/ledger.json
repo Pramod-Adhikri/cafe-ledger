@@ -86526,5 +86526,13 @@
     "type": "Income",
     "amount": 4080,
     "notes": ""
+  },
+  {
+    "id": "ms1dd4frysfd",
+    "bs": "2083-08-23",
+    "ad": "2026-12-09",
+    "type": "Expense",
+    "amount": 1115,
+    "notes": ""
   }
 ]
