@@ -88110,5 +88110,13 @@
     "type": "Income",
     "amount": 1585,
     "notes": ""
+  },
+  {
+    "id": "ms1enewcul44",
+    "bs": "2082-10-22",
+    "ad": "2026-02-05",
+    "type": "Income",
+    "amount": 5575,
+    "notes": ""
   }
 ]
