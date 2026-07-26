@@ -85950,5 +85950,13 @@
     "type": "Income",
     "amount": 1620,
     "notes": ""
+  },
+  {
+    "id": "ms1czchgumtf",
+    "bs": "2083-08-02",
+    "ad": "2026-11-18",
+    "type": "Expense",
+    "amount": 1030,
+    "notes": ""
   }
 ]
