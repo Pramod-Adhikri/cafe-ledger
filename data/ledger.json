@@ -89054,5 +89054,13 @@
     "type": "Income",
     "amount": 1450,
     "notes": ""
+  },
+  {
+    "id": "ms1f3fignyhr",
+    "bs": "2082-11-18",
+    "ad": "2026-03-02",
+    "type": "Income",
+    "amount": 1010,
+    "notes": ""
   }
 ]
