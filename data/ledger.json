@@ -88214,5 +88214,13 @@
     "type": "Expense",
     "amount": 1800,
     "notes": ""
+  },
+  {
+    "id": "ms1epilvhua5",
+    "bs": "2082-10-26",
+    "ad": "2026-02-09",
+    "type": "Income",
+    "amount": 2795,
+    "notes": ""
   }
 ]
