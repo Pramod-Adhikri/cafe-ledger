@@ -86414,5 +86414,13 @@
     "type": "Expense",
     "amount": 2930,
     "notes": ""
+  },
+  {
+    "id": "ms1darj133yu",
+    "bs": "2083-08-18",
+    "ad": "2026-12-04",
+    "type": "Income",
+    "amount": 2660,
+    "notes": ""
   }
 ]
