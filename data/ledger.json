@@ -88046,5 +88046,13 @@
     "type": "Income",
     "amount": 2500,
     "notes": ""
+  },
+  {
+    "id": "ms1elsua481e",
+    "bs": "2082-10-20",
+    "ad": "2026-02-03",
+    "type": "Expense",
+    "amount": 2460,
+    "notes": ""
   }
 ]
