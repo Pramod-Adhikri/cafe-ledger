@@ -87950,5 +87950,13 @@
     "type": "Income",
     "amount": 2515,
     "notes": ""
+  },
+  {
+    "id": "ms1ejzdoa4jf",
+    "bs": "2082-10-17",
+    "ad": "2026-01-31",
+    "type": "Income",
+    "amount": 2460,
+    "notes": ""
   }
 ]
