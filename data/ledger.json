@@ -86686,5 +86686,13 @@
     "type": "Expense",
     "amount": 6010,
     "notes": ""
+  },
+  {
+    "id": "ms1dgnep32je",
+    "bs": "2083-08-27",
+    "ad": "2026-12-13",
+    "type": "Income",
+    "amount": 3605,
+    "notes": ""
   }
 ]
