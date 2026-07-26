@@ -85886,5 +85886,37 @@
     "type": "Expense",
     "amount": 270,
     "notes": ""
+  },
+  {
+    "id": "ms1cyofbrfxm",
+    "bs": "2083-08-01",
+    "ad": "2026-11-17",
+    "type": "Expense",
+    "amount": 60,
+    "notes": ""
+  },
+  {
+    "id": "ms1cyp5vh4nj",
+    "bs": "2083-08-01",
+    "ad": "2026-11-17",
+    "type": "Expense",
+    "amount": 150,
+    "notes": ""
+  },
+  {
+    "id": "ms1cypss6pks",
+    "bs": "2083-08-01",
+    "ad": "2026-11-17",
+    "type": "Expense",
+    "amount": 200,
+    "notes": ""
+  },
+  {
+    "id": "ms1cyqeno5ob",
+    "bs": "2083-08-01",
+    "ad": "2026-11-17",
+    "type": "Expense",
+    "amount": 200,
+    "notes": ""
   }
 ]
