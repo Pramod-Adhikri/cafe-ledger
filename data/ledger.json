@@ -87374,5 +87374,13 @@
     "type": "Expense",
     "amount": 800,
     "notes": ""
+  },
+  {
+    "id": "ms1dwhs3pgpk",
+    "bs": "2083-09-25",
+    "ad": "2027-01-09",
+    "type": "Income",
+    "amount": 370,
+    "notes": ""
   }
 ]
