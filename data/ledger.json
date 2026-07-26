@@ -89030,5 +89030,13 @@
     "type": "Income",
     "amount": 1845,
     "notes": ""
+  },
+  {
+    "id": "ms1f2xyvd2ls",
+    "bs": "2082-11-16",
+    "ad": "2026-02-28",
+    "type": "Income",
+    "amount": 2700,
+    "notes": ""
   }
 ]
