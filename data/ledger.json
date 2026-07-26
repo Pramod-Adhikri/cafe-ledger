@@ -88630,5 +88630,13 @@
     "type": "Income",
     "amount": 1560,
     "notes": ""
+  },
+  {
+    "id": "ms1evehrm1dx",
+    "bs": "2082-11-03",
+    "ad": "2026-02-15",
+    "type": "Income",
+    "amount": 2150,
+    "notes": ""
   }
 ]
