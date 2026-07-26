@@ -87494,5 +87494,13 @@
     "type": "Expense",
     "amount": 1665,
     "notes": ""
+  },
+  {
+    "id": "ms1dyr5grauk",
+    "bs": "2083-09-30",
+    "ad": "2027-01-14",
+    "type": "Income",
+    "amount": 1060,
+    "notes": ""
   }
 ]
