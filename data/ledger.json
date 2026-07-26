@@ -86302,5 +86302,13 @@
     "type": "Expense",
     "amount": 10395,
     "notes": ""
+  },
+  {
+    "id": "ms1d7yelkdab",
+    "bs": "2083-08-13",
+    "ad": "2026-11-29",
+    "type": "Income",
+    "amount": 5335,
+    "notes": ""
   }
 ]
