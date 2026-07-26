@@ -88326,5 +88326,13 @@
     "type": "Expense",
     "amount": 7000,
     "notes": ""
+  },
+  {
+    "id": "ms1es2473vul",
+    "bs": "2082-10-29",
+    "ad": "2026-02-12",
+    "type": "Income",
+    "amount": 5425,
+    "notes": ""
   }
 ]
