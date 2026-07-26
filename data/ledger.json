@@ -88062,5 +88062,13 @@
     "type": "Income",
     "amount": 1300,
     "notes": ""
+  },
+  {
+    "id": "ms1emdwa3oka",
+    "bs": "2082-10-21",
+    "ad": "2026-02-04",
+    "type": "Expense",
+    "amount": 960,
+    "notes": ""
   }
 ]
