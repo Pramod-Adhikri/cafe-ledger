@@ -86022,5 +86022,13 @@
     "type": "Income",
     "amount": 660,
     "notes": ""
+  },
+  {
+    "id": "ms1d0vrtmlu2",
+    "bs": "2083-08-04",
+    "ad": "2026-11-20",
+    "type": "Income",
+    "amount": 1590,
+    "notes": ""
   }
 ]
