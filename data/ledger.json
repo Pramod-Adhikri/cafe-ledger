@@ -87630,5 +87630,13 @@
     "type": "Expense",
     "amount": 36329,
     "notes": ""
+  },
+  {
+    "id": "ms1ebvwcospp",
+    "bs": "2082-10-02",
+    "ad": "2026-01-16",
+    "type": "Income",
+    "amount": 4790,
+    "notes": ""
   }
 ]
