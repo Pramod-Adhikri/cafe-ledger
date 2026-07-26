@@ -86822,5 +86822,21 @@
     "type": "Expense",
     "amount": 2560,
     "notes": ""
+  },
+  {
+    "id": "ms1dk48divka",
+    "bs": "2083-09-03",
+    "ad": "2026-12-18",
+    "type": "Income",
+    "amount": 6650,
+    "notes": ""
+  },
+  {
+    "id": "ms1dk4vl78tx",
+    "bs": "2083-09-03",
+    "ad": "2026-12-18",
+    "type": "Income",
+    "amount": 200,
+    "notes": ""
   }
 ]
