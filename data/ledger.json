@@ -88334,5 +88334,13 @@
     "type": "Income",
     "amount": 5425,
     "notes": ""
+  },
+  {
+    "id": "ms1es52pmldm",
+    "bs": "2082-10-29",
+    "ad": "2026-02-12",
+    "type": "Expense",
+    "amount": 5000,
+    "notes": ""
   }
 ]
