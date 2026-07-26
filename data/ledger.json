@@ -87174,5 +87174,13 @@
     "type": "Expense",
     "amount": 4294,
     "notes": ""
+  },
+  {
+    "id": "ms1dr3ibarux",
+    "bs": "2083-09-17",
+    "ad": "2027-01-01",
+    "type": "Income",
+    "amount": 1920,
+    "notes": ""
   }
 ]
