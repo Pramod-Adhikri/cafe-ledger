@@ -87318,5 +87318,13 @@
     "type": "Income",
     "amount": 2380,
     "notes": ""
+  },
+  {
+    "id": "ms1dvdkr1rda",
+    "bs": "2083-09-23",
+    "ad": "2027-01-07",
+    "type": "Expense",
+    "amount": 1088,
+    "notes": ""
   }
 ]
