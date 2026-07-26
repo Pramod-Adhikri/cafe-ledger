@@ -87742,5 +87742,13 @@
     "type": "Income",
     "amount": 3615,
     "notes": ""
+  },
+  {
+    "id": "ms1ef842n9kz",
+    "bs": "2082-10-09",
+    "ad": "2026-01-23",
+    "type": "Expense",
+    "amount": 615,
+    "notes": ""
   }
 ]
