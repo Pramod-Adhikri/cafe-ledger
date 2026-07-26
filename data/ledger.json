@@ -88390,5 +88390,13 @@
     "type": "Income",
     "amount": 6780,
     "notes": ""
+  },
+  {
+    "id": "ms1etu6pjnwa",
+    "bs": "2082-11-02",
+    "ad": "2026-02-14",
+    "type": "Income",
+    "amount": 35,
+    "notes": ""
   }
 ]
