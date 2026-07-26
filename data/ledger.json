@@ -87126,5 +87126,13 @@
     "type": "Income",
     "amount": 1655,
     "notes": ""
+  },
+  {
+    "id": "ms1dq40govkt",
+    "bs": "2083-09-16",
+    "ad": "2026-12-31",
+    "type": "Expense",
+    "amount": 1685,
+    "notes": ""
   }
 ]
