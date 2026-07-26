@@ -86566,5 +86566,29 @@
     "type": "Income",
     "amount": 1300,
     "notes": ""
+  },
+  {
+    "id": "ms1dex9w81lr",
+    "bs": "2083-08-24",
+    "ad": "2026-12-10",
+    "type": "Income",
+    "amount": 4680,
+    "notes": ""
+  },
+  {
+    "id": "ms1dey04ey9o",
+    "bs": "2083-08-24",
+    "ad": "2026-12-10",
+    "type": "Income",
+    "amount": 240,
+    "notes": ""
+  },
+  {
+    "id": "ms1deypp0rjn",
+    "bs": "2083-08-24",
+    "ad": "2026-12-10",
+    "type": "Income",
+    "amount": 50,
+    "notes": ""
   }
 ]
