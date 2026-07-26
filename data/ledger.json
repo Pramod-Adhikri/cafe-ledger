@@ -86734,5 +86734,13 @@
     "type": "Expense",
     "amount": 2270,
     "notes": ""
+  },
+  {
+    "id": "ms1dilsb77x3",
+    "bs": "2083-09-01",
+    "ad": "2026-12-16",
+    "type": "Expense",
+    "amount": 21471,
+    "notes": ""
   }
 ]
