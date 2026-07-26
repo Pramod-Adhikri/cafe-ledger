@@ -87086,5 +87086,13 @@
     "type": "Income",
     "amount": 100,
     "notes": ""
+  },
+  {
+    "id": "ms1dpdp3hd6s",
+    "bs": "2083-09-14",
+    "ad": "2026-12-29",
+    "type": "Income",
+    "amount": 2430,
+    "notes": ""
   }
 ]
