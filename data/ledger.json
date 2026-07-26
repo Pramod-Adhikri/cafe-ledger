@@ -86750,5 +86750,13 @@
     "type": "Income",
     "amount": 3625,
     "notes": ""
+  },
+  {
+    "id": "ms1divlcvd98",
+    "bs": "2083-09-02",
+    "ad": "2026-12-17",
+    "type": "Expense",
+    "amount": 1855,
+    "notes": ""
   }
 ]
