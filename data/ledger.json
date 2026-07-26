@@ -88454,5 +88454,37 @@
     "type": "Income",
     "amount": 500,
     "notes": ""
+  },
+  {
+    "id": "ms1eu018vnh6",
+    "bs": "2082-11-02",
+    "ad": "2026-02-14",
+    "type": "Income",
+    "amount": 240,
+    "notes": ""
+  },
+  {
+    "id": "ms1eu0nbkjg8",
+    "bs": "2082-11-02",
+    "ad": "2026-02-14",
+    "type": "Income",
+    "amount": 400,
+    "notes": ""
+  },
+  {
+    "id": "ms1eu1a0b13l",
+    "bs": "2082-11-02",
+    "ad": "2026-02-14",
+    "type": "Income",
+    "amount": 400,
+    "notes": ""
+  },
+  {
+    "id": "ms1eu2kq7qa4",
+    "bs": "2082-11-02",
+    "ad": "2026-02-14",
+    "type": "Income",
+    "amount": 800,
+    "notes": ""
   }
 ]
