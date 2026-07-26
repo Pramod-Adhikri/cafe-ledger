@@ -87254,5 +87254,13 @@
     "type": "Income",
     "amount": 1700,
     "notes": ""
+  },
+  {
+    "id": "ms1dtnp732uu",
+    "bs": "2083-09-20",
+    "ad": "2027-01-04",
+    "type": "Income",
+    "amount": 3935,
+    "notes": ""
   }
 ]
