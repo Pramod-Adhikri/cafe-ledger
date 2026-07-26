@@ -86078,5 +86078,13 @@
     "type": "Income",
     "amount": 515,
     "notes": ""
+  },
+  {
+    "id": "ms1d221550oc",
+    "bs": "2083-08-06",
+    "ad": "2026-11-22",
+    "type": "Income",
+    "amount": 2000,
+    "notes": ""
   }
 ]
