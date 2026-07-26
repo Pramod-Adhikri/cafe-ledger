@@ -86726,5 +86726,13 @@
     "type": "Expense",
     "amount": 705,
     "notes": ""
+  },
+  {
+    "id": "ms1di9mrxx4b",
+    "bs": "2083-09-01",
+    "ad": "2026-12-16",
+    "type": "Expense",
+    "amount": 2270,
+    "notes": ""
   }
 ]
