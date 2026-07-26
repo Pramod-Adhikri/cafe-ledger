@@ -87838,5 +87838,13 @@
     "type": "Income",
     "amount": 1900,
     "notes": ""
+  },
+  {
+    "id": "ms1egxmxpn35",
+    "bs": "2082-10-12",
+    "ad": "2026-01-26",
+    "type": "Income",
+    "amount": 3940,
+    "notes": ""
   }
 ]
