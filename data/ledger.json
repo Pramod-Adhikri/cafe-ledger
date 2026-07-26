@@ -88510,5 +88510,21 @@
     "type": "Income",
     "amount": 800,
     "notes": ""
+  },
+  {
+    "id": "ms1eu7lsag36",
+    "bs": "2082-11-02",
+    "ad": "2026-02-14",
+    "type": "Income",
+    "amount": 160,
+    "notes": ""
+  },
+  {
+    "id": "ms1eu94zr7m7",
+    "bs": "2082-11-02",
+    "ad": "2026-02-14",
+    "type": "Income",
+    "amount": 180,
+    "notes": ""
   }
 ]
