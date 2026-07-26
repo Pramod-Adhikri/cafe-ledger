@@ -88646,5 +88646,13 @@
     "type": "Expense",
     "amount": 2275,
     "notes": ""
+  },
+  {
+    "id": "ms1evrsbvclf",
+    "bs": "2082-11-04",
+    "ad": "2026-02-16",
+    "type": "Income",
+    "amount": 1010,
+    "notes": ""
   }
 ]
