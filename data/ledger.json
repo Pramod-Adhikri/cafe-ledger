@@ -87598,5 +87598,13 @@
     "type": "Income",
     "amount": 1915,
     "notes": ""
+  },
+  {
+    "id": "ms1eatnbzc27",
+    "bs": "2082-10-01",
+    "ad": "2026-01-15",
+    "type": "Income",
+    "amount": 580,
+    "notes": ""
   }
 ]
