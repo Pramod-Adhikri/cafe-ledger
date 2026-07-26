@@ -86254,5 +86254,13 @@
     "type": "Income",
     "amount": 1295,
     "notes": ""
+  },
+  {
+    "id": "ms1d6xve0b92",
+    "bs": "2083-08-12",
+    "ad": "2026-11-28",
+    "type": "Income",
+    "amount": 440,
+    "notes": ""
   }
 ]
