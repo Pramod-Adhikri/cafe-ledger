@@ -86814,5 +86814,13 @@
     "type": "Income",
     "amount": 500,
     "notes": ""
+  },
+  {
+    "id": "ms1djs1fm49i",
+    "bs": "2083-09-03",
+    "ad": "2026-12-18",
+    "type": "Expense",
+    "amount": 2560,
+    "notes": ""
   }
 ]
