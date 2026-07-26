@@ -87734,5 +87734,13 @@
     "type": "Income",
     "amount": 715,
     "notes": ""
+  },
+  {
+    "id": "ms1eepwm7tt8",
+    "bs": "2082-10-07",
+    "ad": "2026-01-21",
+    "type": "Income",
+    "amount": 3615,
+    "notes": ""
   }
 ]
