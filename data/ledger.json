@@ -86510,5 +86510,13 @@
     "type": "Income",
     "amount": 1605,
     "notes": ""
+  },
+  {
+    "id": "ms1dcoy52fpt",
+    "bs": "2083-08-22",
+    "ad": "2026-12-08",
+    "type": "Expense",
+    "amount": 3025,
+    "notes": ""
   }
 ]
