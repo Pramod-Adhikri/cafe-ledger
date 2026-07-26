@@ -88742,5 +88742,13 @@
     "type": "Expense",
     "amount": 5000,
     "notes": ""
+  },
+  {
+    "id": "ms1exeve75em",
+    "bs": "2082-11-07",
+    "ad": "2026-02-19",
+    "type": "Income",
+    "amount": 3010,
+    "notes": ""
   }
 ]
