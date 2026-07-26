@@ -86046,5 +86046,13 @@
     "type": "Income",
     "amount": 740,
     "notes": ""
+  },
+  {
+    "id": "ms1d1dfw5krb",
+    "bs": "2083-08-05",
+    "ad": "2026-11-21",
+    "type": "Expense",
+    "amount": 12010,
+    "notes": ""
   }
 ]
