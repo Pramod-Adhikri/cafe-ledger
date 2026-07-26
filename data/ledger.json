@@ -88486,5 +88486,29 @@
     "type": "Income",
     "amount": 800,
     "notes": ""
+  },
+  {
+    "id": "ms1eu3w118s3",
+    "bs": "2082-11-02",
+    "ad": "2026-02-14",
+    "type": "Income",
+    "amount": 400,
+    "notes": ""
+  },
+  {
+    "id": "ms1eu4sz1src",
+    "bs": "2082-11-02",
+    "ad": "2026-02-14",
+    "type": "Income",
+    "amount": 270,
+    "notes": ""
+  },
+  {
+    "id": "ms1eu5pup53g",
+    "bs": "2082-11-02",
+    "ad": "2026-02-14",
+    "type": "Income",
+    "amount": 800,
+    "notes": ""
   }
 ]
