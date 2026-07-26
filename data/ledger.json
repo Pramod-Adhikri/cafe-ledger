@@ -85942,5 +85942,13 @@
     "type": "Income",
     "amount": 1525,
     "notes": ""
+  },
+  {
+    "id": "ms1cz51q4g2w",
+    "bs": "2083-08-01",
+    "ad": "2026-11-17",
+    "type": "Income",
+    "amount": 1620,
+    "notes": ""
   }
 ]
