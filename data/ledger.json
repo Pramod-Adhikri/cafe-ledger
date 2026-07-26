@@ -87998,5 +87998,13 @@
     "type": "Expense",
     "amount": 1800,
     "notes": ""
+  },
+  {
+    "id": "ms1ekwv2bpt4",
+    "bs": "2082-10-19",
+    "ad": "2026-02-02",
+    "type": "Income",
+    "amount": 1260,
+    "notes": ""
   }
 ]
