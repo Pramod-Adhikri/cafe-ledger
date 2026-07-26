@@ -87110,5 +87110,13 @@
     "type": "Income",
     "amount": 2050,
     "notes": ""
+  },
+  {
+    "id": "ms1dprhk2j08",
+    "bs": "2083-09-15",
+    "ad": "2026-12-30",
+    "type": "Expense",
+    "amount": 1925,
+    "notes": ""
   }
 ]
