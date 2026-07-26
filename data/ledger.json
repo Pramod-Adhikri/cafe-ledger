@@ -88014,5 +88014,13 @@
     "type": "Expense",
     "amount": 45100,
     "notes": ""
+  },
+  {
+    "id": "ms1elagtz67b",
+    "bs": "2082-10-19",
+    "ad": "2026-02-02",
+    "type": "Expense",
+    "amount": 10245,
+    "notes": ""
   }
 ]
