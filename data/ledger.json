@@ -86638,5 +86638,13 @@
     "type": "Income",
     "amount": 2070,
     "notes": ""
+  },
+  {
+    "id": "ms1dfxygnyki",
+    "bs": "2083-08-26",
+    "ad": "2026-12-12",
+    "type": "Income",
+    "amount": 3015,
+    "notes": ""
   }
 ]
