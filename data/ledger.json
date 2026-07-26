@@ -87518,5 +87518,45 @@
     "type": "Income",
     "amount": 160,
     "notes": ""
+  },
+  {
+    "id": "ms1dyywdq1em",
+    "bs": "2083-09-30",
+    "ad": "2027-01-14",
+    "type": "Income",
+    "amount": 400,
+    "notes": ""
+  },
+  {
+    "id": "ms1dyzx9okfe",
+    "bs": "2083-09-30",
+    "ad": "2027-01-14",
+    "type": "Income",
+    "amount": 400,
+    "notes": ""
+  },
+  {
+    "id": "ms1dz0rygzne",
+    "bs": "2083-09-30",
+    "ad": "2027-01-14",
+    "type": "Income",
+    "amount": 320,
+    "notes": ""
+  },
+  {
+    "id": "ms1dz1aqrug7",
+    "bs": "2083-09-30",
+    "ad": "2027-01-14",
+    "type": "Income",
+    "amount": 30,
+    "notes": ""
+  },
+  {
+    "id": "ms1dz1yn0m2u",
+    "bs": "2083-09-30",
+    "ad": "2027-01-14",
+    "type": "Income",
+    "amount": 100,
+    "notes": ""
   }
 ]
