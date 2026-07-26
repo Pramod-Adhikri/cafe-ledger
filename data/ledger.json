@@ -88430,5 +88430,29 @@
     "type": "Income",
     "amount": 180,
     "notes": ""
+  },
+  {
+    "id": "ms1ety59egcs",
+    "bs": "2082-11-02",
+    "ad": "2026-02-14",
+    "type": "Income",
+    "amount": 200,
+    "notes": ""
+  },
+  {
+    "id": "ms1etyqsjyhi",
+    "bs": "2082-11-02",
+    "ad": "2026-02-14",
+    "type": "Income",
+    "amount": 200,
+    "notes": ""
+  },
+  {
+    "id": "ms1etzdm3f34",
+    "bs": "2082-11-02",
+    "ad": "2026-02-14",
+    "type": "Income",
+    "amount": 500,
+    "notes": ""
   }
 ]
