@@ -88070,5 +88070,13 @@
     "type": "Expense",
     "amount": 960,
     "notes": ""
+  },
+  {
+    "id": "ms1emlfpn7ad",
+    "bs": "2082-10-21",
+    "ad": "2026-02-04",
+    "type": "Income",
+    "amount": 2100,
+    "notes": ""
   }
 ]
