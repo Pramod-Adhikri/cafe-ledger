@@ -87142,5 +87142,13 @@
     "type": "Income",
     "amount": 1000,
     "notes": ""
+  },
+  {
+    "id": "ms1dqcw70kf3",
+    "bs": "2083-09-16",
+    "ad": "2026-12-31",
+    "type": "Income",
+    "amount": 3248,
+    "notes": ""
   }
 ]
