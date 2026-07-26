@@ -87382,5 +87382,13 @@
     "type": "Income",
     "amount": 370,
     "notes": ""
+  },
+  {
+    "id": "ms1dwl600xt8",
+    "bs": "2083-09-25",
+    "ad": "2027-01-09",
+    "type": "Expense",
+    "amount": 2252,
+    "notes": ""
   }
 ]
