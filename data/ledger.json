@@ -86406,5 +86406,13 @@
     "type": "Income",
     "amount": 14810,
     "notes": ""
+  },
+  {
+    "id": "ms1dangm3npk",
+    "bs": "2083-08-18",
+    "ad": "2026-12-04",
+    "type": "Expense",
+    "amount": 2930,
+    "notes": ""
   }
 ]
