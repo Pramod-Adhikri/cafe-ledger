@@ -87926,5 +87926,13 @@
     "type": "Expense",
     "amount": 20000,
     "notes": ""
+  },
+  {
+    "id": "ms1ej2y8lt79",
+    "bs": "2082-10-16",
+    "ad": "2026-01-30",
+    "type": "Income",
+    "amount": 1285,
+    "notes": ""
   }
 ]
