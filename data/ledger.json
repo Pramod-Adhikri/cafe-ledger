@@ -85926,5 +85926,21 @@
     "type": "Expense",
     "amount": 80,
     "notes": ""
+  },
+  {
+    "id": "ms1cyv5n0zc7",
+    "bs": "2083-08-01",
+    "ad": "2026-11-17",
+    "type": "Expense",
+    "amount": 400,
+    "notes": ""
+  },
+  {
+    "id": "ms1cz13su1t0",
+    "bs": "2083-08-01",
+    "ad": "2026-11-17",
+    "type": "Income",
+    "amount": 1525,
+    "notes": ""
   }
 ]
