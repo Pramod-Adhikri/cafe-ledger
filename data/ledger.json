@@ -87030,5 +87030,13 @@
     "type": "Expense",
     "amount": 1255,
     "notes": ""
+  },
+  {
+    "id": "ms1dofuek75q",
+    "bs": "2083-09-12",
+    "ad": "2026-12-27",
+    "type": "Income",
+    "amount": 1460,
+    "notes": ""
   }
 ]
