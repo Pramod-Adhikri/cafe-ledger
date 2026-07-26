@@ -87190,5 +87190,13 @@
     "type": "Expense",
     "amount": 740,
     "notes": ""
+  },
+  {
+    "id": "ms1ds5gpjcup",
+    "bs": "2083-09-18",
+    "ad": "2027-01-02",
+    "type": "Income",
+    "amount": 2575,
+    "notes": ""
   }
 ]
