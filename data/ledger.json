@@ -86358,5 +86358,13 @@
     "type": "Income",
     "amount": 3380,
     "notes": ""
+  },
+  {
+    "id": "ms1d9copdw52",
+    "bs": "2083-08-16",
+    "ad": "2026-12-02",
+    "type": "Income",
+    "amount": 3900,
+    "notes": ""
   }
 ]
