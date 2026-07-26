@@ -86910,5 +86910,21 @@
     "type": "Income",
     "amount": 800,
     "notes": ""
+  },
+  {
+    "id": "ms1dlrdlq1jq",
+    "bs": "2083-09-07",
+    "ad": "2026-12-22",
+    "type": "Expense",
+    "amount": 1030,
+    "notes": ""
+  },
+  {
+    "id": "ms1dm3dseuva",
+    "bs": "2083-09-07",
+    "ad": "2026-12-22",
+    "type": "Income",
+    "amount": 5460,
+    "notes": ""
   }
 ]
