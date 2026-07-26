@@ -86838,5 +86838,13 @@
     "type": "Income",
     "amount": 200,
     "notes": ""
+  },
+  {
+    "id": "ms1dkarekelo",
+    "bs": "2083-09-04",
+    "ad": "2026-12-19",
+    "type": "Expense",
+    "amount": 1590,
+    "notes": ""
   }
 ]
