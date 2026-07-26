@@ -87774,5 +87774,29 @@
     "type": "Income",
     "amount": 1480,
     "notes": ""
+  },
+  {
+    "id": "ms1efn7w6j7s",
+    "bs": "2082-10-09",
+    "ad": "2026-01-23",
+    "type": "Income",
+    "amount": 100,
+    "notes": ""
+  },
+  {
+    "id": "ms1efnqp7xfu",
+    "bs": "2082-10-09",
+    "ad": "2026-01-23",
+    "type": "Income",
+    "amount": 300,
+    "notes": ""
+  },
+  {
+    "id": "ms1eg193tb4t",
+    "bs": "2082-10-11",
+    "ad": "2026-01-25",
+    "type": "Expense",
+    "amount": 1510,
+    "notes": ""
   }
 ]
